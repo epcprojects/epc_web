@@ -37,9 +37,8 @@ import "../public/css/styles.css";
 import ClientLayout from "@/components/layout/ClientLayout";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
-  description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+  title: "EndPoint Clients | Professional digital solutions",
+  description: "EndPoint Clients | Professional digital solutions",
 };
 const setColorSchemeScript = `
 (function() {
@@ -57,6 +56,21 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en" className="no-touch">
       <head>
+        <link
+          rel="icon"
+          type="image/png"
+          href="favicon/favicon-96x96.png"
+          sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script dangerouslySetInnerHTML={{ __html: setColorSchemeScript }} />
       </head>
       <body>

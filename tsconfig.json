@@ -19,7 +19,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+       "@/icons": [
+        "./public/icons/index.ts"
+      ]
     }
   },
   "include": [

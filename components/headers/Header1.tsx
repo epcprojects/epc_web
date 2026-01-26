@@ -23,7 +23,7 @@ export default function Header1() {
     <header id="header" className={`mxd-header ${isHidden ? "is-hidden" : ""}`}>
       {/* header logo */}
       <div className="mxd-header__logo loading__fade ">
-        <Link href={`/home-main`} className="">
+        <Link href={`/`} className="">
           <Image
             alt="logo epc"
             src={"img/logoHorizontal.svg"}

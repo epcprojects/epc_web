@@ -3,12 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import AnimatedButton from "@/components/animation/AnimatedButton";
-export const metadata: Metadata = {
-  title:
-    "Page Not Found || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
-  description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+import { FiverIcon, UpworkIcon } from "@/public/icons";
+
 export default function NotFoundPage() {
   return (
     <>
@@ -38,13 +34,34 @@ export default function NotFoundPage() {
                       <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                         <div className="mxd-error__caption loading__fade">
                           <p className="t-large t-medium t-120 t-bright">
-                            Under Construction
+                            Exciting Updates Are Coming!
                           </p>
+                        </div>
+                        <div className="mt-6! sm:mt-10! items-center flex flex-wrap gap-4">
+                          <a
+                            href="https://pro.fiverr.com/freelancers/templateplanet"
+                            className="bg-black flex cursor-pointer items-center group gap-4 py-3 text-lg font-medium! text-white ps-8! pe-3 rounded-full "
+                          >
+                            Hire us on
+                            <span className="bg-white group-hover:bg-[#00b22d]! text-black group-hover:text-white! rounded-full h-18 w-18 inline-flex items-center justify-center">
+                              <FiverIcon fill={"currentColor"} />
+                            </span>
+                          </a>
+                          <a
+                            href="https://www.upwork.com/agencies/1735503164466835456/"
+                            className="bg-black flex cursor-pointer items-center gap-4 py-3 group text-lg font-medium! text-white ps-8! pe-3 rounded-full "
+                          >
+                            Hire us on
+                            <span className="bg-white group-hover:bg-[#6FDA44]! text-black group-hover:text-white! rounded-full h-18 w-18 inline-flex items-center justify-center">
+                              <UpworkIcon fill={"currentColor"} />
+                            </span>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
                 {/* <div className="mxd-error__controls loading__fade">
                   <div className="container-fluid p-0">
                     <div className="row g-0">
@@ -73,8 +90,10 @@ export default function NotFoundPage() {
                       key={index}
                       className="marquee__item item-regular item-regular-xl text"
                     >
-                      <p className="marquee__text text-xl">Coming Soon</p>
-                      <div className="marquee__image image-xl">
+                      <p className="marquee__text text-7xl! sm:text-[18rem]! sm:pb-12! pb-3">
+                        Coming Soon
+                      </p>
+                      <div className="marquee__image sm:w-36 h-12 w-12 sm:h-36">
                         <svg
                           version="1.1"
                           xmlns="http://www.w3.org/2000/svg"

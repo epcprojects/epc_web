@@ -5,11 +5,16 @@ import menuItems from "@/data/menu.json"; // adjust path accordingly
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import gsap from "gsap";
-import Flip from "gsap/Flip";
+// import Flip from "gsap/flip";
+// import { Flip } from "gsap/Flip";
+
 import { usePathname } from "next/navigation";
 import AnimatedButton from "../animation/AnimatedButton";
 
-gsap.registerPlugin(Flip);
+// gsap.registerPlugin(Flip);
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+gsap.registerPlugin((gsap as any).Flip);
 
 export default function MobileMenu() {
   const pathname = usePathname();
@@ -34,7 +39,7 @@ export default function MobileMenu() {
           setIsMenuOpen(false);
         },
 
-        800
+        800,
       );
     } else {
       setIsMenuOpen(true);
@@ -43,7 +48,7 @@ export default function MobileMenu() {
           setIsActive(true);
         },
 
-        600
+        600,
       );
     }
   };
@@ -53,7 +58,7 @@ export default function MobileMenu() {
   useEffect(() => {
     // Get scrollHeight for each submenu and store in state
     const heights = submenuRefs.current.map((submenu) =>
-      submenu ? submenu.scrollHeight : 0
+      submenu ? submenu.scrollHeight : 0,
     );
     setSubmenuHeights(heights);
   }, []);
@@ -144,7 +149,7 @@ export default function MobileMenu() {
                               className="main-menu__toggle"
                               onClick={() =>
                                 setActiveSubmenu((pre) =>
-                                  pre == index ? -1 : index
+                                  pre == index ? -1 : index,
                                 )
                               }
                             >

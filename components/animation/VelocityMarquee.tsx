@@ -18,7 +18,7 @@ type VelocityMarqueeProps = {
 
 export default function VelocityMarquee({
   className,
-  duration = 20,
+  duration = 60,
   direction = "right",
   minScale = 1,
   maxScale = 6,
@@ -31,7 +31,7 @@ export default function VelocityMarquee({
   // ✅ left should be NEGATIVE, right should be POSITIVE
   const dirDelta = useMemo(
     () => (direction === "left" ? "-=50%" : "+=50%"),
-    [direction]
+    [direction],
   );
 
   useLayoutEffect(() => {

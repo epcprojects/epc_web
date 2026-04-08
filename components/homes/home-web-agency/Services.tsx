@@ -7,6 +7,7 @@ import Image from "next/image";
 
 import services from "@/data/services/services-web-agency.json";
 import { Service } from "@/types/services";
+import AnimatedButton from "@/components/animation/AnimatedButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,10 +19,10 @@ export default function Services() {
     if (!root) return;
 
     const textItems = Array.from(
-      root.querySelectorAll<HTMLElement>(".mxd-pinned__text-item")
+      root.querySelectorAll<HTMLElement>(".mxd-pinned__text-item"),
     );
     const imgItems = Array.from(
-      root.querySelectorAll<HTMLElement>(".mxd-pinned__img-item")
+      root.querySelectorAll<HTMLElement>(".mxd-pinned__img-item"),
     );
 
     // Guard if lists mismatch/empty
@@ -77,7 +78,7 @@ export default function Services() {
                       key={idx}
                     >
                       <Image
-                        className="mxd-pinned__img"
+                        className="mxd-pinned__img w-full! h-full!"
                         alt="Image"
                         src={item.img}
                         width={800}
@@ -123,6 +124,16 @@ export default function Services() {
                       </div>
 
                       <p className="anim-uni-in-up">{item.desc}</p>
+
+                      <div className="mt-12!">
+                        <AnimatedButton
+                          text="Start a Project"
+                          className="btn btn-anim btn-default btn-outline slide-right-up"
+                          href={`/`}
+                        >
+                          <i className="ph-bold ph-arrow-up-right" />
+                        </AnimatedButton>
+                      </div>
                     </div>
                   ))}
                 </div>

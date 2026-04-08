@@ -10,6 +10,9 @@ export default function Hero() {
         <div className="mxd-hero-05__wrap loading-wrap">
           <div className="mxd-hero-05__top">
             <div className="mxd-hero-05__headline">
+              <div className="flex items-center justify-center w-full">
+                <div> ssf sdf</div>
+              </div>
               <div className="container-fluid p-0">
                 <div className="row g-0 d-flex flex-column flex-xl-row">
                   <div className="col-12 col-xl-8 col-xxl-10 order-2 order-xl-1 mxd-grid-item no-margin">

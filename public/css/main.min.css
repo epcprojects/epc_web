@@ -7325,12 +7325,12 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1200px) {
   .mxd-hero-01__title-wrap {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .mxd-hero-01__title-wrap {
-    padding-bottom: 4rem;
+    padding-bottom: 1.5rem;
   }
 }
 .mxd-hero-01__marquee {
@@ -7338,7 +7338,7 @@ form textarea:required:valid {
   top: 7.6rem;
   right: 0;
   width: 100%;
-  background-color: var(--accent);
+  background-color: #4338CA;
   border: 1px solid var(--base);
   -moz-border-radius: 3.3rem;
   border-radius: 3.3rem;
@@ -7373,8 +7373,8 @@ form textarea:required:valid {
   color: var(--t-opp-bright);
 }
 .mxd-hero-01__marquee .marquee__item.item-regular svg {
-  width: 3.7rem;
-  height: 3.7rem;
+  width: 2.7rem;
+  height: 1.7rem;
   fill: currentColor;
 }
 @media only screen and (min-width: 768px) {
@@ -7402,9 +7402,9 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1200px) {
   .mxd-hero-01__marquee {
-    right: 11rem;
+    right: 0rem;
     width: 389px;
-    height: 132px;
+    height: 92px;
     -moz-border-radius: 6.6rem;
     border-radius: 6.6rem;
   }
@@ -7422,9 +7422,9 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1600px) {
   .mxd-hero-01__marquee {
-    right: 13.3rem;
+    right: -2.3rem;
     width: 430px;
-    height: 154px;
+    /* height: 154px; */
     -moz-border-radius: 7.7rem;
     border-radius: 7.7rem;
   }
@@ -16533,7 +16533,7 @@ form textarea:required:valid {
     height: 320px;
     padding: 0 3rem;
     border-bottom: none;
-    border-left: 1px solid var(--st-bright);
+    border-left: 1px solid #9ca3af;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -17644,8 +17644,8 @@ form textarea:required:valid {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 380px;
-  height: 250px;
+  width: 200px;
+  height: 120px;
 }
 .marquee__item.item-partners::before {
   content: "";
@@ -17655,7 +17655,7 @@ form textarea:required:valid {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--base-tint);
+  /* background-color: var(--base-tint); */
   -moz-border-radius: var(--_radius-m);
   border-radius: var(--_radius-m);
   z-index: -1;
@@ -18249,7 +18249,7 @@ form textarea:required:valid {
     width: calc(50% - 1.5rem);
   }
 }
-.no-touch .mxd-services-stack__work:hover .mxd-services-stack__preview {
+/* .no-touch .mxd-services-stack__work:hover .mxd-services-stack__preview {
   -webkit-filter: blur(10px);
   filter: blur(10px);
   -webkit-transform: scale(1.04);
@@ -18261,7 +18261,7 @@ form textarea:required:valid {
   opacity: 1;
   -webkit-filter: blur(0);
   filter: blur(0);
-}
+} */
 .mxd-services-stack__preview {
   position: absolute;
   top: 0;

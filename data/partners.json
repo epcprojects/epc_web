@@ -1,37 +1,49 @@
 {
   "top": [
     {
-      "src": "/img/brands/envato.svg",
-      "width": 700,
-      "height": 169,
-      "href": "#0"
-    },
-    {
-      "src": "/img/brands/angular.svg",
-      "width": 700,
-      "height": 169,
-      "href": "#0"
-    },
-    {
-      "src": "/img/brands/deepseek.svg",
+      "src": "/img/brands/homesharea.png",
       "width": 665,
       "height": 148,
       "href": "#0"
     },
     {
-      "src": "/img/brands/dribbble.svg",
+      "src": "/img/brands/bajcogroup.png",
       "width": 917,
       "height": 258,
       "href": "#0"
     },
     {
-      "src": "/img/brands/udemy.svg",
+      "src": "/img/brands/capitalcareinvestment.png",
       "width": 631,
       "height": 237,
       "href": "#0"
     },
     {
-      "src": "/img/brands/behance.svg",
+      "src": "/img/brands/mahaana.png",
+      "width": 2499,
+      "height": 464,
+      "href": "#0"
+    },
+    {
+      "src": "/img/brands/bondheshams.png",
+      "width": 2499,
+      "height": 464,
+      "href": "#0"
+    },
+    {
+      "src": "/img/brands/duoworld.png",
+      "width": 2499,
+      "height": 464,
+      "href": "#0"
+    },
+    {
+      "src": "/img/brands/curryking.png",
+      "width": 2499,
+      "height": 464,
+      "href": "#0"
+    },
+    {
+      "src": "/img/brands/frewert-media.png",
       "width": 2499,
       "height": 464,
       "href": "#0"
@@ -39,39 +51,51 @@
   ],
   "bottom": [
     {
-      "src": "/img/brands/codeninja.svg",
-      "width": 223,
-      "height": 34,
+      "src": "/img/brands/misa.png",
+      "width": 700,
+      "height": 169,
       "href": "#0"
     },
     {
-      "src": "/img/brands/crewai.svg",
-      "width": 144,
-      "height": 38,
+      "src": "/img/brands/darerc.png",
+      "width": 700,
+      "height": 169,
       "href": "#0"
     },
     {
-      "src": "/img/brands/smartlook.svg",
-      "width": 149,
-      "height": 24,
+      "src": "/img/brands/azm.png",
+      "width": 665,
+      "height": 148,
       "href": "#0"
     },
     {
-      "src": "/img/brands/ghostgaming.svg",
-      "width": 2854,
-      "height": 1199,
+      "src": "/img/brands/citrusbits.png",
+      "width": 917,
+      "height": 258,
       "href": "#0"
     },
     {
-      "src": "/img/brands/logitech.svg",
-      "width": 702,
-      "height": 210,
+      "src": "/img/brands/hyversa.png",
+      "width": 631,
+      "height": 237,
       "href": "#0"
     },
     {
-      "src": "/img/brands/mozilla.svg",
-      "width": 984,
-      "height": 235,
+      "src": "/img/brands/japan-statioan.png",
+      "width": 2499,
+      "height": 464,
+      "href": "#0"
+    },
+    {
+      "src": "/img/brands/pasha.png",
+      "width": 700,
+      "height": 169,
+      "href": "#0"
+    },
+    {
+      "src": "/img/brands/lmconsulting.png",
+      "width": 700,
+      "height": 169,
       "href": "#0"
     }
   ]

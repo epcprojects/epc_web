@@ -36,10 +36,27 @@ import "./globals.css";
 import "../public/css/styles.css";
 import ClientLayout from "@/components/layout/ClientLayout";
 import { Metadata } from "next";
+import { Manrope, Playfair_Display } from "next/font/google";
+import BottomNav from "@/components/BottomNav";
 export const metadata: Metadata = {
   title: "EndPoint Clients | Professional digital solutions",
   description: "EndPoint Clients | Professional digital solutions",
 };
+
+const manrope_init = Manrope({
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--manrope",
+});
+
+const playfair_init = Playfair_Display({
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--playfair",
+});
+
 const setColorSchemeScript = `
 (function() {
   try {
@@ -54,7 +71,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning lang="en" className="no-touch">
+    <html
+      suppressHydrationWarning
+      lang="en"
+      className={`no-touch ${manrope_init.variable} ${playfair_init.variable}`}
+    >
       <head>
         <link
           rel="icon"
@@ -75,6 +96,7 @@ export default function RootLayout({
       </head>
       <body>
         <ClientLayout>{children}</ClientLayout>
+        {/* <BottomNav /> */}
       </body>
     </html>
   );

@@ -31,3 +31,12 @@ body {
   ::selection {
     background-color: black !important;
   }
+
+.font-manrope {
+  font-family: var(--manrope) !important;
+}
+
+
+.font-playfair {
+  font-family: var(--playfair) !important;
+}

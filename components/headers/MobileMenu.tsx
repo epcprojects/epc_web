@@ -10,8 +10,9 @@ import gsap from "gsap";
 
 import { usePathname } from "next/navigation";
 import AnimatedButton from "../animation/AnimatedButton";
+import { Flip } from "gsap/all";
 
-// gsap.registerPlugin(Flip);
+gsap.registerPlugin(Flip);
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 gsap.registerPlugin((gsap as any).Flip);

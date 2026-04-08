@@ -5,7 +5,11 @@
       "title": "Creative studio",
       "description": "template for modern agencies",
       "previewClass": "preview-image-1",
-      "tags": ["UI/UX", "Web design", "Illustrations"],
+      "tags": [
+        "UI/UX",
+        "Web design",
+        "Illustrations"
+      ],
       "anim": "anim-uni-in-up"
     },
     {
@@ -13,7 +17,11 @@
       "title": "Interactive concept",
       "description": "powered by AI",
       "previewClass": "preview-image-2",
-      "tags": ["Sora", "AI", "Editorial"],
+      "tags": [
+        "Sora",
+        "AI",
+        "Editorial"
+      ],
       "anim": "anim-uni-in-up"
     },
     {
@@ -21,7 +29,11 @@
       "title": "Mobile app design",
       "description": "for a cross-platform solution",
       "previewClass": "preview-image-3",
-      "tags": ["UI/UX", "Design", "Android"],
+      "tags": [
+        "UI/UX",
+        "Design",
+        "Android"
+      ],
       "anim": ""
     },
     {
@@ -29,7 +41,10 @@
       "title": "NFT project",
       "description": "branding",
       "previewClass": "preview-image-4",
-      "tags": ["Brand identity", "Style guides"],
+      "tags": [
+        "Brand identity",
+        "Style guides"
+      ],
       "anim": "anim-uni-in-up"
     },
     {
@@ -37,7 +52,11 @@
       "title": "Illustrations set",
       "description": "for digital and print use.",
       "previewClass": "preview-image-5",
-      "tags": ["Illustrations", "Design", "Packaging"],
+      "tags": [
+        "Illustrations",
+        "Design",
+        "Packaging"
+      ],
       "anim": "anim-uni-in-up"
     },
     {
@@ -45,7 +64,10 @@
       "title": "VR Vision",
       "description": "experience concept",
       "previewClass": "preview-image-6",
-      "tags": ["Midjourney", "AI Model"],
+      "tags": [
+        "Midjourney",
+        "AI Model"
+      ],
       "anim": "anim-uni-in-up"
     }
   ],
@@ -57,7 +79,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-01.webp",
         "desktop": "/img/works/preview/1920x1080_prv-01.webp"
       },
-      "tags": ["Midjourney", "AI", "Editorial"],
+      "tags": [
+        "Midjourney",
+        "AI",
+        "Editorial"
+      ],
       "justify": "justify-end"
     },
     {
@@ -67,7 +93,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-07.webp",
         "desktop": "/img/works/preview/1920x1080_prv-07.webp"
       },
-      "tags": ["Development", "Web", "Editorial"],
+      "tags": [
+        "Development",
+        "Web",
+        "Editorial"
+      ],
       "justify": "justify-end"
     },
     {
@@ -77,7 +107,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-03.webp",
         "desktop": "/img/works/preview/1920x1080_prv-03.webp"
       },
-      "tags": ["Branding", "Web", "Packaging"],
+      "tags": [
+        "Branding",
+        "Web",
+        "Packaging"
+      ],
       "justify": "justify-end"
     },
     {
@@ -87,7 +121,10 @@
         "mobile": "/img/works/preview/1080x1920_prv-04.webp",
         "desktop": "/img/works/preview/1920x1080_prv-04.webp"
       },
-      "tags": ["UI/UX", "Development"],
+      "tags": [
+        "UI/UX",
+        "Development"
+      ],
       "justify": "justify-end"
     }
   ],
@@ -193,7 +230,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-04.webp",
         "desktop": "/img/works/preview/1920x1080_prv-04.webp"
       },
-      "tags": ["Brand", "Illustrations", "Web"],
+      "tags": [
+        "Brand",
+        "Illustrations",
+        "Web"
+      ],
       "justify": "justify-between"
     },
     {
@@ -203,7 +244,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-01.webp",
         "desktop": "/img/works/preview/1920x1080_prv-01.webp"
       },
-      "tags": ["Sora", "AI", "Editorial"],
+      "tags": [
+        "Sora",
+        "AI",
+        "Editorial"
+      ],
       "justify": "justify-between"
     },
     {
@@ -213,7 +258,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-05.webp",
         "desktop": "/img/works/preview/1920x1080_prv-05.webp"
       },
-      "tags": ["Design", "UI/UX", "Android"],
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Android"
+      ],
       "justify": "justify-between"
     }
   ],
@@ -337,7 +386,10 @@
       "thumb": "/img/works/preview/600x730_prv-01.webp",
       "image": "/img/works/preview/1200x800_prv-01.webp",
       "title": "E-commerce website",
-      "tags": ["UI/UX design", "Development"],
+      "tags": [
+        "UI/UX design",
+        "Development"
+      ],
       "date": "2025"
     },
     {
@@ -345,7 +397,10 @@
       "thumb": "/img/works/preview/600x730_prv-02.webp",
       "image": "/img/works/preview/1200x800_prv-02.webp",
       "title": "NFT project branding",
-      "tags": ["Brand identity", "Style guides"],
+      "tags": [
+        "Brand identity",
+        "Style guides"
+      ],
       "date": "2025"
     },
     {
@@ -353,7 +408,10 @@
       "thumb": "/img/works/preview/600x730_prv-03.webp",
       "image": "/img/works/preview/1200x800_prv-03.webp",
       "title": "VR vision project",
-      "tags": ["Midjourney", "AI model"],
+      "tags": [
+        "Midjourney",
+        "AI model"
+      ],
       "date": "2024"
     },
     {
@@ -361,7 +419,10 @@
       "thumb": "/img/works/preview/1200x800_prv-04.webp",
       "image": "/img/works/preview/1200x800_prv-04.webp",
       "title": "Illustrations set",
-      "tags": ["Illustrations", "Design"],
+      "tags": [
+        "Illustrations",
+        "Design"
+      ],
       "date": "2024"
     },
     {
@@ -369,7 +430,10 @@
       "thumb": "/img/works/preview/600x730_prv-05.webp",
       "image": "/img/works/preview/1200x800_prv-05.webp",
       "title": "Blockchain app design",
-      "tags": ["IU/UX design", "Development"],
+      "tags": [
+        "IU/UX design",
+        "Development"
+      ],
       "date": "2024"
     },
     {
@@ -377,96 +441,161 @@
       "thumb": "/img/works/preview/600x730_prv-06.webp",
       "image": "/img/works/preview/1200x800_prv-06.webp",
       "title": "Rayo studio portfolio",
-      "tags": ["IU/UX design", "Development"],
+      "tags": [
+        "IU/UX design",
+        "Development"
+      ],
       "date": "2024"
     }
   ],
   "projects9": [
     {
       "id": 1,
-      "wrapperClass": "mxd-services-stack__inner showcase-inner bg-base-opp",
-      "title": "Digital products",
-      "titleClass": "opposite",
+      "wrapperClass": "mxd-services-stack__inner bg-blue-100! showcase-inner bg-base-opp",
+      "title": "Healthcare",
+      "titleClass": "opposite text-black!",
       "number": "/01",
       "numberClass": "t-opp-muted",
-      "info": "We create visually compelling designs that enhance user experience. We make sure your brand's visuals resonate with your audience.",
-      "infoClass": "t-opposite",
+      "info": "Designing secure, patient-centered digital experiences that simplify complex healthcare systems and improve usability.",
+      "infoClass": "t-opposite text-black!",
       "works": [
         {
           "id": 40,
-          "src": "/img/works/preview/800x400_prv-01.webp",
-          "tags": ["Sora", "AI", "Editorial"]
+          "src": "/img/services/HealthcareApp.jpg",
+          "tags": [
+            "Usability",
+            "Accessibility ",
+            "Data Clarity"
+          ]
         },
         {
           "id": 41,
-          "src": "/img/works/preview/800x400_prv-02.webp",
-          "tags": ["Frontend", "Interactions", "Web"]
+          "src": "/img/services/HealthcareWeb.jpg",
+          "tags": [
+            "Compliance UX",
+            "Health Data ",
+            "Experience "
+          ]
         }
       ]
     },
     {
       "id": 2,
-      "wrapperClass": "mxd-services-stack__inner showcase-inner bg-accent",
-      "title": "Corporate websites",
-      "titleClass": "opposite",
+      "wrapperClass": "mxd-services-stack__inner bg-purple-200! showcase-inner bg-accent",
+      "title": "Fintech ",
+      "titleClass": "opposite text-black!",
       "number": "/02",
       "numberClass": "t-opp-brigth",
-      "info": "We create visually compelling designs that enhance user experience. We make sure your brand's visuals resonate with your audience.",
-      "infoClass": "t-opposite",
+      "info": "Transforming complex financial workflows into intuitive, secure, and trust-driven user experiences.",
+      "infoClass": "t-opposite text-black!",
       "works": [
         {
           "id": 42,
-          "src": "/img/works/preview/800x400_prv-03.webp",
-          "tags": ["Frontend", "Interactions", "Web"]
+          "src": "/img/services/FintechApp.jpg",
+          "tags": [
+            "Secure UX",
+            "Data Visualization",
+            "Trust Design"
+          ]
         },
         {
           "id": 43,
-          "src": "/img/works/preview/800x400_prv-04.webp",
-          "tags": ["Brand", "Illustrations", "Web"]
+          "src": "/img/services/FintechWeb.jpg",
+          "tags": [
+            "Trust Systems",
+            "Financial UX",
+            "Risk & Security"
+          ]
         }
       ]
     },
     {
       "id": 3,
-      "wrapperClass": "mxd-services-stack__inner radius-dark showcase-inner bg-base-tint",
-      "title": "eCommerce",
+      "wrapperClass": "mxd-services-stack__inner radius-dark bg-orange-100! showcase-inner bg-base-tint",
+      "title": "E-commerce",
       "titleClass": "",
       "number": "/03",
       "numberClass": "t-muted-extra",
-      "info": "We create visually compelling designs that enhance user experience. We make sure your brand's visuals resonate with your audience.",
+      "info": "Designing high-converting digital experiences that streamline product discovery, checkout, and customer retention.",
       "infoClass": "",
       "works": [
         {
           "id": 44,
-          "src": "/img/works/preview/800x400_prv-05.webp",
-          "tags": ["Design", "UI/UX", "Android"]
+          "src": "/img/services/EcommerceApp.jpg",
+          "tags": [
+            "Conversion UX",
+            "Checkout Flow",
+            "Product Discovery"
+          ]
         },
         {
           "id": 45,
-          "src": "/img/works/preview/800x400_prv-06.webp",
-          "tags": ["IU/UX design", "Development"]
+          "src": "/img/services/EcommerceWeb.jpg",
+          "tags": [
+            "Shopping Flow",
+            "Retention UX",
+            "Conversion Design"
+          ]
         }
       ]
     },
     {
       "id": 4,
-      "wrapperClass": "mxd-services-stack__inner showcase-inner bg-base-opp",
-      "title": "Brand identity",
-      "titleClass": "opposite",
-      "number": "/04",
+      "wrapperClass": "mxd-services-stack__inner showcase-inner bg-teal-100!  bg-base-opp",
+      "title": "SaaS",
+      "titleClass": "opposite text-black!",
+      "number": "/05",
       "numberClass": "t-opp-muted",
-      "info": "We create visually compelling designs that enhance user experience. We make sure your brand's visuals resonate with your audience.",
-      "infoClass": "t-opposite",
+      "info": "Designing scalable digital experiences that simplify complex workflows, enhance usability, and support product growth.",
+      "infoClass": "t-opposite text-black!",
       "works": [
         {
           "id": 46,
-          "src": "/img/works/preview/800x400_prv-07.webp",
-          "tags": ["Brand", "Style guides"]
+          "src": "/img/services/SaaS1.jpg",
+          "tags": [
+            "Product UX",
+            "Feature Design",
+            "Growth Systems"
+          ]
         },
         {
           "id": 47,
-          "src": "/img/works/preview/800x400_prv-08.webp",
-          "tags": ["Interactions", "Web", "Style guides"]
+          "src": "/img/services/SaaS2.jpg",
+          "tags": [
+            "Dashboard UX",
+            "Workflow Design",
+            "Scalable Systems"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "wrapperClass": "mxd-services-stack__inner bg-red-100! showcase-inner bg-base-opp",
+      "title": "Enterprise",
+      "titleClass": "opposite text-black!",
+      "number": "/05",
+      "numberClass": "t-opp-muted",
+      "info": "Designing scalable, high-impact digital experiences that bring clarity to complex systems and support business growth.",
+      "infoClass": "t-opposite text-black!",
+      "works": [
+        {
+          "id": 46,
+          "src": "/img/services/EnterpriseApp.jpg",
+          "tags": [
+            "B2B UX",
+            "Workflow Design",
+            "Dashboard UX"
+          ]
+        },
+        {
+          "id": 47,
+          "src": "/img/services/EnterpriseWeb.jpg",
+          "tags": [
+            "System Design",
+            "Operational UX",
+            "Workflow Clarity"
+          ]
         }
       ]
     }
@@ -475,19 +604,31 @@
     {
       "id": 48,
       "image": "/img/works/preview/1920x1080_prv-04.webp",
-      "tags": ["Brand", "Illustrations", "Web"],
+      "tags": [
+        "Brand",
+        "Illustrations",
+        "Web"
+      ],
       "title": "Studio template"
     },
     {
       "id": 49,
       "image": "/img/works/preview/1920x1080_prv-01.webp",
-      "tags": ["Sora", "AI", "Editorial"],
+      "tags": [
+        "Sora",
+        "AI",
+        "Editorial"
+      ],
       "title": "AI Experiments"
     },
     {
       "id": 50,
       "image": "/img/works/preview/1920x1080_prv-05.webp",
-      "tags": ["Design", "UI/UX", "Android"],
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Android"
+      ],
       "title": "Mobile app design"
     }
   ]

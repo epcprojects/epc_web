@@ -14,9 +14,11 @@ export default function Partners() {
 
   return (
     <div className="mxd-section padding-pre-title">
-      <div className="mxd-container fullwidth-container">
+      <div className="mxd-container fullwidth-container relative ">
         {/* Block - Marquee Partners Two Lines Start */}
         <div className="mxd-block">
+          <div className="bg-linear-to-r from-[#FCF7F650] to-[#FCF7F6] absolute end-0 z-50 h-full -bottom-6 w-1/3"></div>
+          <div className="bg-linear-to-l from-[#FCF7F650] to-[#FCF7F6] absolute left-0 z-50 h-full -bottom-6 w-1/3"></div>
           {/* top line */}
           <VelocityMarquee direction="left" className="marquee marquee--gsap">
             {top.map((p, idx) => (
@@ -30,6 +32,7 @@ export default function Partners() {
                   src={p.src}
                   width={p.width}
                   height={p.height}
+                  className=""
                 />
               </a>
             ))}

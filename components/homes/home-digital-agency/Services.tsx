@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import StackCards from "@/components/animation/StackCards";
 import { projects9 } from "@/data/projects.json";
-export default function Services() {
+export default function ServicesDesignAgency() {
   return (
     <div className="mxd-section padding-stacked-section">
       <div className="mxd-container grid-container">
@@ -16,21 +16,21 @@ export default function Services() {
                   <div className="mxd-services-stack__container">
                     <div className="mxd-services-stack__title showcase-title">
                       <h3 className={stack.titleClass}>{stack.title}</h3>
-                      <span
+                      {/* <span
                         className={`mxd-services-stack__number ${stack.numberClass}`}
                       >
                         {stack.number}
-                      </span>
+                      </span> */}
                     </div>
                     <div className="mxd-services-stack__info showcase-info">
                       <p className={stack.infoClass}>{stack.info}</p>
                     </div>
                     <div className="mxd-services-stack__works">
                       {stack.works.map((w, i) => (
-                        <Link
+                        <div
                           key={i}
                           className="mxd-services-stack__work"
-                          href={`/project-details`}
+                          // href={`/project-details`}
                         >
                           <Image
                             className="mxd-services-stack__preview"
@@ -49,7 +49,7 @@ export default function Services() {
                               </span>
                             ))}
                           </div>
-                          <div className="mxd-preview-hover">
+                          {/* <div className="mxd-preview-hover">
                             <i className="mxd-preview-hover__icon icon-small">
                               <Image
                                 alt="Eye Icon"
@@ -58,8 +58,8 @@ export default function Services() {
                                 height={21}
                               />
                             </i>
-                          </div>
-                        </Link>
+                          </div> */}
+                        </div>
                       ))}
                     </div>
                   </div>

@@ -13,25 +13,30 @@ import Facts from "@/components/homes/home-software-development-company/Facts";
 import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/BottomNav";
+import ContactForm from "@/components/ContactForm";
+import Testimonials from "@/components/homes/home-1/Testimonials";
 
 const Page = () => {
   return (
     <div>
       <MobileMenu />
+
       <Hero />
       <Partners />
-      {/* <MarqueeSlider2 /> */}
+      <ServicesDesignAgency />
+      <About />
       <ParallaxBanner />
       <Services />
-      <About />
-      <ServicesDesignAgency />
-
       <Facts />
+      <Testimonials />
 
       <BottomNav />
 
-      <Blogs />
-      <Cta />
+      <div className="mxd-section overflow-hidden!">
+        <div className="mxd-container max-w-8xl! mx-auto ">
+          <ContactForm />
+        </div>
+      </div>
       <Footer2 />
     </div>
   );

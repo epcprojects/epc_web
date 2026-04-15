@@ -5,9 +5,9 @@ import AnimatedButton from "@/components/animation/AnimatedButton";
 export default function Hero() {
   return (
     <>
-      <div className="mxd-section h-fit! mxd-hero-section mxd-hero-fullheight">
-        <div className="mxd-hero-01">
-          <div className="mxd-hero-01__wrap loading-wrap">
+      <div className="mxd-section relative flex flex-col justify-center items-center h-fit! mxd-hero-section min-h-dvh mxd-hero-fullheight">
+        <div className="mxd-hero-01 z-[100]">
+          <div className="mxd-hero-01__wrap loading-wrap ">
             {/* top group */}
             <div className="mxd-hero-01__top flex flex-col gap-4">
               <div className="mb-8! space-y-6! mt-24!">
@@ -87,7 +87,7 @@ export default function Hero() {
                     <AnimatedButton
                       text=" Start a Project"
                       target="_black"
-                      className="btn btn-anim btn-default btn-mobile-icon bg-black text-white slide-right"
+                      className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
                       href=" https://calendly.com/endpointclients/30min"
                     >
                       <i className="ph-bold ph-arrow-up-right" />
@@ -198,6 +198,22 @@ export default function Hero() {
             </div>
           </div>
         </div>
+
+        <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+          <iframe
+            src="https://player.cloudinary.com/embed/?cloud_name=dgbdcdqd1&public_id=Gradient_04_HR_mfj88z&autoplay=true&muted=true&loop=true"
+            width="640"
+            height="360"
+            style={{ height: "auto", width: "100%", aspectRatio: "640 / 360" }}
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+            allowFullScreen
+            frameBorder="0"
+          />
+        </div>
+
+        {/* <div className="absolute inset-0 bg-[#FCF7F670] -z-10 pointer-events-none overflow-hidden"></div> */}
+
+        <div className="absolute w-full top-0 h-dvh  bg-linear-to-t from-[#FCF7F6] to-[#FCF7F670] -mb-20 z-80 pointer-events-none overflow-hidden"></div>
       </div>
     </>
   );

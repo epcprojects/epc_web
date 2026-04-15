@@ -9,6 +9,14 @@ export default function ServicesDesignAgency() {
       <div className="mxd-container grid-container">
         {/* Block - Services/Features Stacking Cards Start */}
         <div className="mxd-block mxd-grid-item no-margin">
+          <div className="mb-4 md:mb-8 space-y-4! md:space-y-8!">
+            <div className="px-4 py-3 font-semibold text-[#4338CA] border-2! border-[#4338CA] w-fit rounded-full">
+              Industry Expertise
+            </div>
+            <h2 className="text-5xl! leading-normal!">
+              Trusted Design Across <br /> Every Industry
+            </h2>
+          </div>
           <div className="content__block">
             <StackCards className="stack-wrapper mxd-hero-02-stack">
               {projects9.map((stack) => (
@@ -37,7 +45,7 @@ export default function ServicesDesignAgency() {
                             alt="Work Preview"
                             src={w.src}
                             width={800}
-                            height={400}
+                            height={600}
                           />
                           <div className="mxd-services-stack__tags tags-absolute">
                             {w.tags.map((t, ti) => (

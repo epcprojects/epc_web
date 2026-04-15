@@ -21,7 +21,7 @@ export default function Facts() {
 
                       {/* image */}
                       <Image
-                        className="w-60! h-60!"
+                        className="w-60! h-60! "
                         alt="Icon"
                         src={fact.image}
                         width={fact.imageWidth}

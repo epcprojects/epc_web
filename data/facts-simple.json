@@ -31,9 +31,9 @@
   },
   {
     "id": 4,
-    "number": 5,
-    "suffix": "★",
-    "description": "Client Satisfaction Rating",
+    "number": 500,
+    "suffix": "+",
+    "description": "Top Rated Projects on Upwork & Fiverr",
     "image": "/img/brands/Client_Satisfaction_Rating.png",
     "imageWidth": 274,
     "imageHeight": 280,

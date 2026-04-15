@@ -108,7 +108,7 @@ export default function MobileMenu() {
             e.preventDefault();
             handleToggle();
           }}
-          className={`mxd-nav__hamburger ${isMenuOpen ? "nav-open" : ""}`}
+          className={`mxd-nav__hamburger border-2! rounded-full border-[#FAF7F6]! drop-shadow ${isMenuOpen ? "nav-open" : ""}`}
           ref={hamburgerBtnRef}
         >
           {/* flip element */}
@@ -131,14 +131,12 @@ export default function MobileMenu() {
                 className="mxd-menu__caption fade-in-elm"
                 style={{ transitionDelay: "0.4s" }}
               >
-                🦄 Innovative design
-                <br />
-                and cutting-edge development
+                Global UI/UX Design Agency
               </p>
               <div className="main-menu">
                 <nav className="main-menu__content">
                   <ul id="main-menu" className="main-menu__accordion">
-                    {menuItems.map((item, index) => (
+                    {menuItems.slice(5).map((item, index) => (
                       <li
                         key={index}
                         className="main-menu__item fade-in-up-elm"
@@ -212,6 +210,54 @@ export default function MobileMenu() {
                     ))}
                   </ul>
                 </nav>
+
+                <div className="mt-32! flex! flex-col! gap-12! fade-in-elm">
+                  <div className="">
+                    <p className=" text-6xl! flex items-center gap-4">
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M64 32.0007C38.0951 35.3677 35.3662 38.0966 31.9993 64.0015C28.6338 38.0951 25.9049 35.3662 0 32.0007C25.9049 28.6338 28.6338 25.9049 32.0007 0C35.3677 25.9049 38.0966 28.6338 64.0015 32.0007H64Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <a
+                        className="text-white!"
+                        href="mailto:info@endpointclients.com?subject=Message%20from%20your%20site"
+                      >
+                        info@endpointclients.com
+                      </a>
+                    </p>
+                  </div>
+                  {/* inner card */}
+                  <div className="">
+                    <p className=" text-6xl! flex items-center gap-4">
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M64 32.0007C38.0951 35.3677 35.3662 38.0966 31.9993 64.0015C28.6338 38.0951 25.9049 35.3662 0 32.0007C25.9049 28.6338 28.6338 25.9049 32.0007 0C35.3677 25.9049 38.0966 28.6338 64.0015 32.0007H64Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <a
+                        href="tel:+447598981921"
+                        className="text-white underline-0! border-b-0!"
+                      >
+                        +447598981921
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             {/* right side */}
@@ -227,7 +273,7 @@ export default function MobileMenu() {
                     Showcase your projects, services and expertise with impact.
                   </p>
                   <div
-                    className="menu-promo__video fade-in-up-elm"
+                    className="menu-promo__video fade-in-up-elm min-w-[600px]!"
                     style={{ transitionDelay: "0.3s" }}
                   >
                     <video
@@ -241,15 +287,15 @@ export default function MobileMenu() {
                     >
                       <source
                         type="video/mp4"
-                        src="video/540x310_video-01.mp4"
+                        src="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4"
                       />
                       <source
                         type="video/webm"
-                        src="video/540x310_video-01.webm"
+                        src="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4"
                       />
                       <source
                         type="video/ogv"
-                        src="video/540x310_video-01.ogv"
+                        src="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4"
                       />
                     </video>
                   </div>
@@ -257,7 +303,7 @@ export default function MobileMenu() {
               </div>
             </div>
             {/* data bottom line */}
-            <div
+            {/* <div
               className="mxd-menu__data fade-in-up-elm"
               style={{ transitionDelay: "0.4s" }}
             >
@@ -275,7 +321,7 @@ export default function MobileMenu() {
                 <i className="ph ph-copyright" />
                 2025
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="hamburger__parking-slot" />
         </div>

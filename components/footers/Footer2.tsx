@@ -7,9 +7,9 @@ import Image from "next/image";
 
 export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
   return (
-    <footer id="mxd-footer" className="mxd-footer">
+    <footer id="mxd-footer" className="mxd-footer mt-12! md:mt-32!">
       {/* Footer Block - Fullwidth Text Start */}
-      <div className="mxd-footer__text-wrap">
+      {/* <div className="mxd-footer__text-wrap">
         <div className=" py-6! md:py-12! mb-12!">
           <Link href={`/`} className="">
             <Image
@@ -21,7 +21,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             />
           </Link>
         </div>
-      </div>
+      </div> */}
       {/* Footer Block - Fullwidth Text End */}
       {/* Footer Block - Info Columns Start */}
       <div className="mxd-footer__footer-blocks">
@@ -30,50 +30,121 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
           {/* inner card */}
           <div className="footer-blocks__card fullheight-card">
             {/* footer navigation */}
-            <div className="footer-blocks__nav">
-              <ul className="footer-nav">
-                {footerNav.map(
-                  (
-                    item: { label: string; href: string; counter?: number },
-                    idx: number,
-                  ) => (
-                    <li className="footer-nav__item anim-uni-in-up" key={idx}>
-                      <AnimatedButton
-                        href={item.href}
-                        text={item.label}
-                        className="footer-nav__link btn-anim"
-                      />
+            <div className="flex! flex-col gap-4 md:gap-8">
+              <Link href={`/`} className="">
+                <Image
+                  alt="logo epc"
+                  src={"img/logoHorizontal.svg"}
+                  width={40}
+                  height={40}
+                  className=" w-100!"
+                />
+              </Link>
+              <h2 className="text-2xl! md:text-4xl! font-normal! leading-normal">
+                Are you ready to elevate your brand’s digital presence?I lead an
+                exceptional team of UX/UI designers, researchers, 3D artists,
+                and webmasters.
+              </h2>
 
-                      {item.counter && (
-                        <p className="footer-nav__counter">
-                          <svg
-                            version="1.1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            x="0px"
-                            y="0px"
-                            width="20px"
-                            height="20px"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fill="currentColor"
-                              d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
-                  c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
-                  c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
-                  c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
-                  c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
-                  c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
-                  c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
-                            />
-                          </svg>
-                          <span>{item.counter}</span>
-                        </p>
-                      )}
-                    </li>
-                  ),
-                )}
-              </ul>
+              <AnimatedButton
+                text="Contact Us"
+                target="_black"
+                className="btn w-fit! mt-4! btn-anim btn-default btn-mobile-icon bg-black text-white slide-right"
+                href=""
+              >
+                <i className="ph-bold ph-arrow-up-right" />
+              </AnimatedButton>
+
+              <div className="flex mt-16! gap-4">
+                <div className="relative group">
+                  <a
+                    href="https://www.upwork.com/agencies/1735503164466835456/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      alt="Upwork"
+                      src={"/img/icons/upwork.svg"}
+                      width={24}
+                      height={24}
+                      className="w-16! h-16!"
+                    />
+                  </a>
+
+                  <div className="pointer-events-none absolute left-1/2 bottom-[120%] z-20 mt-3 -translate-x-1/2 opacity-0 transition-all duration-200 group-hover:opacity-100!">
+                    <div className="relative rounded-md bg-black px-3 py-2 text-lg! text-white shadow-lg whitespace-nowrap">
+                      Top Rated Plus
+                      <div className="absolute left-1/2 -bottom-3 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-black" />
+                    </div>
+                  </div>
+                </div>
+                <div className="relative group">
+                  <a
+                    href="https://pro.fiverr.com/freelancers/templateplanet"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      alt="Fiverr"
+                      src={"/img/icons/fiverr.svg"}
+                      width={24}
+                      height={24}
+                      className="w-16! h-16!"
+                    />
+                  </a>
+
+                  <div className="pointer-events-none absolute left-1/2 bottom-[120%] z-20 mt-3 -translate-x-1/2 opacity-0 transition-all duration-200 group-hover:opacity-100!">
+                    <div className="relative rounded-md bg-black px-3 py-2 text-lg! text-white shadow-lg whitespace-nowrap">
+                      Pro Seller Agency
+                      <div className="absolute left-1/2 -bottom-3 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-black" />
+                    </div>
+                  </div>
+                </div>
+                <div className="relative group">
+                  <a
+                    href="https://clutch.co/profile/endpoint-clients"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      alt="Fiverr"
+                      src={"/img/icons/clutch.svg"}
+                      width={24}
+                      height={24}
+                      className="w-16! h-16! rounded-full"
+                    />
+                  </a>
+
+                  <div className="pointer-events-none absolute left-1/2 bottom-[120%] z-20 mt-3 -translate-x-1/2 opacity-0 transition-all duration-200 group-hover:opacity-100!">
+                    <div className="relative rounded-md bg-black px-3 py-2 text-lg! text-white shadow-lg whitespace-nowrap">
+                      Leading Design Agency
+                      <div className="absolute left-1/2 -bottom-3 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-black" />
+                    </div>
+                  </div>
+                </div>
+                <div className="relative group">
+                  <a
+                    href="https://clutch.co/profile/endpoint-clients"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      alt="Fiverr"
+                      src={"img/icons/techbehemothsSvg.svg"}
+                      width={20}
+                      height={20}
+                      className=" w-16! h-16! rounded-full"
+                    />
+                  </a>
+
+                  <div className="pointer-events-none absolute left-1/2 bottom-[120%] z-20 mt-3 -translate-x-1/2 opacity-0 transition-all duration-200 group-hover:opacity-100!">
+                    <div className="relative rounded-md bg-black px-3 py-2 text-lg! text-white shadow-lg whitespace-nowrap">
+                      Leading Design Agency
+                      <div className="absolute left-1/2 -bottom-3 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-black" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             {/* links */}
             <div className="footer-blocks__links anim-uni-in-up">
@@ -102,28 +173,19 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
           <div className="footer-blocks__card">
             <p className="mxd-point-subtitle anim-uni-in-up">
               <svg
-                version="1.1"
+                width="20"
+                height="20"
+                viewBox="0 0 64 64"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="20px"
-                height="20px"
-                viewBox="0 0 20 20"
-                fill="currentColor"
               >
                 <path
-                  fill="currentColor"
-                  d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
-            c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
-            c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
-            c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
-            c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
-            c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
-            c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
+                  d="M64 32.0007C38.0951 35.3677 35.3662 38.0966 31.9993 64.0015C28.6338 38.0951 25.9049 35.3662 0 32.0007C25.9049 28.6338 28.6338 25.9049 32.0007 0C35.3677 25.9049 38.0966 28.6338 64.0015 32.0007H64Z"
+                  fill="black"
                 />
               </svg>
-              <a href="mailto:example@example.com?subject=Message%20from%20your%20site">
-                hello@rayostudio.com
+              <a href="mailto:info@endpointclients.com?subject=Message%20from%20your%20site">
+                info@endpointclients.com
               </a>
             </p>
           </div>
@@ -131,27 +193,18 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
           <div className="footer-blocks__card">
             <p className="mxd-point-subtitle anim-uni-in-up">
               <svg
-                version="1.1"
+                width="20"
+                height="20"
+                viewBox="0 0 64 64"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="20px"
-                height="20px"
-                viewBox="0 0 20 20"
-                fill="currentColor"
               >
                 <path
-                  fill="currentColor"
-                  d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
-            c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
-            c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
-            c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
-            c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
-            c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
-            c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
+                  d="M64 32.0007C38.0951 35.3677 35.3662 38.0966 31.9993 64.0015C28.6338 38.0951 25.9049 35.3662 0 32.0007C25.9049 28.6338 28.6338 25.9049 32.0007 0C35.3677 25.9049 38.0966 28.6338 64.0015 32.0007H64Z"
+                  fill="black"
                 />
               </svg>
-              <a href="tel:+12127089400">+1 212-708-9400</a>
+              <a href="tel:+447598981921">+447598981921</a>
             </p>
           </div>
           {/* inner card */}
@@ -188,7 +241,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             <div className="footer-blocks__block">
               {/* card title */}
               <div className="footer-blocks__title anim-uni-in-up">
-                <p className="footer-blocks__title-l">Ecosystem</p>
+                <p className="footer-blocks__title-l">Review</p>
               </div>
               {/* footer socials */}
               <div className="footer-blocks__socials">
@@ -210,15 +263,9 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             {/* links */}
             <div className="footer-blocks__links anim-uni-in-up">
               <p className="t-xsmall t-muted">
-                <a
-                  className="no-effect"
-                  href="https://themeforest.net/user/ib-themes/portfolio"
-                  target="_blank"
-                >
-                  ib themes
-                </a>
                 <i className="ph-bold ph-copyright" />
-                {new Date().getFullYear()}
+                {new Date().getFullYear()} Endpoint Clients | All Rights
+                Reserved.
               </p>
             </div>
           </div>

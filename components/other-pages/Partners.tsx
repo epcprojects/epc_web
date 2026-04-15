@@ -24,7 +24,7 @@ export default function Partners() {
             {top.map((p, idx) => (
               <a
                 key={idx}
-                className="marquee__item item-partners"
+                className="marquee__item mr-0! opacity-60 item-partners"
                 href={p.href || "#0"}
               >
                 <Image
@@ -32,7 +32,7 @@ export default function Partners() {
                   src={p.src}
                   width={p.width}
                   height={p.height}
-                  className=""
+                  className="grayscale-100"
                 />
               </a>
             ))}
@@ -42,7 +42,7 @@ export default function Partners() {
             {bottom.map((p, idx) => (
               <a
                 key={idx}
-                className="marquee__item item-partners"
+                className="marquee__item mr-0! mt-0! opacity-60  item-partners"
                 href={p.href || "#0"}
               >
                 <Image
@@ -50,6 +50,7 @@ export default function Partners() {
                   src={p.src}
                   width={p.width}
                   height={p.height}
+                  className="grayscale-100"
                 />
               </a>
             ))}

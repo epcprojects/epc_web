@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 "use client";
 import RevealText from "@/components/animation/RevealText";
 import Image from "next/image";
@@ -6,7 +7,7 @@ import testimonialsData from "@/data/testimonials.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Parallax } from "swiper/modules";
 import AnimatedButton from "@/components/animation/AnimatedButton";
-import Link from "next/link";
+
 export default function Testimonials() {
   return (
     <div className="mxd-section padding-grid-pre-mtext">
@@ -26,17 +27,16 @@ export default function Testimonials() {
                           <div className="col-12 mxd-grid-item no-margin">
                             <div className="mxd-section-title__title anim-uni-in-up">
                               <RevealText as="h2" className="reveal-type">
-                                What our clients say
+                                Stories that showcase our UX Excellence
                               </RevealText>
                             </div>
                           </div>
                           <div className="col-12 mxd-grid-item no-margin">
                             <div className="mxd-section-title__descr">
                               <p className="anim-uni-in-up">
-                                We&apos;re more than just executors — we&apos;re
-                                your creative partners. Don&apos;t just take our
-                                word for it, see what clients have to say about
-                                working with us.
+                                Great work speaks for itself, but our clients
+                                speak even louder. Discover why teams keep
+                                coming back.
                               </p>
                             </div>
                           </div>
@@ -122,24 +122,10 @@ export default function Testimonials() {
                                   height={item.authorPhotoHeight}
                                 />
                               </div>
-                              <div className="mxd-testimonials-card__company">
-                                <Image
-                                  alt="Company Logo"
-                                  src={item.companyLogo}
-                                  width={item.companyLogoWidth}
-                                  height={item.companyLogoHeight}
-                                />
-                              </div>
+                              <div className="mxd-testimonials-card__company"></div>
                             </div>
                             <div className="mxd-testimonials-card__text">
                               <p className="anim-uni-in-up">{item.text}</p>
-                              <AnimatedButton
-                                text="Project Page"
-                                className="btn btn-anim btn-default btn-small btn-outline slide-right-up anim-uni-in-up"
-                                href={item.projectPage}
-                              >
-                                <i className="ph ph-arrow-up-right" />
-                              </AnimatedButton>
                             </div>
                           </div>
                           <div className="mxd-testimonials-card__author">
@@ -148,9 +134,6 @@ export default function Testimonials() {
                             </h5>
                             <p className="mxd-testimonials-card__position t-small anim-uni-in-up">
                               {item.authorPosition}
-                              <a className="" href={item.authorCompanyUrl}>
-                                {item.authorCompany}
-                              </a>
                             </p>
                           </div>
                         </div>

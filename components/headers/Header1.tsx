@@ -22,7 +22,7 @@ export default function Header1() {
   return (
     <>
       <div className="fixed! top-10 left-24 z-100 ">
-        <Link href={`/`} className="">
+        <Link href={`/`} className=" inline-block">
           <Image
             alt="logo epc"
             src={"img/logoHorizontal.svg"}
@@ -56,7 +56,7 @@ export default function Header1() {
               <AnimatedButton
                 text="Let’s Talk"
                 target="_black"
-                className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
+                className="btn btn-anim  btn-default btn-mobile-icon btn-outline slide-right"
                 href="https://www.google.com/url?q=https://calendly.com/endpointclients/30min&sa=D&source=docs&ust=1775469268982218&usg=AOvVaw2gBsAmr3POhR5M801bKim7"
               >
                 <i className="ph-bold ph-arrow-up-right" />

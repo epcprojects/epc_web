@@ -1,24 +1,51 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const navItems = [
   { label: "Home", href: "/landing-page" },
   { label: "About Us", href: "/about-us" },
   { label: "Services", href: "/services" },
-  { label: "Contact Us", href: "/landing-page#contactus" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function BottomNav() {
   const router = useRouter();
+  const pathname = usePathname();
 
-  const handleClick = (href: string) => {
-    router.push(href);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+
+    if (!element) return;
+
+    const offset = 120;
+    const top = element.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({ top, behavior: "auto" });
+    requestAnimationFrame(() => {
+      window.scrollTo({ top, behavior: "smooth" });
+    });
   };
 
+  const handleClick = (href: string) => {
+    const [path, hash] = href.split("#");
+
+    if (hash) {
+      sessionStorage.setItem("pending-scroll-section", hash);
+
+      if (pathname === path) {
+        window.history.pushState(null, "", href);
+        requestAnimationFrame(() => scrollToSection(hash));
+        return;
+      }
+
+      router.push(href, { scroll: false });
+      return;
+    }
+
+    router.push(href, { scroll: false });
+  };
   return (
     <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[1000]">
       <div className="bg-white border border-[#E5E7EB] drop-shadow-2xl p-3 flex items-center gap-2.5 rounded-3xl">
@@ -37,7 +64,7 @@ export default function BottomNav() {
 
         {/* Center CTA */}
         <button
-          onClick={() => handleClick("/")}
+          onClick={() => handleClick("/landing-page")}
           className="h-[60px] flex items-center gap-3 relative rounded-2xl cursor-pointer text-center py-4 text-3xl! px-[32px]! overflow-hidden bg-[#4539D2] hover:bg-[#2c1dd1] text-white text-lg"
         >
           <svg

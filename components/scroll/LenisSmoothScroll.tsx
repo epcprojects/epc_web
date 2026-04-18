@@ -73,5 +73,5 @@ export default function LenisSmoothScroll() {
   ) {
     return null;
   }
-  return <ReactLenis root />;
+  return <ReactLenis root options={{ anchors: { offset: -120 } }} />;
 }

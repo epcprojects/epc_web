@@ -57,7 +57,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className=" h-full py-8 md:px-18! md:py-36! flex! items-center w-full rounded-[56px]! overflow-hidden bg-neutral-900">
+    <section className=" h-full py-8 md:px-18! md:py-36! relative flex! items-center w-full rounded-[56px]! overflow-hidden bg-neutral-900">
       <video
         autoPlay
         loop

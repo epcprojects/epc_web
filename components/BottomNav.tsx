@@ -2,33 +2,43 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const navItems = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/" },
-  { label: "Services", href: "/" },
-  { label: "Contact Us", href: "/" },
+  { label: "Home", href: "/landing-page" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Services", href: "/services" },
+  { label: "Contact Us", href: "/landing-page#contactus" },
 ];
 
 export default function BottomNav() {
+  const router = useRouter();
+
+  const handleClick = (href: string) => {
+    router.push(href);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[1000]">
       <div className="bg-white border border-[#E5E7EB] drop-shadow-2xl p-3 flex items-center gap-2.5 rounded-3xl">
         {/* Left Items */}
         {navItems.slice(0, 2).map((item, index) => (
-          <Link
+          <button
             key={index}
-            href={item.href}
-            className="font-medium min-w-[124px] max-w-[124px]  text-center inline-block text-lg text-black bg-white hover:bg-[#F3F4F6]! border border-[#E5E7EB] h-[60px] py-4 rounded-2xl"
+            onClick={() => handleClick(item.href)}
+            // href={item.href}
+            // scroll={true}
+            className="font-medium min-w-[124px] max-w-[124px] cursor-pointer  text-center inline-block text-2xl! text-black bg-white hover:bg-[#F3F4F6]! border border-[#E5E7EB] h-[60px] py-4 rounded-2xl"
           >
             {item.label}
-          </Link>
+          </button>
         ))}
 
         {/* Center CTA */}
-        <Link
-          href="/"
-          className="h-[60px] flex items-center gap-3 relative rounded-2xl text-center py-4 px-[32px]! overflow-hidden bg-[#4539D2] hover:bg-[#2c1dd1] text-white text-lg"
+        <button
+          onClick={() => handleClick("/")}
+          className="h-[60px] flex items-center gap-3 relative rounded-2xl cursor-pointer text-center py-4 text-2xl! px-[32px]! overflow-hidden bg-[#4539D2] hover:bg-[#2c1dd1] text-white text-lg"
         >
           <svg
             width="19"
@@ -50,17 +60,17 @@ export default function BottomNav() {
             width={146}
             height={146}
           />
-        </Link>
+        </button>
 
         {/* Right Items */}
         {navItems.slice(2).map((item, index) => (
-          <Link
+          <button
             key={index}
-            href={item.href}
-            className="font-medium min-w-[124px] max-w-[124px] text-center inline-block text-lg text-black bg-white hover:bg-[#F3F4F6]! border border-[#E5E7EB] h-[60px] py-4 rounded-2xl"
+            onClick={() => handleClick(item.href)}
+            className="font-medium min-w-[124px] max-w-[124px] text-center cursor-pointer inline-block text-2xl! text-black bg-white hover:bg-[#F3F4F6]! border border-[#E5E7EB] h-[60px] py-4 rounded-2xl"
           >
             {item.label}
-          </Link>
+          </button>
         ))}
       </div>
     </div>

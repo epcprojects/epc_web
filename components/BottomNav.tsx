@@ -29,7 +29,7 @@ export default function BottomNav() {
             onClick={() => handleClick(item.href)}
             // href={item.href}
             // scroll={true}
-            className="font-medium min-w-[124px] max-w-[124px] cursor-pointer  text-center inline-block text-2xl! text-black bg-white hover:bg-[#F3F4F6]! border border-[#E5E7EB] h-[60px] py-4 rounded-2xl"
+            className="font-medium min-w-[124px] max-w-[124px] cursor-pointer  text-center inline-block text-3xl! text-black bg-white hover:bg-[#F3F4F6]! border border-[#E5E7EB] h-[60px] py-4 rounded-2xl"
           >
             {item.label}
           </button>
@@ -38,7 +38,7 @@ export default function BottomNav() {
         {/* Center CTA */}
         <button
           onClick={() => handleClick("/")}
-          className="h-[60px] flex items-center gap-3 relative rounded-2xl cursor-pointer text-center py-4 text-2xl! px-[32px]! overflow-hidden bg-[#4539D2] hover:bg-[#2c1dd1] text-white text-lg"
+          className="h-[60px] flex items-center gap-3 relative rounded-2xl cursor-pointer text-center py-4 text-3xl! px-[32px]! overflow-hidden bg-[#4539D2] hover:bg-[#2c1dd1] text-white text-lg"
         >
           <svg
             width="19"
@@ -67,7 +67,7 @@ export default function BottomNav() {
           <button
             key={index}
             onClick={() => handleClick(item.href)}
-            className="font-medium min-w-[124px] max-w-[124px] text-center cursor-pointer inline-block text-2xl! text-black bg-white hover:bg-[#F3F4F6]! border border-[#E5E7EB] h-[60px] py-4 rounded-2xl"
+            className="font-medium min-w-[124px] max-w-[124px] text-center cursor-pointer inline-block text-3xl! text-black bg-white hover:bg-[#F3F4F6]! border border-[#E5E7EB] h-[60px] py-4 rounded-2xl"
           >
             {item.label}
           </button>

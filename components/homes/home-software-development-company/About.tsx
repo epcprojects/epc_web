@@ -12,7 +12,7 @@ export default function About() {
             <div className="row gx-0">
               <div className="col-12 col-xl-5 mxd-grid-item no-margin">
                 <div className="mxd-block__name">
-                  <div className="px-4 py-3  font-semibold text-black border-2! text-3xl! border-black w-fit rounded-full">
+                  <div className="  font-semibold text-[#4939d2]  text-4xl! w-fit">
                     What Makes Us Different
                   </div>
                   <RevealText as="h2" className="reveal-type anim-uni-in-up">

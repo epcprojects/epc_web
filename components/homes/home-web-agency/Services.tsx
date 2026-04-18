@@ -8,6 +8,7 @@ import Image from "next/image";
 import services from "@/data/services/services-web-agency.json";
 import { Service } from "@/types/services";
 import AnimatedButton from "@/components/animation/AnimatedButton";
+import RevealText from "@/components/animation/RevealText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,13 +66,21 @@ export default function Services() {
   return (
     <div className="mxd-section padding-pinned-img-pre-mtext">
       <div className="mxd-container">
-        <div className="-mb-8 md:-mb-16 space-y-4! md:space-y-4!">
+        {/* <div className="-mb-8 md:-mb-16 space-y-4! md:space-y-4!">
           <div className="px-4 py-3 font-semibold text-3xl! text-[#4338CA] border-2! border-[#4338CA] w-fit rounded-full">
             Our Services
           </div>
           <h2 className="text-5xl! leading-normal!">
             We Design Digital Solutions <br /> that Performs
           </h2>
+        </div> */}
+        <div className="mxd-block__name -mb-8 md:-mb-16">
+          <div className="  font-semibold text-[#4939d2]  text-4xl! w-fit">
+            Our Services
+          </div>
+          <RevealText as="h2" className="reveal-type anim-uni-in-up">
+            We Design Digital Solutions <br /> that Performs
+          </RevealText>
         </div>
         {/* Block - Services Pinned Image Start */}
         <div className="mxd-block">

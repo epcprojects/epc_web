@@ -541,7 +541,7 @@
     },
     {
       "id": 4,
-      "wrapperClass": "mxd-services-stack__inner showcase-inner bg-teal-100!  bg-base-opp",
+      "wrapperClass": "mxd-services-stack__inner showcase-inner bg-gray-200!  bg-base-opp",
       "title": "SaaS",
       "titleClass": "opposite text-black!",
       "number": "/05",
@@ -571,7 +571,7 @@
     },
     {
       "id": 5,
-      "wrapperClass": "mxd-services-stack__inner bg-red-100! showcase-inner bg-base-opp",
+      "wrapperClass": "mxd-services-stack__inner bg-teal-100! showcase-inner bg-base-opp",
       "title": "Enterprise",
       "titleClass": "opposite text-black!",
       "number": "/05",

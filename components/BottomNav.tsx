@@ -87,11 +87,11 @@ export default function BottomNav() {
         <div className="relative ">
           <button
             onClick={() => handleClick("/contact")}
-            className="absolute overflow-hidden bg-red-500 -top-10 w-full rounded-2xl flex text-2xl! text-white items-center flex-col gap-2"
+            className="absolute overflow-hidden  p-2 -top-10 w-full rounded-2xl flex text-2xl! text-white items-center flex-col gap-2"
           >
             <img
               src={"/img/illustrations/projectIcon.svg"}
-              className="w-full h-full"
+              className="w-full h-full rounded-2xl"
             />
           </button>
         </div>

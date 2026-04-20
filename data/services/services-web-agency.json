@@ -24,6 +24,20 @@
     "redirect": "/"
   },
   {
+    "img": "/img/services/AI-ML.jpeg",
+    "title": "AI & ML Development",
+    "tags": [
+      "Generative AI",
+      "AI Assistants & Chatbots",
+      "AI Product Development",
+      "Machine Learning Solutions",
+      "Natural Language Processing (NLP)",
+      "Predictive Analytics"
+    ],
+    "desc": "We implement AI solutions like machine learning, NLP, and automation to drive innovation and optimize business processes.",
+    "redirect": "/"
+  },
+  {
     "img": "/img/services/SaaS.jpg",
     "title": "SaaS & Dashboard Design",
     "tags": [

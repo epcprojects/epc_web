@@ -22,6 +22,20 @@
     "desc": "From pixel perfect websites to seamless mobile experiences, we build designs that work beautifully across every screen and device. Whether it's a landing page, a full web platform, or a mobile app, we deliver a clean and conversion focused design every time."
   },
   {
+    "image": "/img/services/AI-ML.jpeg",
+    "title": "AI & ML Development",
+    "tags": [
+      "Generative AI",
+      "AI Assistants & Chatbots",
+      "AI Product Development",
+      "Machine Learning Solutions",
+      "Natural Language Processing (NLP)",
+      "Predictive Analytics"
+    ],
+    "desc": "We implement AI solutions like machine learning, NLP, and automation to drive innovation and optimize business processes.",
+    "redirect": "/"
+  },
+  {
     "title": "SaaS & Dashboard Design",
     "image": "/img/services/SaaS.jpg",
     "tags": [

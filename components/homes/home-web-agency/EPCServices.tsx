@@ -12,7 +12,7 @@ import RevealText from "@/components/animation/RevealText";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Services() {
+export default function EPCServices() {
   const pinnedRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {

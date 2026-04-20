@@ -3,7 +3,7 @@ import MobileMenu from "@/components/headers/MobileMenu";
 import About from "@/components/homes/home-software-development-company/About";
 import Hero from "@/components/homes/home-1/Hero";
 import ParallaxBanner from "@/components/homes/home-web-agency/ParallaxBanner";
-import Services from "@/components/homes/home-web-agency/Services";
+import Services from "@/components/homes/home-web-agency/EPCServices";
 import Partners from "@/components/other-pages/Partners";
 import ServicesDesignAgency from "@/components/homes/home-digital-agency/Services";
 import Facts from "@/components/homes/home-software-development-company/Facts";
@@ -22,6 +22,7 @@ const Page = () => {
       <About />
       <ParallaxBanner />
       <Services />
+
       <Facts />
       <Testimonials />
 

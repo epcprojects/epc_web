@@ -1,23 +1,34 @@
 import BottomNav from "@/components/BottomNav";
-import Blogs from "@/components/common/Blogs";
-import Cta from "@/components/common/Cta";
+import ContactForm from "@/components/ContactForm";
 import Footer2 from "@/components/footers/Footer2";
 import MobileMenu from "@/components/headers/MobileMenu";
+import Testimonials from "@/components/homes/home-1/Testimonials";
+import ParallaxBanner from "@/components/homes/home-web-agency/ParallaxBanner";
 import Hero from "@/components/other-pages/services/Hero";
-import ParallaxDivider from "@/components/other-pages/services/ParallaxDivider";
 import Services from "@/components/other-pages/services/Services";
-import React from "react";
-
+import Facts from "@/components/homes/home-software-development-company/Facts";
 const Page = () => {
   return (
     <div>
       <MobileMenu />
       <Hero />
-      <Services />
+      <Facts />
+      {/* 
+     
       <ParallaxDivider />
       <Blogs />
-      <Cta />
+      <Cta /> */}
+      <Services />
+      <ParallaxBanner />
+      <Testimonials />
+
       <BottomNav />
+
+      <div className="mxd-section overflow-hidden! scroll-mt-32" id="contactus">
+        <div className="mxd-container max-w-8xl! mx-auto ">
+          <ContactForm />
+        </div>
+      </div>
       <Footer2 />
     </div>
   );

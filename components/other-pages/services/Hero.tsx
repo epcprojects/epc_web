@@ -1,6 +1,4 @@
-import Counter from "@/components/common/Counter";
-import Image from "next/image";
-import Link from "next/link";
+import AnimatedButton from "@/components/animation/AnimatedButton";
 
 export default function Hero() {
   return (
@@ -49,7 +47,30 @@ export default function Hero() {
                       <h1 className="inner-headline__title headline-img-before headline-img-04 loading__item">
                         New standards in digital excellence
                       </h1>
-                      {/* <p class="inner-headline__text t-large t-bright"></p> */}
+                      <p className="inner-headline__text t-large t-bright mt-4! md:mt-8!">
+                        We are Global Design Agency specializing in UI/UX, Web,
+                        Mobile App & SaaS Design. Crafting digital experiences
+                        across 15+ industries that drive real results.
+                      </p>
+                      <div className="flex items-center gap-3 justify-start mt-4 md:mt-16! w-full">
+                        <AnimatedButton
+                          text=" Start a Project"
+                          target="_black"
+                          className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
+                          href=" https://calendly.com/endpointclients/30min"
+                        >
+                          <i className="ph-bold ph-arrow-up-right" />
+                        </AnimatedButton>
+
+                        <AnimatedButton
+                          text="Explore Work"
+                          target="_black"
+                          className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
+                          href="https://www.behance.net/endpointclients"
+                        >
+                          <i className="ph-bold ph-arrow-up-right" />
+                        </AnimatedButton>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -60,108 +81,10 @@ export default function Hero() {
           {/* Block - Inner Page Headline End */}
         </div>
       </div>
+
       {/* Section - Inner Page Headline End */}
       {/* Section - Inner Page Statistics Start */}
-      <div className="mxd-section mxd-section-inner-stats overflow-hidden">
-        <div className="mxd-container grid-container">
-          {/* Block - Inner Page Statistics Start */}
-          <div className="mxd-block">
-            <div className="container-fluid px-0">
-              <div className="row gx-0">
-                {/* Inner Block Name Start */}
-                <div className="col-12 col-xl-2 mxd-grid-item no-margin" />
-                {/* Inner Block Name Start */}
-                {/* Inner Block Content Start */}
-                <div className="col-12 col-xl-10">
-                  <div className="mxd-block__content">
-                    <div className="mxd-block__inner-stats">
-                      <div className="mxd-stats-cards loading__fade">
-                        <div className="container-fluid px-0">
-                          <div className="row gx-0">
-                            {/* item */}
-                            <div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item">
-                              <div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4">
-                                <div className="mxd-counter">
-                                  <p
-                                    id="stats-counter-3"
-                                    className="mxd-counter__number mxd-stats-number"
-                                  >
-                                    <Counter max={5} />+
-                                  </p>
-                                  <p className="mxd-counter__descr t-140 t-bright">
-                                    Years of professional experience in
-                                    designing digital products
-                                  </p>
-                                </div>
-                                <div className="mxd-stats-cards__btngroup">
-                                  <Link
-                                    className="btn btn-anim btn-default btn-outline slide-right-up"
-                                    href={`/contact`}
-                                  >
-                                    <span className="btn-caption">
-                                      Start New Project
-                                    </span>
-                                    <i className="ph-bold ph-arrow-up-right" />
-                                  </Link>
-                                </div>
-                                <div className="mxd-stats-cards__image mxd-stats-cards-image-3">
-                                  <Image
-                                    alt="Illustration"
-                                    src="/img/illustrations/800x800_card-image-03.webp"
-                                    width={800}
-                                    height={800}
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            {/* item */}
-                            <div className="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item">
-                              <div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4">
-                                <div className="mxd-counter">
-                                  <p
-                                    id="stats-counter-4"
-                                    className="mxd-counter__number mxd-stats-number"
-                                  >
-                                    <Counter max={70} />+
-                                  </p>
-                                  <p className="mxd-counter__descr t-140 t-bright">
-                                    Successfully
-                                    <br />
-                                    completed projects
-                                  </p>
-                                </div>
-                                <div className="mxd-stats-cards__btngroup">
-                                  <Link
-                                    className="btn btn-anim btn-default btn-outline slide-right-up"
-                                    href={`/works-simple`}
-                                  >
-                                    <span className="btn-caption">Works</span>
-                                    <i className="ph-bold ph-arrow-up-right" />
-                                  </Link>
-                                </div>
-                                <div className="mxd-stats-cards__image mxd-stats-cards-image-4">
-                                  <Image
-                                    alt="Illustration"
-                                    src="/img/illustrations/800x800_card-image-04.webp"
-                                    width={800}
-                                    height={800}
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Inner Block Content End */}
-              </div>
-            </div>
-          </div>
-          {/* Block - Inner Page Statistics End */}
-        </div>
-      </div>
+
       {/* Section - Inner Page Statistics End */}
     </>
   );

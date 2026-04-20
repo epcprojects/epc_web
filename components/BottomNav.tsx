@@ -47,8 +47,8 @@ export default function BottomNav() {
     router.push(href, { scroll: false });
   };
   return (
-    <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[1000]">
-      <div className="bg-white border border-[#E5E7EB] drop-shadow-2xl p-3 flex items-center gap-2.5 rounded-3xl">
+    <div className="fixed py-8! bottom-0 backdrop-blur-2xl left-1/2 w-full flex items-center justify-center bg-linear-to-b from-red-50 to-red-500 -translate-x-1/2 z-[1000]">
+      <div className="bg-white border w-fit border-[#E5E7EB] drop-shadow-2xl p-3 flex items-center gap-2.5 rounded-3xl">
         {/* Left Items */}
         {navItems.slice(0, 2).map((item, index) => (
           <button

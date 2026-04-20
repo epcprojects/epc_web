@@ -29,11 +29,11 @@ export default function Services() {
     });
   };
   return (
-    <div className="mxd-section overflow-hidden padding-default">
+    <div className="mxd-section padding-default ">
       <div className="mxd-container grid-container">
         {/* Block - Services List Start */}
         <div className="mxd-block">
-          <div className="mxd-services-list grid-top hover-reveal">
+          <div className="mxd-services-list grid-top hover-reveal pt-0!">
             {services.map((s: Service2, idx: number) => (
               <div
                 key={idx}
@@ -73,7 +73,9 @@ export default function Services() {
                     <div className="row gx-0">
                       <div className="col-12 col-xl-7 mxd-grid-item no-margin">
                         <div className="mxd-services-list__title anim-uni-in-up">
-                          <p>{s.title}</p>
+                          <p className="text-4xl! md:text-6xl! lg:text-9xl!">
+                            {s.title}
+                          </p>
                         </div>
                       </div>
                       <div className="col-12 col-xl-3 mxd-grid-item no-margin">

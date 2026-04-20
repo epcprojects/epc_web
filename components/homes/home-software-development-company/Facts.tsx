@@ -1,16 +1,22 @@
+"use client";
 import Image from "next/image";
 import factsData from "@/data/facts-simple.json";
 import Counter from "@/components/common/Counter";
+import { usePathname } from "next/navigation";
 
 export default function Facts() {
+  const pathname = usePathname();
+
   return (
-    <div className="mxd-section padding-default">
+    <div
+      className={`mxd-section  ${pathname === "/services" ? "pb-24! xl:pb-52!" : " padding-default"}  `}
+    >
       <div className="mxd-container grid-container">
         {/* Block - Statistics Cards Start */}
         <div className="mxd-block">
           <div className="mxd-stats-simple">
             <div className="container-fluid p-0">
-              <div className="grid grid-cols-5 g-0 mxd-stats-simple">
+              <div className="grid  xl:grid-cols-5  grid-cols-2 lg:grid-cols-3 g-0 mxd-stats-simple">
                 {factsData.map((fact) => (
                   <div
                     key={fact.id}
@@ -31,7 +37,7 @@ export default function Facts() {
                       <div className="mxd-counter">
                         <p
                           id={fact.counterId}
-                          className="mxd-stats-number text-[80px]! mxd-stats-simple__counter"
+                          className="mxd-stats-number lg:text-[52px]!  xl:text-[80px]!  mxd-stats-simple__counter"
                         >
                           <Counter max={fact.number} />
                           {fact.suffix}

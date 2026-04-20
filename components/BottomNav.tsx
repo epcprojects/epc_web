@@ -49,7 +49,10 @@ export default function BottomNav() {
   return (
     <div className="fixed md:py-8! bottom-0  left-1/2 w-full flex items-center justify-center bg-linear-to-b from-white/0 to-white   -translate-x-1/2 z-[1000]">
       <div className="md:hidden grid grid-cols-5  bg-black gap-0 rounded-t-2xl w-full">
-        <button className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2">
+        <button
+          onClick={() => handleClick("/landing-page")}
+          className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2"
+        >
           <svg
             width={24}
             height={24}
@@ -63,7 +66,10 @@ export default function BottomNav() {
           </svg>
           Home
         </button>
-        <button className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2">
+        <button
+          onClick={() => handleClick("/about-us")}
+          className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2"
+        >
           <svg
             width={24}
             height={24}
@@ -79,14 +85,20 @@ export default function BottomNav() {
         </button>
 
         <div className="relative ">
-          <button className="absolute overflow-hidden bg-red-500 -top-10 w-full rounded-2xl flex text-2xl! text-white items-center flex-col gap-2">
+          <button
+            onClick={() => handleClick("/contact")}
+            className="absolute overflow-hidden bg-red-500 -top-10 w-full rounded-2xl flex text-2xl! text-white items-center flex-col gap-2"
+          >
             <img
               src={"/img/illustrations/projectIcon.svg"}
               className="w-full h-full"
             />
           </button>
         </div>
-        <button className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2">
+        <button
+          onClick={() => handleClick("/services")}
+          className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2"
+        >
           <svg
             width={24}
             height={24}
@@ -100,7 +112,10 @@ export default function BottomNav() {
           </svg>
           Services
         </button>
-        <button className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2">
+        <button
+          onClick={() => handleClick("/contact")}
+          className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2"
+        >
           <svg
             width={24}
             height={24}

@@ -5,12 +5,12 @@ import AnimatedButton from "@/components/animation/AnimatedButton";
 export default function Hero() {
   return (
     <>
-      <div className="mxd-section relative flex flex-col justify-center items-center h-fit! mxd-hero-section min-h-dvh mxd-hero-fullheight">
+      <div className="mxd-section relative! flex flex-col justify-center items-center h-fit! mxd-hero-section min-h-dvh mxd-hero-fullheight">
         <div className="mxd-hero-01 z-[100]">
           <div className="mxd-hero-01__wrap loading-wrap ">
             {/* top group */}
             <div className="mxd-hero-01__top flex flex-col gap-4">
-              <div className="mb-8! space-y-6! mt-24!">
+              <div className="mb-8! items-center flex flex-col space-y-6! mt-24!">
                 <TrustedClients />
 
                 <h1 className="text-center text-4xl!">
@@ -34,7 +34,7 @@ export default function Hero() {
                         className="marquee__item item-regular text items-center! flex!"
                       >
                         <div className="flex items-center gap-2 relative">
-                          <p className="text-[80px]! pe-22! font-playfair!">
+                          <p className="md:text-[80px]! pe-22! font-playfair!">
                             {text}{" "}
                           </p>
                           <div className="absolute top-10 -right-20!">
@@ -58,7 +58,7 @@ export default function Hero() {
                   </VelocityMarquee>
                 </div>
                 {/* title text */}
-                <h1 className="hero-01-title text-[80px]! font-manrope!">
+                <h1 className="hero-01-title md:text-[80px]! font-manrope!">
                   <span className="hero-01-title__row loading__item">
                     <em className="hero-01-title__item font-manrope!">
                       Designing
@@ -199,11 +199,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+        <div className="absolute!  inset-0  -z-10 pointer-events-none overflow-hidden">
           <iframe
             src="https://player.cloudinary.com/embed/?cloud_name=dgbdcdqd1&public_id=Gradient_04_HR_mfj88z&autoplay=true&muted=true&loop=true"
             width="640"
-            height="360"
+            // height="360"
             style={{ height: "auto", width: "100%", aspectRatio: "640 / 360" }}
             allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
             allowFullScreen

@@ -53,7 +53,7 @@ export default function Services() {
                   }}
                   className="hover-reveal__content hover-reveal-360x440"
                 >
-                  <Image
+                  <img
                     style={{
                       transform:
                         hoverState.activeIndex === idx

@@ -47,7 +47,7 @@ export default function BottomNav() {
     router.push(href, { scroll: false });
   };
   return (
-    <div className="fixed md:py-8! bottom-0  left-1/2 w-full flex items-center justify-center bg-linear-to-b from-white/0 to-white   -translate-x-1/2 z-[1000]">
+    <div className="fixed md:py-8! bottom-0  left-1/2 w-full flex items-center justify-center   -translate-x-1/2 z-[1000]">
       <div className="md:hidden grid grid-cols-5  bg-black gap-0 rounded-t-2xl w-full">
         <button
           onClick={() => handleClick("/landing-page")}

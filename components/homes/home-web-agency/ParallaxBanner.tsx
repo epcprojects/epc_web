@@ -25,9 +25,6 @@ import BackgroundParallax from "@/components/animation/BackgroundParallax";
 //   );
 // }
 
-
-
-
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -48,7 +45,8 @@ export default function ParallaxBanner() {
     const topSpacer = topSpacerRef.current;
     const bottomSpacer = bottomSpacerRef.current;
 
-    if (!section || !container || !divider || !topSpacer || !bottomSpacer) return;
+    if (!section || !container || !divider || !topSpacer || !bottomSpacer)
+      return;
 
     const ctx = gsap.context(() => {
       const getFinalScale = () => window.innerWidth / container.offsetWidth;
@@ -84,19 +82,19 @@ export default function ParallaxBanner() {
       tl.to(
         topSpacer,
         {
-          height: 130,
+          height: 120,
           ease: "none",
         },
-        0
+        0,
       );
 
       tl.to(
         bottomSpacer,
         {
-          height: 70,
+          height: 250,
           ease: "none",
         },
-        0
+        0,
       );
 
       tl.to(
@@ -105,7 +103,7 @@ export default function ParallaxBanner() {
           scale: getFinalScale,
           ease: "none",
         },
-        0
+        0,
       );
 
       tl.to(
@@ -114,7 +112,7 @@ export default function ParallaxBanner() {
           borderRadius: "0px",
           ease: "none",
         },
-        0
+        0,
       );
     }, section);
 
@@ -140,7 +138,7 @@ export default function ParallaxBanner() {
             loop
             playsInline
             preload="auto"
-            className="block  object-contain"
+            className="block w-full h-full object-contain"
           />
         </div>
       </div>
@@ -149,5 +147,3 @@ export default function ParallaxBanner() {
     </section>
   );
 }
-
-

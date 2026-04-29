@@ -1,6 +1,6 @@
 import React from "react";
 
-const PolygonIcon = () => {
+const PolygonIcon = ({ fill = "#4939D2" }) => {
   return (
     <svg
       width="11"
@@ -11,7 +11,7 @@ const PolygonIcon = () => {
     >
       <path
         d="M0 2.96104L5.2987 0L10.5974 2.96104V9.19481L5.2987 12L0 9.19481V2.96104Z"
-        fill="#4939D2"
+        fill={fill}
       />
     </svg>
   );

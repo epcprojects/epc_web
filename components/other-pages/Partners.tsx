@@ -13,18 +13,21 @@ export default function Partners() {
   const bottom = partnersData.bottom;
 
   return (
-    <div className="mxd-section padding-pre-title">
-      <div className="mxd-container fullwidth-container relative ">
+    <div className=" rounded-t-[50px] -mt-20! pt-[64px]! pb-[96px]! bg-[white]">
+      <div className=" relative ">
         {/* Block - Marquee Partners Two Lines Start */}
-        <div className="mxd-block">
-          <div className="bg-linear-to-r from-[#FCF7F650] to-[#FCF7F6] absolute end-0 z-50 h-full -bottom-6 w-1/3"></div>
-          <div className="bg-linear-to-l from-[#FCF7F650] to-[#FCF7F6] absolute left-0 z-50 h-full -bottom-6 w-1/3"></div>
+        <div className="container max-w-7xl mx-auto">
+          <h2 className="!text-[24px]  !font-bold text-gray-950 text-center !mb-6">
+            Chosen by 350+ Premium Brands Worldwide
+          </h2>
+          {/* <div className="bg-linear-to-r from-[#FCF7F650] to-[#FCF7F6] absolute end-0 z-50 h-full -bottom-9 w-1/3"></div>
+          <div className="bg-linear-to-l from-[#FCF7F650] to-[#FCF7F6] absolute left-0 z-50 h-full -bottom-9 w-1/3"></div> */}
           {/* top line */}
-          <VelocityMarquee direction="left" className="marquee marquee--gsap">
+          <VelocityMarquee direction="left" className="marquee marquee--gsap h-[91px]!">
             {top.map((p, idx) => (
               <a
                 key={idx}
-                className="marquee__item mr-0! opacity-60 item-partners"
+                className="marquee__item mr-0! h-[68px]! opacity-60 item-partners"
                 href={p.href || "#0"}
               >
                 <Image
@@ -32,17 +35,17 @@ export default function Partners() {
                   src={p.src}
                   width={p.width}
                   height={p.height}
-                  className="grayscale-100"
+                  // className="grayscale-100"
                 />
               </a>
             ))}
           </VelocityMarquee>
           {/* bottom line */}
-          <VelocityMarquee className="marquee marquee--gsap">
+          <VelocityMarquee className="marquee marquee--gsap h-[91px]!">
             {bottom.map((p, idx) => (
               <a
                 key={idx}
-                className="marquee__item mr-0! mt-0! opacity-60  item-partners"
+                className="marquee__item mr-0! mt-0! opacity-60 h-[68px]!  item-partners"
                 href={p.href || "#0"}
               >
                 <Image
@@ -50,7 +53,7 @@ export default function Partners() {
                   src={p.src}
                   width={p.width}
                   height={p.height}
-                  className="grayscale-100"
+                  // className="grayscale-100"
                 />
               </a>
             ))}

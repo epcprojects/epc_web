@@ -24,7 +24,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: var(--_font-accent) !important;
+  font-family: var(--manrope) !important;
 
 }
 
@@ -39,4 +39,42 @@ body {
 
 .font-playfair {
   font-family: var(--playfair) !important;
+}
+
+
+html,
+body {
+  overflow-x: visible;
+  overflow-y: visible;
+  -ms-overflow-style: auto;
+}
+
+/* Chrome, Safari, Edge: sirf horizontal scrollbar hide */
+html::-webkit-scrollbar:horizontal,
+body::-webkit-scrollbar:horizontal {
+  height: 0;
+}
+
+/* Vertical scrollbar visible */
+html::-webkit-scrollbar:vertical,
+body::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--manrope), sans-serif !important;
+}
+
+body *:not(.font-playfair):not(.font-playfair *) {
+  font-family: var(--manrope), sans-serif !important;
+}
+
+.font-playfair,
+.font-playfair * {
+  font-family: var(--playfair), serif !important;
+  font-style: italic !important;
 }

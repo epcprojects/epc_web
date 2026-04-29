@@ -453,11 +453,11 @@
       "id": 1,
       "wrapperClass": "mxd-services-stack__inner bg-blue-100! showcase-inner bg-base-opp",
       "title": "Healthcare",
-      "titleClass": "opposite text-black!",
+      "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/01",
       "numberClass": "t-opp-muted",
       "info": "Designing secure, patient-centered digital experiences that simplify complex healthcare systems and improve usability.",
-      "infoClass": "t-opposite text-black!",
+      "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {
           "id": 40,
@@ -483,11 +483,11 @@
       "id": 2,
       "wrapperClass": "mxd-services-stack__inner bg-purple-200! showcase-inner bg-accent",
       "title": "Fintech ",
-      "titleClass": "opposite text-black!",
+      "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/02",
       "numberClass": "t-opp-brigth",
       "info": "Transforming complex financial workflows into intuitive, secure, and trust-driven user experiences.",
-      "infoClass": "t-opposite text-black!",
+      "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {
           "id": 42,
@@ -513,11 +513,11 @@
       "id": 3,
       "wrapperClass": "mxd-services-stack__inner radius-dark bg-orange-100! showcase-inner bg-base-tint",
       "title": "E-commerce",
-      "titleClass": "",
+      "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/03",
       "numberClass": "t-muted-extra",
       "info": "Designing high-converting digital experiences that streamline product discovery, checkout, and customer retention.",
-      "infoClass": "",
+      "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {
           "id": 44,
@@ -543,11 +543,11 @@
       "id": 4,
       "wrapperClass": "mxd-services-stack__inner showcase-inner bg-gray-200!  bg-base-opp",
       "title": "SaaS",
-      "titleClass": "opposite text-black!",
+      "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/05",
       "numberClass": "t-opp-muted",
       "info": "Designing scalable digital experiences that simplify complex workflows, enhance usability, and support product growth.",
-      "infoClass": "t-opposite text-black!",
+       "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {
           "id": 46,
@@ -573,11 +573,11 @@
       "id": 5,
       "wrapperClass": "mxd-services-stack__inner bg-teal-100! showcase-inner bg-base-opp",
       "title": "Enterprise",
-      "titleClass": "opposite text-black!",
+       "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/05",
       "numberClass": "t-opp-muted",
       "info": "Designing scalable, high-impact digital experiences that bring clarity to complex systems and support business growth.",
-      "infoClass": "t-opposite text-black!",
+      "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {
           "id": 46,

@@ -13,8 +13,8 @@ import Testimonials from "@/components/homes/home-1/Testimonials";
 
 const Page = () => {
   return (
-    <div>
-      <MobileMenu />
+    <div >
+      {/* <MobileMenu /> */}
 
       <Hero />
       <Partners />

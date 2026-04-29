@@ -15,7 +15,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   return (
     <>
       {/* <MobileMenu /> */}
-      <Header1 />
+      {/* <Header1 /> */}
       {children}
       <AnchorScrollController />
       <InitScroll />

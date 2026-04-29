@@ -9,6 +9,7 @@ import services from "@/data/services/services-web-agency.json";
 import { Service } from "@/types/services";
 import AnimatedButton from "@/components/animation/AnimatedButton";
 import RevealText from "@/components/animation/RevealText";
+import { PolygonIcon } from "@/public/icons";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -65,7 +66,7 @@ export default function EPCServices() {
 
   return (
     <div className="mxd-section padding-pinned-img-pre-mtext">
-      <div className="mxd-container">
+      <div className="mxd-container ">
         {/* <div className="-mb-8 md:-mb-16 space-y-4! md:space-y-4!">
           <div className="px-4 py-3 font-semibold text-3xl! text-[#4338CA] border-2! border-[#4338CA] w-fit rounded-full">
             Our Services
@@ -74,18 +75,21 @@ export default function EPCServices() {
             We Design Digital Solutions <br /> that Performs
           </h2>
         </div> */}
-        <div className="mxd-block__name -mb-8 md:-mb-16">
-          <div className="  font-semibold text-[#4939d2]  text-4xl! w-fit">
+        <div className="mxd-block__name ">
+         <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">
+          <PolygonIcon />
+          <p className="text-[#4939D2]! text-[18px]! font-medium!">
             Our Services
-          </div>
-          <RevealText as="h2" className="reveal-type anim-uni-in-up">
-            We Design Digital Solutions <br /> that Performs
+          </p>
+        </div>
+          <RevealText as="h2" className="reveal-type anim-uni-in-up text-[48px]!">
+            We Design Digital <br/> Solutions <span className="font-playfair !">That Performs</span>
           </RevealText>
         </div>
         {/* Block - Services Pinned Image Start */}
         <div className="mxd-block">
           <div className="mxd-pinned" ref={pinnedRef}>
-            <div className="mxd-pinned__visual page-padding">
+            <div className="mxd-pinned__visual page-padding pt-[48px]!">
               <div className="mxd-pinned__img-wrap">
                 <div className="mxd-pinned__img-list" role="list">
                   {services.map((item: { img: string }, idx: number) => (
@@ -125,14 +129,14 @@ export default function EPCServices() {
                         />
                       </div>
 
-                      <h2 className="mxd-pinned__title h2-small anim-uni-in-up">
+                      <h2 className="mxd-pinned__title h2-small anim-uni-in-up text-[48px]!">
                         {item.title}
                       </h2>
 
                       <div className="mxd-pinned__tags">
                         {item.tags.map((tag, tagIdx) => (
                           <span
-                            className="tag tag-default tag-outline anim-uni-in-up"
+                            className="tag tag-default tag-outline anim-uni-in-up text-[14px]! text-gray-900!"
                             key={tagIdx}
                           >
                             {tag}
@@ -140,7 +144,7 @@ export default function EPCServices() {
                         ))}
                       </div>
 
-                      <p className="anim-uni-in-up">{item.desc}</p>
+                      <p className="anim-uni-in-up text-[20px]!">{item.desc}</p>
 
                       <div className="mt-12!">
                         <AnimatedButton

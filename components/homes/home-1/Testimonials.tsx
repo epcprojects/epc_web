@@ -27,7 +27,7 @@ export default function Testimonials() {
                           <div className="col-12 mxd-grid-item no-margin">
                             <div className="mxd-section-title__title anim-uni-in-up">
                               <RevealText as="h2" className="reveal-type">
-                                Stories that showcase our UX Excellence
+                                Stories that showcase our <span className="font-playfair !"> UX Excellence</span>
                               </RevealText>
                             </div>
                           </div>

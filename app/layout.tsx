@@ -1,6 +1,6 @@
 // import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -34,6 +34,7 @@ import "./globals.css";
 // }
 
 import "../public/css/styles.css";
+import "./globals.css";
 import ClientLayout from "@/components/layout/ClientLayout";
 import { Metadata } from "next";
 import { Manrope, Playfair_Display } from "next/font/google";
@@ -51,9 +52,10 @@ const manrope_init = Manrope({
 });
 
 const playfair_init = Playfair_Display({
-  style: ["normal"],
+  style: ["italic"],
   subsets: ["latin"],
   display: "swap",
+  
   variable: "--playfair",
 });
 
@@ -94,7 +96,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script dangerouslySetInnerHTML={{ __html: setColorSchemeScript }} />
       </head>
-      <body>
+      <body className={`${manrope_init.variable} ${playfair_init.variable}`}>
         <ClientLayout>{children}</ClientLayout>
         {/* <BottomNav /> */}
       </body>

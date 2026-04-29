@@ -1,40 +1,50 @@
 import AnimatedButton from "@/components/animation/AnimatedButton";
 import RevealText from "@/components/animation/RevealText";
+import { PolygonIcon } from "@/public/icons";
 import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="mxd-section padding-default">
-      <div className="mxd-container grid-container">
+    // mxd-section padding-default
+    // mxd-container grid-container
+    <div className="container max-w-7xl mx-auto pt-[48px]! px-[32px]! pb-[96px]!">
+      <div className=" space-y-[20px]!">
         {/* Block - About Description with H2 Title and Paragraph Start */}
-        <div className="mxd-block">
+        <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">
+          <PolygonIcon />
+          <p className="text-[#4939D2]! text-[18px]! font-medium!">
+            What Makes Us Different
+          </p>
+        </div>
+        <div className="mxd-block ">
           <div className="container-fluid px-0">
-            <div className="row gx-0">
-              <div className="col-12 col-xl-5 mxd-grid-item no-margin">
+            <div className="row gx-0 space-x-[20px]!">
+              <div className="col-12 col-xl-5 mxd-grid-item no-margin px-[0px]!">
                 <div className="mxd-block__name">
-                  <div className="  font-semibold text-[#4939d2]  text-4xl! w-fit">
-                    What Makes Us Different
-                  </div>
-                  <RevealText as="h2" className="reveal-type anim-uni-in-up">
-                    Design That Solves Real Problems
+                  <RevealText
+                    as="h2"
+                    className="reveal-type anim-uni-in-up text-[48px]! font-semibold!"
+                  >
+                    Design That Solves{" "}
+                    <span className="font-playfair !">Real Problems</span>
                   </RevealText>
                 </div>
               </div>
-              <div className="col-12 col-xl-6 mxd-grid-item no-margin">
+              <div className="col-12 col-xl-6 mxd-grid-item no-margin px-[0px]!">
                 <div className="mxd-block__content">
                   <div className="mxd-block__paragraph">
-                    <p className="t-large t-bright anim-uni-in-up">
+                    <p className="t-large t-bright anim-uni-in-up text-[24px]!">
                       Great products don’t need explanation. We design
                       experiences that feel natural, reduce friction, and guide
                       users effortlessly from first interaction to conversion.
                     </p>
                     <div className="mxd-paragraph__lists">
-                      <div className="container-fluid p-0">
-                        <div className="row g-0">
+                      <div className="container-fluid p-0 ">
+                        <div className="row g-0 ">
                           <div className="col-6 col-xl-5">
                             <ul>
                               <li>
-                                <p className="anim-uni-in-up flex items-center gap-4">
+                                <p className="anim-uni-in-up flex items-center gap-4 text-[18px]!">
                                   <svg
                                     width="20"
                                     height="20"
@@ -51,7 +61,7 @@ export default function About() {
                                 </p>
                               </li>
                               <li>
-                                <p className="anim-uni-in-up flex items-center gap-4">
+                                <p className="anim-uni-in-up flex items-center gap-4 text-[18px]!">
                                   <svg
                                     width="20"
                                     height="20"
@@ -68,7 +78,7 @@ export default function About() {
                                 </p>
                               </li>
                               <li>
-                                <p className="anim-uni-in-up flex items-center gap-4">
+                                <p className="anim-uni-in-up flex items-center gap-4 text-[18px]!">
                                   <svg
                                     width="20"
                                     height="20"
@@ -89,7 +99,7 @@ export default function About() {
                           <div className="col-6 col-xl-5">
                             <ul>
                               <li>
-                                <p className="anim-uni-in-up flex items-center gap-4">
+                                <p className="anim-uni-in-up flex items-center gap-4 text-[18px]!">
                                   <svg
                                     width="20"
                                     height="20"
@@ -106,7 +116,7 @@ export default function About() {
                                 </p>
                               </li>
                               <li>
-                                <p className="anim-uni-in-up flex items-center gap-4">
+                                <p className="anim-uni-in-up flex items-center gap-4 text-[18px]!">
                                   <svg
                                     width="20"
                                     height="20"
@@ -123,7 +133,7 @@ export default function About() {
                                 </p>
                               </li>
                               <li>
-                                <p className="anim-uni-in-up flex items-center gap-4">
+                                <p className="anim-uni-in-up flex items-center gap-4 text-[18px]!">
                                   <svg
                                     width="20"
                                     height="20"

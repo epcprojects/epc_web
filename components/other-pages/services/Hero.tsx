@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 import HeroSection from "@/components/HeroComponent/HeroSection";
@@ -24,7 +23,6 @@ export default function Hero() {
           />
         </div>
 
-
         <div className="hidden lg:block">
           <Image
             src="/img/services/services-cube.png"
@@ -36,20 +34,16 @@ export default function Hero() {
           />
         </div>
 
-        
-
         <HeroSection
-        subtitle="Services"
+          subtitle="Services"
           firstLinePrefix="New"
           firstLineSuffix="tech"
           secondLinePrefix="in Digital"
           secondLineHighlight="Excellence"
-          showSocialLinks={false}  
+          showSocialLinks={false}
           showTestimonial={false}
           simpleDescription="We are Global Design Agency specializing in UI/UX, Web, Mobile App & SaaS Design. Crafting digital experiences across 15+ industries that drive real results."
         />
-
-       
       </div>
     </>
   );

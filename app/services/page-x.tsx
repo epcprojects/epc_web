@@ -12,6 +12,7 @@ import StackCards from "@/components/animation/StackCards";
 import { PolygonIcon } from "@/public/icons";
 import OfficeContactCard from "@/components/OfficeContactCard.tsx";
 import ProcessStepCard from "@/components/ProcessStepCard";
+import PrimaryButton from "@/components/Buttons/PrimaryButton";
 
 const steps = [
   {
@@ -60,7 +61,14 @@ const Page = () => {
               </span>
             </p>
 
-            <button className="bg-red-500">btn</button>
+            <PrimaryButton
+              label="Book a Call"
+              onClick={() => {
+                console.log("start project clicked");
+              }}
+              className="bg-white! text-black!"
+              fill="black"
+            />
           </div>
 
           <img
@@ -160,7 +168,12 @@ const Page = () => {
             />
           </div>
 
-          <h2 className="text-center">Add Primary butn label Book a Call</h2>
+          <PrimaryButton
+            label="Book a Call"
+            onClick={() => {
+              console.log("start project clicked");
+            }}
+          />
         </div>
       </div>
 
@@ -190,7 +203,12 @@ const Page = () => {
                   industries.
                 </p>
 
-                <h2>Add Primary butn label Book a Call</h2>
+                <PrimaryButton
+                  label="Book a Call"
+                  onClick={() => {
+                    console.log("start project clicked");
+                  }}
+                />
               </div>
             </div>
 
@@ -250,45 +268,45 @@ const Page = () => {
         </div>
       </div>
 
-      <StackCards>
-        <ServiceCard
-          title="UI/UX & Product Design."
-          description="We design intuitive, user-centered digital experiences that keep people engaged. From research and wireframes to high-fidelity prototypes, every interaction is crafted with purpose to solve real user problems and drive business results."
-          image="/img/illustrations/uiux_bg.jpg"
-          imageAlt="UI UX product design"
-          features={[
-            { label: "Research-Driven Decisions" },
-            { label: "Scalable Systems" },
-            { label: "Strategic UX Thinking" },
-            { label: "Data-Informed Design" },
-            { label: "UI/UX Design" },
-            { label: "Usability Design" },
-          ]}
-          avatars={[
-            {
-              src: "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-              alt: "Client 1",
-            },
-            {
-              src: "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-              alt: "Client 2",
-            },
-            {
-              src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80",
-              alt: "Client 3",
-            },
-            {
-              src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-              alt: "Client 4",
-            },
-          ]}
-          buttonIcon="/img/illustrations/actBtn.png"
-          onClick={() => console.log("Clicked")}
-        />
-      </StackCards>
+      {/* <StackCards> */}
+      <ServiceCard
+        title="UI/UX & Product Design."
+        description="We design intuitive, user-centered digital experiences that keep people engaged. From research and wireframes to high-fidelity prototypes, every interaction is crafted with purpose to solve real user problems and drive business results."
+        image="/img/illustrations/uiux_bg.jpg"
+        imageAlt="UI UX product design"
+        features={[
+          { label: "Research-Driven Decisions" },
+          { label: "Scalable Systems" },
+          { label: "Strategic UX Thinking" },
+          { label: "Data-Informed Design" },
+          { label: "UI/UX Design" },
+          { label: "Usability Design" },
+        ]}
+        avatars={[
+          {
+            src: "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+            alt: "Client 1",
+          },
+          {
+            src: "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+            alt: "Client 2",
+          },
+          {
+            src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80",
+            alt: "Client 3",
+          },
+          {
+            src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+            alt: "Client 4",
+          },
+        ]}
+        buttonIcon="/img/illustrations/actBtn.png"
+        onClick={() => console.log("Clicked")}
+      />
+      {/* </StackCards> */}
 
       <Services />
-      <ParallaxBanner />
+      <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4" />
       <Testimonials />
 
       <BottomNav />

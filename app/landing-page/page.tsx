@@ -13,14 +13,14 @@ import Testimonials from "@/components/homes/home-1/Testimonials";
 
 const Page = () => {
   return (
-    <div >
+    <div>
       {/* <MobileMenu /> */}
 
       <Hero />
       <Partners />
       <ServicesDesignAgency />
       <About />
-      <ParallaxBanner />
+      <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4" />
       <Services />
 
       <Facts />

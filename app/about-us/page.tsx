@@ -21,14 +21,14 @@ const Page = () => {
       <ParallaxBackround />
       <Blogs />
       <Cta /> */}
-       <Hero2 />
-       <div className="bg-black">
-               <div className="rounded-t-[50px]   bg-[white]">
-                   <Facts />
-               </div>
-             </div>
+      <Hero2 />
+      <div className="bg-black">
+        <div className="rounded-t-[50px]   bg-[white]">
+          <Facts />
+        </div>
+      </div>
       <Partners />
-      <ParallaxBanner />
+      <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4" />
       <Testimonials />
       <BottomNav />
       <Footer2 />

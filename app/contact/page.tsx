@@ -20,7 +20,7 @@ const Page = () => {
         </div>
       </div>
       <Facts />
-      <ParallaxBanner />
+      {/* <ParallaxBanner /> */}
       {/* <>
         <div className="mxd-section loading-wrap relative flex flex-col justify-center items-center h-fit! mxd-hero-section min-h-dvh mxd-hero-fullheight">
           <div className="mxd-container max-w-8xl! mx-auto mxd-hero-01">

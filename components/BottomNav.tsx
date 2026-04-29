@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const navItems = [
   { label: "Home", href: "/landing-page" },
@@ -13,6 +14,21 @@ const navItems = [
 export default function BottomNav() {
   const router = useRouter();
   const pathname = usePathname();
+
+  const [showBottomNav, setShowBottomNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const triggerPoint = window.innerHeight * 0.8;
+      setShowBottomNav(window.scrollY >= triggerPoint);
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -47,7 +63,15 @@ export default function BottomNav() {
     router.push(href, { scroll: false });
   };
   return (
-    <div className="fixed md:py-8! bottom-0  left-1/2 w-full flex items-center justify-center   -translate-x-1/2 z-[1000]">
+    // <div className="fixed md:py-8! bottom-0  left-1/2 w-full flex items-center justify-center   -translate-x-1/2 z-[1000]">
+    <div
+      className={`fixed bottom-0 left-1/2 z-[1000] flex w-full -translate-x-1/2 items-center justify-center transition-all duration-500 md:py-8! ${
+        showBottomNav
+          ? "translate-y-0 opacity-100"
+          : "pointer-events-none translate-y-full opacity-0"
+      }`}
+    >
+      {" "}
       <div className="md:hidden grid grid-cols-5  bg-black gap-0 rounded-t-2xl w-full">
         <button
           onClick={() => handleClick("/landing-page")}
@@ -130,7 +154,6 @@ export default function BottomNav() {
           Contact
         </button>
       </div>
-
       <div className="bg-white md:flex hidden border w-fit border-[#E5E7EB] drop-shadow-2xl p-3 items-center gap-2.5 rounded-3xl">
         {/* Left Items */}
         {navItems.slice(0, 2).map((item, index) => (

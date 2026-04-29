@@ -27,7 +27,11 @@ export default function Testimonials() {
                           <div className="col-12 mxd-grid-item no-margin">
                             <div className="mxd-section-title__title anim-uni-in-up">
                               <RevealText as="h2" className="reveal-type">
-                                Stories that showcase our <span className="font-playfair !"> UX Excellence</span>
+                                Stories that showcase our{" "}
+                                <span className="font-playfair !">
+                                  {" "}
+                                  UX Excellence
+                                </span>
                               </RevealText>
                             </div>
                           </div>
@@ -142,20 +146,14 @@ export default function Testimonials() {
 
                     {/* navigation buttons */}
                     <div className="swiper-button-prev mxd-slider-btn mxd-slider-btn-round-prev animate-card-2">
-                      <a
-                        className="btn btn-round btn-round-small btn-outline slide-left anim-no-delay"
-                        href="#"
-                      >
+                      <button className="btn btn-round btn-round-small btn-outline slide-left anim-no-delay">
                         <i className="ph ph-arrow-left" />
-                      </a>
+                      </button>
                     </div>
                     <div className="swiper-button-next mxd-slider-btn mxd-slider-btn-round-next animate-card-2">
-                      <a
-                        className="btn btn-round btn-round-small btn-outline slide-right anim-no-delay"
-                        href="#"
-                      >
+                      <button className="btn btn-round btn-round-small btn-outline slide-right anim-no-delay">
                         <i className="ph ph-arrow-right" />
-                      </a>
+                      </button>
                     </div>
                   </Swiper>
                   <div className="testimonials-slider__shadow" />

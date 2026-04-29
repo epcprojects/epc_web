@@ -30,8 +30,15 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
+type ParallaxBannerProps = {
+  videoUrl: string;
+  className?: string;
+};
 
-export default function ParallaxBanner() {
+export default function ParallaxBanner({
+  videoUrl,
+  className = "",
+}: ParallaxBannerProps) {
   const sectionRef = useRef<HTMLElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const dividerRef = useRef<HTMLDivElement | null>(null);
@@ -120,7 +127,10 @@ export default function ParallaxBanner() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="padding-pre-manifest overflow-visible">
+    <section
+      ref={sectionRef}
+      className={`padding-pre-manifest overflow-visible ${className}`}
+    >
       <div ref={topSpacerRef} />
 
       <div

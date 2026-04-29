@@ -1,15 +1,16 @@
 import { ArrowUpIcon, ButtonLines, EllipsisIcon } from "@/public/icons";
-import Image from "next/image";
 type PrimaryButtonProps = {
   label: string;
   onClick?: () => void;
   className?: string;
+  fill?: string;
 };
 
 export default function PrimaryButton({
   label,
   onClick,
   className = "",
+  fill = "white",
 }: PrimaryButtonProps) {
   return (
     <button
@@ -23,10 +24,12 @@ export default function PrimaryButton({
         </div>
       </div> */}
 
-      <span className="relative z-10 text-[20px]! text-white">{label}</span>
+      <span className={` ${className} relative z-10 text-[20px]! text-white`}>
+        {label}
+      </span>
 
       <div className="relative z-10 shrink-0 transition-transform duration-500 group-hover:rotate-45">
-        <ArrowUpIcon fill="white" />
+        <ArrowUpIcon fill={fill} />
       </div>
       <div className="absolute -left-80 -top-20 w-[65px] h-[200px] rounded-full bg-white blur-[70px] -rotate-30 group-hover:animate-[buttonShine_1.2s_linear_infinite]" />
     </button>

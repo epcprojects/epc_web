@@ -633,31 +633,31 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
           </p>
           <div className="flex flex-row gap-[17px]!">
             <Link
-              href={""}
+              href={"https://www.facebook.com/endpointclients"}
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <FacebookFooterIcon />
             </Link>
             <Link
-              href={""}
+              href={"https://www.instagram.com/endpointclients/"}
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <InstagramFooterIcon />
             </Link>
             <Link
-              href={""}
+              href={"https://www.youtube.com/@EndPointClients."}
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <YoutubeFooterIcon />
             </Link>
             <Link
-              href={""}
+              href={"https://x.com/Endpointclients"}
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <XFooterIcon />
             </Link>
             <Link
-              href={""}
+              href={"https://www.linkedin.com/company/endpoint-clients/"}
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <LinkedinFooterIcon />

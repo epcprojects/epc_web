@@ -5,6 +5,7 @@ import MobileMenu from "@/components/headers/MobileMenu";
 import Hero from "@/components/other-pages/contact/Hero";
 import Facts from "@/components/homes/home-software-development-company/Facts";
 import ParallaxBanner from "@/components/homes/home-web-agency/ParallaxBanner";
+import About from "@/components/homes/home-software-development-company/About";
 const Page = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const Page = () => {
           </div>
         </div>
       </div>
+      <About />
       <Facts />
       <ParallaxBanner />
       {/* <>

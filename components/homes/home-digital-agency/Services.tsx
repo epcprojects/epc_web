@@ -7,7 +7,7 @@ import RevealText from "@/components/animation/RevealText";
 import { PolygonIcon } from "@/public/icons";
 export default function ServicesDesignAgency() {
   return (
-    <div className="px-[32px]! container max-w-7xl mx-auto " >
+    <div className="px-[32px]! container max-w-7xl mx-auto ">
       <div className="">
         {/* Block - Services/Features Stacking Cards Start */}
         <div className="mxd-block mxd-grid-item no-margin">
@@ -19,7 +19,9 @@ export default function ServicesDesignAgency() {
               </p>
             </div>
             <p className="  text-[48px]! leading-[100%]! font-semibold! text-gray-950">
-              Trusted Design<br/>Across <span className=" font-playfair ! ">Every Industry</span> 
+              Trusted Design
+              <br />
+              Across <span className=" font-playfair ! ">Every Industry</span>
             </p>
           </div>
           {/* <div className="mxd-block__name mb-4 md:mb-24! space-y-4!">
@@ -33,7 +35,10 @@ export default function ServicesDesignAgency() {
           <div className="content__block">
             <StackCards className="stack-wrapper mxd-hero-02-stack ">
               {projects9.map((stack) => (
-                <div key={stack.id} className={`${stack.wrapperClass} p-[48px]!`}>
+                <div
+                  key={stack.id}
+                  className={`${stack.wrapperClass} p-[48px]!`}
+                >
                   <div className="mxd-services-stack__container">
                     <div className="mxd-services-stack__title showcase-title mb-[8px]!">
                       <h3 className={stack.titleClass}>{stack.title}</h3>

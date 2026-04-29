@@ -74,8 +74,8 @@ export default function ContactForm() {
       <div className="container mx-auto max-w-8xl px-4 md:px-8 gap-10! grid grid-cols-1 md:grid-cols-2 relative">
         <div className="flex flex-col justify-between h-full">
           <div className="flex flex-col gap-4">
-            <h2 className=" text-white">
-              Let’s Design products <br /> user remembers.
+            <h2 className=" text-white text-[50px]! font-semibold!">
+              Let’s <span className="font-playfair">Design Products</span> <br /> user remembers.
             </h2>
             <p className="text-xl! leading-normal text-white md:text-3xl!">
               Tell us about your idea. We’ll start with a call to understand

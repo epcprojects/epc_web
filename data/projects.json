@@ -456,14 +456,14 @@
       "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/01",
       "numberClass": "t-opp-muted",
-      "info": "Designing secure, patient-centered digital experiences that simplify complex healthcare systems and improve usability.",
+      "info": "We design HIPAA-conscious, patient-centered digital experiences that simplify complex clinical workflows and improve usability for patients and providers alike.",
       "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {
           "id": 40,
           "src": "/img/services/HealthcareApp.jpg",
           "tags": [
-            "Usability",
+            "Patient UX",
             "Accessibility ",
             "Data Clarity"
           ]
@@ -474,7 +474,7 @@
           "tags": [
             "Compliance UX",
             "Health Data ",
-            "Experience "
+            "Clinical Workflows"
           ]
         }
       ]
@@ -486,7 +486,7 @@
       "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/02",
       "numberClass": "t-opp-brigth",
-      "info": "Transforming complex financial workflows into intuitive, secure, and trust-driven user experiences.",
+      "info": "From banking apps to investment platforms, we transform dense financial data into intuitive, secure, and trust-driven experiences that help users make confident decisions.",
       "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {
@@ -502,7 +502,7 @@
           "id": 43,
           "src": "/img/services/FintechWeb.jpg",
           "tags": [
-            "Trust Systems",
+            "Dashboards",
             "Financial UX",
             "Risk & Security"
           ]
@@ -516,7 +516,7 @@
       "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/03",
       "numberClass": "t-muted-extra",
-      "info": "Designing high-converting digital experiences that streamline product discovery, checkout, and customer retention.",
+      "info": "We craft high-converting shopping experiences that streamline product discovery, reduce checkout friction, and turn first-time buyers into loyal customers.",
       "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {
@@ -546,7 +546,7 @@
       "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/05",
       "numberClass": "t-opp-muted",
-      "info": "Designing scalable digital experiences that simplify complex workflows, enhance usability, and support product growth.",
+      "info": "We design product experiences that scale simplifying complex workflows, boosting feature adoption, and supporting sustainable growth from MVP to enterprise.",
        "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {
@@ -576,7 +576,7 @@
        "titleClass": "opposite text-gray-950! text-[48px]! font-bold!",
       "number": "/05",
       "numberClass": "t-opp-muted",
-      "info": "Designing scalable, high-impact digital experiences that bring clarity to complex systems and support business growth.",
+      "info": "We bring clarity to complex enterprise systems with scalable B2B interfaces that streamline operations, surface insights, and accelerate decision-making across teams.",
       "infoClass": "t-opposite text-gray-700! text-[20px]!",
       "works": [
         {

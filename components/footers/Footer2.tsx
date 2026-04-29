@@ -22,8 +22,10 @@ import {
   YoutubeFooterIcon,
 } from "@/public/icons";
 import PrimaryButton from "../Buttons/PrimaryButton";
+import { useRouter } from "next/navigation";
 
 export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
+  const router = useRouter();
   return (
     // <footer id="mxd-footer" className="mxd-footer mt-12! md:mt-32!">
     //   {/* Footer Block - Fullwidth Text Start */}
@@ -350,7 +352,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                       src={"/img/icons/fiverr.svg"}
                       width={40}
                       height={40}
-                     className="w-[40px]! h-[40px]!"
+                      className="w-[40px]! h-[40px]!"
                     />
                   </a>
 
@@ -372,7 +374,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                       src={"/img/icons/clutch.svg"}
                       width={40}
                       height={40}
-                    className="w-[40px]! h-[40px]! rounded-full"
+                      className="w-[40px]! h-[40px]! rounded-full"
                     />
                   </a>
 
@@ -394,7 +396,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                       src={"img/icons/techbehemothsSvg.svg"}
                       width={40}
                       height={40}
-                      className="w-[40px]! h-[40px]! rounded-full" 
+                      className="w-[40px]! h-[40px]! rounded-full"
                     />
                   </a>
 
@@ -408,15 +410,15 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               </div>
             </div>
             <PrimaryButton
-  label="Contact Us"
-  onClick={() => {
-    console.log("Contact clicked");
-  }}
-/>
+              label="Contact Us"
+              onClick={() => {
+                router.push("/contact");
+              }}
+            />
           </div>
         </div>
-        <div className="flex flex-wrap gap-[30px]">
-          <div className="flex flex-col gap-6 min-w-[281px]!">
+        <div className="flex flex-wrap gap-[30px] justify-between" >
+          <div className="flex flex-col gap-6 min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               Quick Link
             </h4>
@@ -452,7 +454,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 min-w-[281px]!">
+          <div className="flex flex-col gap-6 min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               Support
             </h4>
@@ -481,7 +483,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 min-w-[281px]!">
+          <div className="flex flex-col gap-6 min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               Review
             </h4>
@@ -518,15 +520,6 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               >
                 Designrush
               </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-6 min-w-[281px]!">
-            <h4 className="text-[17px]! font-semibold! uppercase text-white">
-              Review
-            </h4>
-
-            <div className="flex flex-col gap-4">
               <Link
                 href="https://www.goodfirms.co/"
                 target="_blank"
@@ -534,15 +527,6 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               >
                 Goodfirms
               </Link>
-
-              <Link
-                href="https://superbcompanies.com/"
-                target="_blank"
-                className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
-              >
-                Superb companies
-              </Link>
-
               <Link
                 href="https://www.trustpilot.com/"
                 target="_blank"
@@ -552,6 +536,8 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               </Link>
             </div>
           </div>
+
+        
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[24px]">
           <div className="bg-black/50 rounded-[32px]! p-[28px]! flex flex-col gap-[20px]">
@@ -560,7 +546,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 <PakFlagIcon />
               </div>
               <p className="text-[24px]! font-semibold! text-white!">
-                Pakistan Office
+                Pakistan
               </p>
             </div>
             <div className="flex flex-col gap-[14px]">
@@ -588,7 +574,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 <BahrainFlagIcon />
               </div>
               <p className="text-[24px]! font-semibold! text-white!">
-                Bahrain Office
+                Bahrain
               </p>
             </div>
             <div className="flex flex-col gap-[14px]">
@@ -617,7 +603,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 <LondonFlagIcon />
               </div>
               <p className="text-[24px]! font-semibold! text-white!">
-                London Office
+                United Kingdom
               </p>
             </div>
             <div className="flex flex-col gap-[14px]">
@@ -642,24 +628,41 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between px-[32px]!">
-               <p className="text-[16px]! font-normal! text-white!">© {new Date().getFullYear()} Endpoint Clients | All Rights Reserved.</p>
-               <div className="flex flex-row gap-[17px]!">
-                          <Link href={""} className="w-[32px]! h-[32px]! flex items-center justify-center ">
-                                <FacebookFooterIcon/>
-                          </Link>
-                          <Link href={""} className="w-[32px]! h-[32px]! flex items-center justify-center ">
-                                <InstagramFooterIcon/>
-                          </Link>
-                          <Link href={""} className="w-[32px]! h-[32px]! flex items-center justify-center ">
-                                <YoutubeFooterIcon/>
-                          </Link>
-                          <Link href={""} className="w-[32px]! h-[32px]! flex items-center justify-center ">
-                                <XFooterIcon/>
-                          </Link>
-                          <Link href={""} className="w-[32px]! h-[32px]! flex items-center justify-center ">
-                                <LinkedinFooterIcon/>
-                          </Link>
-               </div>
+          <p className="text-[16px]! font-normal! text-white!">
+            © {new Date().getFullYear()} Endpoint Clients | All Rights Reserved.
+          </p>
+          <div className="flex flex-row gap-[17px]!">
+            <Link
+              href={"https://www.facebook.com/endpointclients"}
+              className="w-[32px]! h-[32px]! flex items-center justify-center "
+            >
+              <FacebookFooterIcon />
+            </Link>
+            <Link
+              href={"https://www.instagram.com/endpointclients/"}
+              className="w-[32px]! h-[32px]! flex items-center justify-center "
+            >
+              <InstagramFooterIcon />
+            </Link>
+            <Link
+              href={"https://www.youtube.com/@EndPointClients."}
+              className="w-[32px]! h-[32px]! flex items-center justify-center "
+            >
+              <YoutubeFooterIcon />
+            </Link>
+            <Link
+              href={"https://x.com/Endpointclients"}
+              className="w-[32px]! h-[32px]! flex items-center justify-center "
+            >
+              <XFooterIcon />
+            </Link>
+            <Link
+              href={"https://www.linkedin.com/company/endpoint-clients/"}
+              className="w-[32px]! h-[32px]! flex items-center justify-center "
+            >
+              <LinkedinFooterIcon />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

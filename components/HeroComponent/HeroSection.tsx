@@ -1,6 +1,6 @@
 import { ArrowIcon, ArrowUpIcon, StarIcon } from "@/public/icons";
 import Image from "next/image";
-import React from "react";
+import React, { ReactNode } from "react";
 import AnimatedButton from "../animation/AnimatedButton";
 import VelocityMarquee from "../animation/VelocityMarquee";
 
@@ -40,6 +40,7 @@ type HeroSectionProps = {
 
   showSocialLinks?: boolean;
   socialLinks?: SocialLink[];
+  innerPagesText?: ReactNode;
 };
 
 const defaultMarqueeItems = [
@@ -101,11 +102,11 @@ export default function HeroSection({
   subtitle = "Global UI/UX Design Agency",
   marqueeItems = defaultMarqueeItems,
 
-  firstLinePrefix ,
-  firstLineHighlight ,
-  firstLineSuffix ,
+  firstLinePrefix,
+  firstLineHighlight,
+  firstLineSuffix,
 
-  secondLinePrefix ,
+  secondLinePrefix,
   secondLineHighlight,
 
   showTestimonial = true,
@@ -116,6 +117,7 @@ export default function HeroSection({
 
   showSocialLinks = true,
   socialLinks = defaultSocialLinks,
+  innerPagesText,
 }: HeroSectionProps) {
   return (
     <div className="mxd-hero-01 min-h-[dvh] z-[100]">
@@ -139,65 +141,72 @@ export default function HeroSection({
               showTestimonial ? "gap-[40px]!" : "gap-[12px]!"
             }`}
           >
-            <div className="mxd-hero-01__title-wrap">
-              <div className="mxd-hero-01__marquee loading__item bg-black/30! border-0!">
-                <VelocityMarquee direction="left" className="marquee marquee-right--gsap">
-                  {marqueeItems.map((text, index) => (
-                    <div
-                      key={`${text}-${index}`}
-                      className="marquee__item item-regular text items-center! flex!"
-                    >
-                      <div className="flex items-center gap-2 relative">
-                        <p className="md:text-[80px]! pe-22! font-playfair!">
-                          {text}
-                        </p>
+            {innerPagesText ? (
+              <p className="text-white text-center">{innerPagesText}</p>
+            ) : (
+              <div className="mxd-hero-01__title-wrap">
+                <div className="mxd-hero-01__marquee loading__item bg-black/30! border-0!">
+                  <VelocityMarquee
+                    direction="left"
+                    className="marquee marquee-right--gsap"
+                  >
+                    {marqueeItems.map((text, index) => (
+                      <div
+                        key={`${text}-${index}`}
+                        className="marquee__item item-regular text items-center! flex!"
+                      >
+                        <div className="flex items-center gap-2 relative">
+                          <p className="md:text-[80px]! pe-22! font-playfair!">
+                            {text}
+                          </p>
 
-                        <div className="absolute top-10 -right-20!">
-                          <svg
-                            width="32"
-                            height="32"
-                            viewBox="0 0 128 128"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M64 32.0007C38.0951 35.3677 35.3662 38.0966 31.9993 64.0015C28.6338 38.0951 25.9049 35.3662 0 32.0007C25.9049 28.6338 28.6338 25.9049 32.0007 0C35.3677 25.9049 38.0966 28.6338 64.0015 32.0007H64Z"
-                              fill="white"
-                            />
-                          </svg>
+                          <div className="absolute top-10 -right-20!">
+                            <svg
+                              width="32"
+                              height="32"
+                              viewBox="0 0 128 128"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M64 32.0007C38.0951 35.3677 35.3662 38.0966 31.9993 64.0015C28.6338 38.0951 25.9049 35.3662 0 32.0007C25.9049 28.6338 28.6338 25.9049 32.0007 0C35.3677 25.9049 38.0966 28.6338 64.0015 32.0007H64Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                </VelocityMarquee>
-              </div>
+                    ))}
+                  </VelocityMarquee>
+                </div>
 
-              <h1 className="hero-01-title md:text-[80px]! font-manrope!">
-                <span className="hero-01-title__row loading__item">
-                  <em className="hero-01-title__item font-manrope!">
-                    {firstLinePrefix}{" "}
-                    <span className="ml-8! font-playfair ! inline-block">
-                      {firstLineHighlight}
-                    </span>
-                  </em>
-
-                  {firstLineSuffix && (
-                    <em className="hero-01-title__item title-item-transparent font-playfair !">
-                      {firstLineSuffix}
+                <h1 className="hero-01-title md:text-[80px]! font-manrope!">
+                  <span className="hero-01-title__row loading__item">
+                    <em className="hero-01-title__item font-manrope!">
+                      {firstLinePrefix}{" "}
+                      <span className="ml-8! font-playfair! inline-block">
+                        {firstLineHighlight}
+                      </span>
                     </em>
-                  )}
-                </span>
 
-                <span className="hero-01-title__row loading__item">
-                  <em className="hero-01-title__item font-manrope!">
-                    {secondLinePrefix}{" "}
-                    <span className="ml-8! font-playfair ! inline-block">
-                      {secondLineHighlight}
-                    </span>
-                  </em>
-                </span>
-              </h1>
-            </div>
+                    {firstLineSuffix && (
+                      <em className="hero-01-title__item title-item-transparent font-playfair!">
+                        {firstLineSuffix}
+                      </em>
+                    )}
+                  </span>
+
+                  <span className="hero-01-title__row loading__item">
+                    <em className="hero-01-title__item font-manrope!">
+                      {secondLinePrefix}{" "}
+                      <span className="ml-8! font-playfair! inline-block">
+                        {secondLineHighlight}
+                      </span>
+                    </em>
+                  </span>
+                </h1>
+              </div>
+            )}
 
             {showTestimonial ? (
               <div className="py-[8px]! pr-[20px]! pl-[16px]! flex flex-col lg:flex-row gap-[10px]! items-center bg-black/30 rounded-full">
@@ -259,7 +268,9 @@ export default function HeroSection({
                       }
                     >
                       <ArrowUpIcon
-                        fill={button.variant === "secondary" ? "white" : undefined}
+                        fill={
+                          button.variant === "secondary" ? "white" : undefined
+                        }
                       />
                     </AnimatedButton>
                   ))}
@@ -269,7 +280,10 @@ export default function HeroSection({
               {showSocialLinks && socialLinks.length > 0 && (
                 <div className="flex items-center justify-center gap-4 mt-12! md:mt-24!">
                   {socialLinks.map((item, index) => (
-                    <div key={`${item.alt}-${index}`} className="relative group">
+                    <div
+                      key={`${item.alt}-${index}`}
+                      className="relative group"
+                    >
                       <a href={item.href} target="_blank" rel="noreferrer">
                         <img
                           alt={item.alt}

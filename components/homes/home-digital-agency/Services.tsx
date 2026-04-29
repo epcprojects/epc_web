@@ -43,7 +43,7 @@ export default function ServicesDesignAgency() {
                     <div className="mxd-services-stack__title showcase-title mb-[8px]!">
                       <h3 className={stack.titleClass}>{stack.title}</h3>
                     </div>
-                    <div className="mxd-services-stack__info showcase-info mb-[32px]!">
+                    <div className="mxd-services-stack__info showcase-info max-w-[824px]! w-full! mb-[32px]!">
                       <p className={stack.infoClass}>{stack.info}</p>
                     </div>
                     <div className="mxd-services-stack__works !relative !z-10 !flex !flex-row !items-start !gap-[32px] !overflow-visible !opacity-100 !visible">
@@ -60,16 +60,16 @@ export default function ServicesDesignAgency() {
                             height={600}
                           />
 
-                          <div className="mxd-services-stack__tags tags-absolute !flex !flex-row !flex-nowrap !items-center !gap-[8px] !z-[40] !opacity-100 !visible">
-        {w.tags.map((t, ti) => (
-          <span
-            key={ti}
-            className="tag tag-default tag-permanent !opacity-100 !visible"
-          >
-            {t}
-          </span>
-        ))}
-      </div>
+                          <div className="mxd-services-stack__tags tags-absolute bottom-[20px]! !flex !flex-row !flex-nowrap !items-center !gap-[8px] !z-[40] !opacity-100 !visible">
+                            {w.tags.map((t, ti) => (
+                              <span
+                                key={ti}
+                                className="tag tag-default tag-permanent border! border-white! bg-black/30! text-white! backdrop-blur-[30px]! !opacity-100 !visible"
+                              >
+                                {t}
+                              </span>
+                            ))}
+                          </div>
                         </div>
                       ))}
                     </div>

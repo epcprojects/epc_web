@@ -103,7 +103,7 @@ export default function VelocityMarquee({
       {/* 🚫 remove direction-specific CSS class */}
       <div
         ref={trackRef}
-        className="marquee-flex"
+        className={`marquee-flex `}
         style={{
           display: "inline-flex",
           whiteSpace: "nowrap",

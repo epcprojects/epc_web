@@ -17,10 +17,11 @@ export default function Hero() {
 
         <HeroSection
         subtitle="Contact"
-          firstLinePrefix="Have a"
-          firstLineSuffix="tech"
-          secondLinePrefix="or Just"
-          secondLineHighlight="Want to Chat?"
+          innerPagesText = {
+            <span className="text-[72px]! text-white text-center! leading-[86px]! font-semibold">
+            Got an  <span className="font-playfair text-white">Idea?</span><br/> Let&apos;s Make It Real.
+            </span>
+          }
           showSocialLinks={false}  
           showTestimonial={false}
           simpleDescription="We are Global Design Agency specializing in UI/UX, Web, Mobile App & SaaS Design. Crafting digital experiences across 15+ industries that drive real results."

@@ -40,13 +40,14 @@ export default function Hero() {
 
         <HeroSection
         subtitle="Services"
-          firstLinePrefix="New"
-          firstLineSuffix="tech"
-          secondLinePrefix="in Digital"
-          secondLineHighlight="Excellence"
+          innerPagesText = {
+            <span className="text-[72px]! text-white leading-[86px]! font-semibold">
+             Design <span className="font-playfair text-white">Services</span><br/> Built for Impact
+            </span>
+          }
           showSocialLinks={false}  
           showTestimonial={false}
-          simpleDescription="We are Global Design Agency specializing in UI/UX, Web, Mobile App & SaaS Design. Crafting digital experiences across 15+ industries that drive real results."
+          simpleDescription="From UI/UX and web design to SaaS platforms and AI-powered products, we deliver end-to-end services that turn bold ideas into measurable business growth."
         />
 
        

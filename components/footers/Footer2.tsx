@@ -417,7 +417,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             />
           </div>
         </div>
-        <div className="flex flex-wrap gap-[30px] justify-between" >
+        <div className="flex flex-wrap gap-[30px] justify-between">
           <div className="flex flex-col gap-6 min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               Quick Link
@@ -536,8 +536,6 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               </Link>
             </div>
           </div>
-
-        
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[24px]">
           <div className="bg-black/50 rounded-[32px]! p-[28px]! flex flex-col gap-[20px]">
@@ -573,9 +571,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               <div className="shrink-0">
                 <BahrainFlagIcon />
               </div>
-              <p className="text-[24px]! font-semibold! text-white!">
-                Bahrain
-              </p>
+              <p className="text-[24px]! font-semibold! text-white!">Bahrain</p>
             </div>
             <div className="flex flex-col gap-[14px]">
               <div className="flex flex-row gap-[10px] ">
@@ -592,7 +588,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                   <CallIcon />
                 </div>
                 <p className="text-[16px]! font-normal! text-gray-200!">
-                  +97335579427
+                  +973 3557 9427
                 </p>
               </div>
             </div>

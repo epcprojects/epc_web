@@ -20,14 +20,16 @@ export default function About() {
         </div>
         <div className="mxd-block ">
           <div className="container-fluid px-0">
-            <div className="row gx-0 space-x-[20px]!">
-              <div className="col-12 col-xl-5 mxd-grid-item no-margin px-[0px]!">
+            <div className="row gx-0 ">
+              <div className="col-12 col-xl-6 mxd-grid-item no-margin px-[0px]!">
                 <div className="mxd-block__name">
                   <RevealText
                     as="h2"
                     className="reveal-type anim-uni-in-up text-[48px]! font-semibold!"
                   >
-                    Design That<br/>Solves{" "}
+                    Design That
+                    <br />
+                    Solves{" "}
                     <span className="font-playfair !">Real Problems</span>
                   </RevealText>
                 </div>
@@ -59,7 +61,7 @@ export default function About() {
                                       fill="black"
                                     />
                                   </svg>
-                                  Research-Driven Decisions
+                                  15+ Years of Experience
                                 </p>
                               </li>
                               <li>
@@ -76,7 +78,7 @@ export default function About() {
                                       fill="black"
                                     />
                                   </svg>
-                                  Strategic UX Thinking
+                                  1,200+ Projects Shipped
                                 </p>
                               </li>
                               <li>
@@ -93,7 +95,7 @@ export default function About() {
                                       fill="black"
                                     />
                                   </svg>{" "}
-                                  Clean Interfaces
+                                  Top-Rated on Upwork & Fiverr
                                 </p>
                               </li>
                             </ul>
@@ -114,7 +116,7 @@ export default function About() {
                                       fill="black"
                                     />
                                   </svg>{" "}
-                                  Scalable Systems
+                                  Data-Informed Design
                                 </p>
                               </li>
                               <li>
@@ -131,7 +133,7 @@ export default function About() {
                                       fill="black"
                                     />
                                   </svg>{" "}
-                                  Data-Informed Design
+                                  Clean Interfaces
                                 </p>
                               </li>
                               <li>

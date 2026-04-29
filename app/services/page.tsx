@@ -4,6 +4,7 @@ import ParallaxBanner from "@/components/homes/home-web-agency/ParallaxBanner";
 import Hero from "@/components/other-pages/services/Hero";
 import About from "@/components/homes/home-software-development-company/About";
 import Facts from "@/components/homes/home-software-development-company/Facts";
+import BottomNav from "@/components/BottomNav";
 const Page = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const Page = () => {
       <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4" />
       <Facts />
       <Testimonials />
+      <BottomNav />
       <Footer2 />
     </div>
   );

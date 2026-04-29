@@ -66,8 +66,8 @@ export default function EPCServices() {
   }, []);
 
   return (
-    <div className="mxd-section padding-pinned-img-pre-mtext">
-      <div className="mxd-container ">
+    <div className="container  padding-pinned-img-pre-mtext">
+      <div className=" ">
         {/* <div className="-mb-8 md:-mb-16 space-y-4! md:space-y-4!">
           <div className="px-4 py-3 font-semibold text-3xl! text-[#4338CA] border-2! border-[#4338CA] w-fit rounded-full">
             Our Services

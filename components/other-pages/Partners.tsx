@@ -23,7 +23,10 @@ export default function Partners() {
           {/* <div className="bg-linear-to-r from-[#FCF7F650] to-[#FCF7F6] absolute end-0 z-50 h-full -bottom-9 w-1/3"></div>
           <div className="bg-linear-to-l from-[#FCF7F650] to-[#FCF7F6] absolute left-0 z-50 h-full -bottom-9 w-1/3"></div> */}
           {/* top line */}
-          <VelocityMarquee direction="left" className="marquee marquee--gsap h-[91px]!">
+          <VelocityMarquee
+            direction="left"
+            className="marquee marquee--gsap h-[91px]!"
+          >
             {top.map((p, idx) => (
               <a
                 key={idx}
@@ -35,7 +38,7 @@ export default function Partners() {
                   src={p.src}
                   width={p.width}
                   height={p.height}
-                  // className="grayscale-100"
+                  className="grayscale-100 hover:grayscale-0"
                 />
               </a>
             ))}
@@ -53,7 +56,7 @@ export default function Partners() {
                   src={p.src}
                   width={p.width}
                   height={p.height}
-                  // className="grayscale-100"
+                  className="grayscale-100 hover:grayscale-0"
                 />
               </a>
             ))}

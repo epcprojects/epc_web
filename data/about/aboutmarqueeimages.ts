@@ -24,12 +24,7 @@ export const aboutMarqueeImages: AboutMarqueeImage[] = [
     width: 400,
     height: 400,
   },
-  {
-    src: "/img/about/Fintech.png",
-    alt: "Fintech",
-    width: 400,
-    height: 400,
-  },
+
   {
     src: "/img/about/Enterprise2.png",
     alt: "Enterprise",
@@ -69,6 +64,12 @@ export const aboutMarqueeImages: AboutMarqueeImage[] = [
   {
     src: "/img/about/Coaching.png",
     alt: "Coaching",
+    width: 400,
+    height: 400,
+  },
+  {
+    src: "/img/about/Fintech.png",
+    alt: "Fintech",
     width: 400,
     height: 400,
   },

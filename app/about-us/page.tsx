@@ -23,11 +23,13 @@ const Page = () => {
       <Cta /> */}
       <Hero2 />
       <div className="bg-black">
-        <div className="rounded-t-[50px]   bg-[white]">
+        <div className="rounded-t-[50px]  bg-[white]">
           <Facts />
         </div>
       </div>
-      <Partners />
+      <div className="-mt-80!">
+        <Partners />
+      </div>
       <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4" />
       <Testimonials />
       <BottomNav />

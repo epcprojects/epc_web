@@ -222,7 +222,7 @@ export default function HeroSection({
 
                 <div className="flex flex-col items-stretch gap-1">
                   <div className="flex flex-row items-center gap-1.5">
-                    <p className="text-lg font-medium text-white">
+                    <p className="text-[18px]! font-medium text-white">
                       What Clients Say About Us
                     </p>
                     <ArrowIcon />
@@ -237,7 +237,7 @@ export default function HeroSection({
                       <StarIcon />
                     </div>
 
-                    <span className="text-sm font-normal text-white">
+                    <span className="text-[14px]! font-normal text-white">
                       based on 100+ reviews
                     </span>
                   </div>
@@ -267,11 +267,13 @@ export default function HeroSection({
                         getDefaultButtonClassName(button.variant)
                       }
                     >
-                      <ArrowUpIcon
-                        fill={
-                          button.variant === "secondary" ? "white" : undefined
-                        }
-                      />
+                      <div className="relative z-10 shrink-0 transition-transform duration-500 group-hover:rotate-45">
+                        <ArrowUpIcon
+                          fill={
+                            button.variant === "secondary" ? "white" : undefined
+                          }
+                        />
+                      </div>
                     </AnimatedButton>
                   ))}
                 </div>

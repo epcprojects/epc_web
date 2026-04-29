@@ -24,33 +24,26 @@ export default function ServicesDesignAgency() {
               Across <span className=" font-playfair ! ">Every Industry</span>
             </p>
           </div>
-          {/* <div className="mxd-block__name mb-4 md:mb-24! space-y-4!">
-            <div className="  font-semibold text-[#4939d2] text-4xl! w-fit">
-              Industry Expertise
-            </div>
-            <RevealText as="h2" className="reveal-type anim-uni-in-up">
-              Trusted Design Across Every Industry
-            </RevealText>
-          </div> */}
+
           <div className="content__block">
             <div className="stack-wrapper mxd-hero-02-stack h-[100%]! mt-[48px]!">
               {projects9.map((stack) => (
                 <div
                   key={stack.id}
-                  className={`${stack.wrapperClass} p-[48px]!  mb-[48px]!`}
+                  className={`${stack.wrapperClass} px-[48px]! pt-[48px]! pb-[32px]!  mb-[48px]!`}
                 >
                   <div className="mxd-services-stack__container">
                     <div className="mxd-services-stack__title showcase-title mb-[8px]!">
                       <h3 className={stack.titleClass}>{stack.title}</h3>
                     </div>
-                    <div className="mxd-services-stack__info showcase-info max-w-[824px]! w-full! mb-[32px]!">
+                    <div className="mxd-services-stack__info showcase-info max-w-[824px]! w-full! mb-[32px]! pb-4! md:pb-8">
                       <p className={stack.infoClass}>{stack.info}</p>
                     </div>
                     <div className="mxd-services-stack__works !relative !z-10 !flex !flex-row !items-start !gap-[32px] !overflow-visible !opacity-100 !visible">
                       {stack.works.map((w, i) => (
                         <div
                           key={i}
-                          className="mxd-services-stack__work !relative !z-10 !block !shrink-0 !w-[544px] !max-w-[544px] !min-w-[544px] !h-auto !opacity-100 !visible !overflow-visible"
+                          className="mxd-services-stack__work !relative !z-10 !block !shrink-0  !h-auto !opacity-100 !visible !overflow-visible"
                         >
                           <Image
                             className="mxd-services-stack__preview !relative !z-10 !block !w-[544px] !h-[408px] !opacity-100 !visible rounded-[24px]!"

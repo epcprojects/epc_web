@@ -48,7 +48,11 @@ export default function Hero() {
           />
         </div>
         <div>
-          <VelocityMarquee direction="left" className="overflow-visible ">
+          <VelocityMarquee
+            direction="left"
+            duration={20}
+            className="overflow-visible "
+          >
             {aboutMarqueeImages.map((image) => (
               <Image
                 key={image.src}
@@ -56,7 +60,7 @@ export default function Hero() {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
-                className="mr-[30px]! z-10 w-auto! h-auto!"
+                className="mr-[30px]! w-120! h-120! z-10 "
                 priority
               />
             ))}

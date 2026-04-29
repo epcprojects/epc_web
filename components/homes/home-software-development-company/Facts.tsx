@@ -23,7 +23,7 @@ export default function Facts() {
                     className="col-span-5 md:col-span-1  mxd-grid-item"
                   >
                     <div
-                      className={`mxd-stats-simple__inner animate-card-4 flex! flex-col! gap-[32px]! p-[24px]! items-center! justify-start! ${
+                      className={`mxd-stats-simple__inner animate-card-4 flex! border-gray-200! flex-col! gap-[32px]! p-[24px]! items-center! justify-start! ${
                         index === 0 ? "before:hidden! border-l-0!" : ""
                       }`}
                     >

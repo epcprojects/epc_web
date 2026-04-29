@@ -32,7 +32,7 @@ const splitToLetters = (s: string) =>
   ));
 
 export default function AnimatedButton<As extends ElementType = "div">(
-  props: PolyProps<As> & { position?: "previous" | "next" }
+  props: PolyProps<As> & { position?: "previous" | "next" },
 ) {
   const {
     as,
@@ -69,14 +69,14 @@ export default function AnimatedButton<As extends ElementType = "div">(
 
   const variantClass =
     variant === "primary"
-      ? "bg-white text-black border border-white"
-      : "bg-transparent text-white border border-white";
+      ? "bg-white text-black border border-white font-semibold!"
+      : "bg-transparent text-white border border-white font-semibold!";
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
-  const baseClassName = `btn-anim ${variantClass} ${className}`;
+  const baseClassName = `btn-anim group ${variantClass} ${className}`;
 
   const tagProps = {
     className: baseClassName,

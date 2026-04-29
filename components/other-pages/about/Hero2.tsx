@@ -33,7 +33,7 @@ export default function Hero() {
         />
         <div className="flex flex-col gap-[64px]">
           <HeroSection
-            subtitle="About Us"
+            subtitle=""
             innerPagesText={
               <span className="text-[72px]! text-white text-center! leading-[86px]! font-semibold">
                 A{" "}
@@ -44,7 +44,7 @@ export default function Hero() {
             showSocialLinks={false}
             showTestimonial={false}
             buttons={defaultButtons}
-            simpleDescription="We are a creative digital agency specializing in innovative design and cutting-edge development. We help businesses stand out and thrive in the modern landscape."
+            simpleDescription="We started with a simple belief that great design has the power to change how people experience the world. Today, we're a global team helping brands across 15+ industries design products that truly matter."
           />
         </div>
         <div>

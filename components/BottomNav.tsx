@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { label: "Home", href: "/landing-page" },
+  { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
   { label: "Services", href: "/services" },
   { label: "Contact Us", href: "/contact" },
@@ -19,7 +19,7 @@ export default function BottomNav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const triggerPoint = window.innerHeight * 0.8;
+      const triggerPoint = window.innerHeight * 0.5;
       setShowBottomNav(window.scrollY >= triggerPoint);
     };
 

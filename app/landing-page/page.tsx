@@ -1,5 +1,4 @@
 import Footer2 from "@/components/footers/Footer2";
-import MobileMenu from "@/components/headers/MobileMenu";
 import About from "@/components/homes/home-software-development-company/About";
 import Hero from "@/components/homes/home-1/Hero";
 import ParallaxBanner from "@/components/homes/home-web-agency/ParallaxBanner";
@@ -14,8 +13,6 @@ import Testimonials from "@/components/homes/home-1/Testimonials";
 const Page = () => {
   return (
     <div>
-      {/* <MobileMenu /> */}
-
       <Hero />
       <Partners />
       <ServicesDesignAgency />

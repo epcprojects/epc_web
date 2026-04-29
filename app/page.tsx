@@ -1,15 +1,38 @@
-import CommingSoon from "./comming-soon/page";
-import { Metadata } from "next";
-// export const metadata: Metadata = {
-//   title:
-//     "Preview || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
-//   description:
-//     "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
-// };
-export default function Home() {
+import Footer2 from "@/components/footers/Footer2";
+import About from "@/components/homes/home-software-development-company/About";
+import Hero from "@/components/homes/home-1/Hero";
+import ParallaxBanner from "@/components/homes/home-web-agency/ParallaxBanner";
+import Services from "@/components/homes/home-web-agency/EPCServices";
+import Partners from "@/components/other-pages/Partners";
+import ServicesDesignAgency from "@/components/homes/home-digital-agency/Services";
+import Facts from "@/components/homes/home-software-development-company/Facts";
+import BottomNav from "@/components/BottomNav";
+import ContactForm from "@/components/ContactForm";
+import Testimonials from "@/components/homes/home-1/Testimonials";
+
+const Page = () => {
   return (
-    <>
-      <CommingSoon />
-    </>
+    <div>
+      <Hero />
+      <Partners />
+      <ServicesDesignAgency />
+      <About />
+      <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4" />
+      <Services />
+
+      <Facts />
+      <Testimonials />
+
+      <BottomNav />
+
+      <div className="mxd-section overflow-hidden! scroll-mt-32" id="contactus">
+        <div className="mxd-container max-w-8xl! mx-auto ">
+          <ContactForm />
+        </div>
+      </div>
+      <Footer2 />
+    </div>
   );
-}
+};
+
+export default Page;

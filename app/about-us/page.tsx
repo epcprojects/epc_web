@@ -1,24 +1,16 @@
 import BottomNav from "@/components/BottomNav";
-import Approch from "@/components/common/Approch";
-import Awards from "@/components/common/Awards";
-import Blogs from "@/components/common/Blogs";
-import Cta from "@/components/common/Cta";
-import Facts from "@/components/common/Facts";
-import MarqueeSlider from "@/components/common/MarqueeSlider";
+import Facts from "@/components/homes/home-software-development-company/Facts";
 import Footer2 from "@/components/footers/Footer2";
-import MobileMenu from "@/components/headers/MobileMenu";
-import Marquee from "@/components/homes/home-1/Marquee";
-import ParallaxBanner from "@/components/homes/home-web-agency/ParallaxBanner";
 import Hero2 from "@/components/other-pages/about/Hero2";
-import ParallaxBackround from "@/components/other-pages/about/ParallaxBackround";
-import Team from "@/components/other-pages/about/Team";
+import ParallaxBanner from "@/components/homes/home-web-agency/ParallaxBanner";
 import React from "react";
-
+import Partners from "@/components/other-pages/Partners";
+import Testimonials from "@/components/homes/home-1/Testimonials";
 const Page = () => {
   return (
     <div>
-      <MobileMenu />
-      <Hero2 />
+      {/* <MobileMenu />
+     
       <Marquee />
       <ParallaxBanner />
       <Awards />
@@ -28,7 +20,16 @@ const Page = () => {
       <Approch />
       <ParallaxBackround />
       <Blogs />
-      <Cta />
+      <Cta /> */}
+       <Hero2 />
+       <div className="bg-black">
+               <div className="rounded-t-[50px]   bg-[white]">
+                   <Facts />
+               </div>
+             </div>
+      <Partners />
+      <ParallaxBanner />
+      <Testimonials />
       <BottomNav />
       <Footer2 />
     </div>

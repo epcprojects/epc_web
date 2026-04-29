@@ -78,3 +78,13 @@ body *:not(.font-playfair):not(.font-playfair *) {
   font-family: var(--playfair), serif !important;
   font-style: italic !important;
 }
+@keyframes buttonShine {
+  0% {
+    transform: translate(0, 0) rotate(-30deg);
+  }
+
+  100% {
+    transform: translate(500px, 0px) rotate(-30deg);
+  }
+}
+

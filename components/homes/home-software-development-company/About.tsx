@@ -1,5 +1,7 @@
+"use client";
 import AnimatedButton from "@/components/animation/AnimatedButton";
 import RevealText from "@/components/animation/RevealText";
+import PrimaryButton from "@/components/Buttons/PrimaryButton";
 import { PolygonIcon } from "@/public/icons";
 import Link from "next/link";
 
@@ -25,7 +27,7 @@ export default function About() {
                     as="h2"
                     className="reveal-type anim-uni-in-up text-[48px]! font-semibold!"
                   >
-                    Design That Solves{" "}
+                    Design That<br/>Solves{" "}
                     <span className="font-playfair !">Real Problems</span>
                   </RevealText>
                 </div>
@@ -40,11 +42,11 @@ export default function About() {
                     </p>
                     <div className="mxd-paragraph__lists">
                       <div className="container-fluid p-0 ">
-                        <div className="row g-0 ">
-                          <div className="col-6 col-xl-5">
+                        <div className="grid grid-cols-2 gap-y-[12px]!">
+                          <div className=" ">
                             <ul>
                               <li>
-                                <p className="anim-uni-in-up flex items-center gap-4 text-[18px]!">
+                                <p className="anim-uni-in-up flex items-center gap-[12px]! text-[18px]! ">
                                   <svg
                                     width="20"
                                     height="20"
@@ -96,7 +98,7 @@ export default function About() {
                               </li>
                             </ul>
                           </div>
-                          <div className="col-6 col-xl-5">
+                          <div className="">
                             <ul>
                               <li>
                                 <p className="anim-uni-in-up flex items-center gap-4 text-[18px]!">
@@ -155,13 +157,12 @@ export default function About() {
                       </div>
                     </div>
                     <div className="mxd-paragraph__controls anim-uni-in-up">
-                      <AnimatedButton
-                        text="Start a Project"
-                        className="btn btn-anim btn-default btn-outline slide-right-up"
-                        href={`/`}
-                      >
-                        <i className="ph-bold ph-arrow-up-right" />
-                      </AnimatedButton>
+                      <PrimaryButton
+                        label="Start a Project"
+                        onClick={() => {
+                          console.log("Project Start clicked");
+                        }}
+                      />
                     </div>
                   </div>
                 </div>

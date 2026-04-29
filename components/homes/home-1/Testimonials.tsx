@@ -10,7 +10,7 @@ import AnimatedButton from "@/components/animation/AnimatedButton";
 
 export default function Testimonials() {
   return (
-    <div className="mxd-section padding-grid-pre-mtext">
+    <div className="mxd-section padding-grid-pre-mtext pl-[230px]!">
       <div className="mxd-container no-padding-container">
         {/* Block - Testimonials Slider #01 with Section Title Start */}
         <div className="mxd-block">

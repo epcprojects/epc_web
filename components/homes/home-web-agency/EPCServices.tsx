@@ -10,6 +10,7 @@ import { Service } from "@/types/services";
 import AnimatedButton from "@/components/animation/AnimatedButton";
 import RevealText from "@/components/animation/RevealText";
 import { PolygonIcon } from "@/public/icons";
+import PrimaryButton from "@/components/Buttons/PrimaryButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,15 +76,19 @@ export default function EPCServices() {
             We Design Digital Solutions <br /> that Performs
           </h2>
         </div> */}
-        <div className="mxd-block__name ">
-         <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">
-          <PolygonIcon />
-          <p className="text-[#4939D2]! text-[18px]! font-medium!">
-            Our Services
-          </p>
-        </div>
-          <RevealText as="h2" className="reveal-type anim-uni-in-up text-[48px]!">
-            We Design Digital <br/> Solutions <span className="font-playfair !">That Performs</span>
+        <div className="mxd-block__name flex flex-col gap-[20px]!">
+          <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">
+            <PolygonIcon />
+            <p className="text-[#4939D2]! text-[18px]! font-medium!">
+              Our Services
+            </p>
+          </div>
+          <RevealText
+            as="h2"
+            className="reveal-type anim-uni-in-up text-[48px]!"
+          >
+            We Design Digital <br /> Solutions{" "}
+            <span className="font-playfair !">That Performs</span>
           </RevealText>
         </div>
         {/* Block - Services Pinned Image Start */}
@@ -147,13 +152,12 @@ export default function EPCServices() {
                       <p className="anim-uni-in-up text-[20px]!">{item.desc}</p>
 
                       <div className="mt-12!">
-                        <AnimatedButton
-                          text="Start a Project"
-                          className="btn btn-anim btn-default btn-outline slide-right-up"
-                          href={`/`}
-                        >
-                          <i className="ph-bold ph-arrow-up-right" />
-                        </AnimatedButton>
+                        <PrimaryButton
+                          label="Start a Project"
+                          onClick={() => {
+                            console.log("start project clicked");
+                          }}
+                        />
                       </div>
                     </div>
                   ))}

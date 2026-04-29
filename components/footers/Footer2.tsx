@@ -21,6 +21,7 @@ import {
   XFooterIcon,
   YoutubeFooterIcon,
 } from "@/public/icons";
+import PrimaryButton from "../Buttons/PrimaryButton";
 
 export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
   return (
@@ -325,9 +326,9 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                     <img
                       alt="Upwork"
                       src={"/img/icons/upwork.svg"}
-                      width={24}
-                      height={24}
-                      className="w-24! h-24!"
+                      width={40}
+                      height={40}
+                      className="w-[40px]! h-[40px]!"
                     />
                   </a>
 
@@ -347,9 +348,9 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                     <img
                       alt="Fiverr"
                       src={"/img/icons/fiverr.svg"}
-                      width={24}
-                      height={24}
-                      className="w-24! h-24!"
+                      width={40}
+                      height={40}
+                     className="w-[40px]! h-[40px]!"
                     />
                   </a>
 
@@ -369,9 +370,9 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                     <img
                       alt="Fiverr"
                       src={"/img/icons/clutch.svg"}
-                      width={24}
-                      height={24}
-                      className="w-24! h-24! rounded-full"
+                      width={40}
+                      height={40}
+                    className="w-[40px]! h-[40px]! rounded-full"
                     />
                   </a>
 
@@ -391,9 +392,9 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                     <img
                       alt="Fiverr"
                       src={"img/icons/techbehemothsSvg.svg"}
-                      width={20}
-                      height={20}
-                      className=" h-24! rounded-full"
+                      width={40}
+                      height={40}
+                      className="w-[40px]! h-[40px]! rounded-full" 
                     />
                   </a>
 
@@ -406,22 +407,12 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 </div>
               </div>
             </div>
-            <div>
-              <button
-                onClick={() => {
-                  "";
-                }}
-                className="py-[16px]! px-[24px]! min-w-[185px]! relative overflow-hidden flex flex-row items-center gap-2 bg-[#4939D2] rounded-[12px]!"
-              >
-                <div className="absolute top-0 left-0">
-                  <ButtonLines />
-                </div>
-                <span className="text-[20px]! text-white ">Contact Us</span>
-                <div className="shrink-0">
-                  <ArrowUpIcon fill="white" />
-                </div>
-              </button>
-            </div>
+            <PrimaryButton
+  label="Contact Us"
+  onClick={() => {
+    console.log("Contact clicked");
+  }}
+/>
           </div>
         </div>
         <div className="flex flex-wrap gap-[30px]">

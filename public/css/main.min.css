@@ -354,6 +354,7 @@
   --bg-demo-screen-08: var(--bg-demo-screen-08--dark);
   --bg-demo-screen-09: var(--bg-demo-screen-09--dark);
 }
+
 .about-image-1 {
   background-image: url(/img/avatars/1400x1400_ava-01.webp);
 }

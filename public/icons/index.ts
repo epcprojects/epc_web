@@ -15,7 +15,9 @@ import YoutubeFooterIcon from "./YoutubeFooterIcon";
 import InstagramFooterIcon from "./InstagramFooterIcon";
 import XFooterIcon from "./XFooterIcon";
 import LinkedinFooterIcon from "./LinkedinFooterIcon";
+import EllipsisIcon from "./EllipsisIcon";
 export {
+    EllipsisIcon,
     FacebookFooterIcon,
     YoutubeFooterIcon,
     InstagramFooterIcon,

@@ -9,20 +9,24 @@ export default function Facts() {
 
   return (
     <div
-      className={`mxd-section  ${pathname === "/services" ? "pb-24! xl:pb-52!" : " padding-default"}  `}
+      className={`mxd-section  ${pathname === "/services" ? "pb-24! xl:pb-52!" : " padding-default"}  container max-w-7xl mx-auto px-0!`}
     >
-      <div className="mxd-container grid-container ">
+      <div className="mxd-container grid-container px-0! ">
         {/* Block - Statistics Cards Start */}
         <div className="mxd-block">
           <div className="mxd-stats-simple ">
             <div className="container-fluid p-0">
               <div className="grid  xl:grid-cols-5  grid-cols-2 lg:grid-cols-3 g-0 mxd-stats-simple">
-                {factsData.map((fact) => (
+                {factsData.map((fact, index) => (
                   <div
                     key={fact.id}
                     className="col-span-5 md:col-span-1  mxd-grid-item"
                   >
-                    <div className="mxd-stats-simple__inner animate-card-4 flex! flex-col! gap-[32px]! p-[24px]! items-center! ">
+                    <div
+                      className={`mxd-stats-simple__inner animate-card-4 flex! flex-col! gap-[32px]! p-[24px]! items-center! justify-start! ${
+                        index === 0 ? "before:hidden! border-l-0!" : ""
+                      }`}
+                    >
                       {/* counter */}
 
                       {/* image */}

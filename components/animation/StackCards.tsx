@@ -135,13 +135,18 @@ export default function StackCards({
         ref={(el) => {
           if (el) itemRefs.current[index] = el;
         }}
-        className="stack-item"
-        style={{ willChange: "transform" }}
+        className="stack-item "
+        
+              
+
       >
         {content}
       </div>
     );
   });
+
+
+
 
   return (
     <div ref={wrapperRef} className={className}>

@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   title: "Endpoint Clients - Leading Global UI UX Design Agency",
   description:
     " Endpoint Clients is a global design agency crafting UI UX, web, mobile app, SaaS, branding, and AI products for ambitious brands across 15 plus industries.",
-  keywords: [
-    "EndPoint Clients",
-    "software development company",
-    "web development",
-    "mobile app development",
-    "UI UX design",
-    "digital solutions",
-  ],
+  // keywords: [
+  //   "EndPoint Clients",
+  //   "software development company",
+  //   "web development",
+  //   "mobile app development",
+  //   "UI UX design",
+  //   "digital solutions",
+  // ],
   alternates: {
     canonical: "/",
   },

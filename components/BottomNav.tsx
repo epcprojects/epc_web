@@ -108,7 +108,7 @@ export default function BottomNav() {
           About Us
         </button>
 
-        <div className="relative ">
+        <div className="relative">
           <button
             onClick={() => handleClick("/contact")}
             className="absolute overflow-hidden  p-2 -top-10 w-full rounded-2xl flex text-2xl! text-white items-center flex-col gap-2"
@@ -171,7 +171,7 @@ export default function BottomNav() {
         {/* Center CTA */}
         <button
           onClick={() => handleClick("/landing-page")}
-          className="h-[60px] flex items-center gap-3 relative rounded-2xl cursor-pointer text-center py-4 text-3xl! px-[32px]! overflow-hidden bg-[#4539D2] hover:bg-[#2c1dd1] text-white text-lg"
+          className="h-[60px] group flex items-center gap-3 relative rounded-2xl cursor-pointer text-center py-4 text-3xl! px-[32px]! overflow-hidden bg-[#4539D2] hover:bg-[#2c1dd1] text-white text-lg"
         >
           <svg
             width="19"
@@ -193,6 +193,7 @@ export default function BottomNav() {
             width={146}
             height={146}
           />
+          <div className="absolute -left-80 -top-12 w-[65px] h-[200px] rounded-full bg-white blur-[70px] -rotate-30 group-hover:animate-[buttonShine_1.2s_linear_infinite]" />
         </button>
 
         {/* Right Items */}

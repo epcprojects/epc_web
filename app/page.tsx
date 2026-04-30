@@ -26,7 +26,7 @@ const Page = () => {
       <BottomNav />
 
       <div className="mxd-section overflow-hidden! scroll-mt-32" id="contactus">
-        <div className="mxd-container max-w-8xl! mx-auto ">
+        <div className="container max-w-7xl mx-auto ">
           <ContactForm />
         </div>
       </div>

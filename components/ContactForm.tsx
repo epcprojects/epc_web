@@ -36,21 +36,31 @@ export default function ContactForm() {
   const handleSubmit = async (
     values: typeof initialValues,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    { resetForm, setSubmitting }: any,
+    { resetForm, setSubmitting, setStatus }: any,
   ) => {
     try {
-      console.log("Submitted values:", values);
+      setStatus(null);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
 
-      // API call here
-      // await fetch("/api/contact", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(values),
-      // });
+      if (!response.ok) {
+        throw new Error("Failed to send message. Please try again.");
+      }
 
       resetForm();
+      setStatus({
+        type: "success",
+        message: "Your inquiry has been sent successfully.",
+      });
     } catch (error) {
       console.error(error);
+      setStatus({
+        type: "error",
+        message: "We could not send your inquiry. Please try again.",
+      });
     } finally {
       setSubmitting(false);
     }
@@ -107,7 +117,7 @@ export default function ContactForm() {
               onSubmit={handleSubmit}
               validateOnBlur={false}
             >
-              {({ isSubmitting, touched, errors }) => (
+              {({ isSubmitting, touched, errors, status }) => (
                 <Form className="space-y-16!">
                   <div>
                     <label
@@ -272,13 +282,26 @@ export default function ContactForm() {
                     />
                   </div>
 
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full rounded-full bg-[#05080d] px-8 py-3.5 cursor-pointer text-[20px] font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
-                  >
-                    {isSubmitting ? "Sending..." : "Send inquiry"}
-                  </button>
+                  <div>
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full rounded-full bg-[#05080d] px-8 py-3.5 cursor-pointer text-[20px] font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      {isSubmitting ? "Sending..." : "Send inquiry"}
+                    </button>
+                    {status?.message ? (
+                      <p
+                        className={`text-center text-[15px]! font-medium ${
+                          status.type === "success"
+                            ? "text-green-600!"
+                            : "text-red-600!"
+                        }`}
+                      >
+                        {status.message}
+                      </p>
+                    ) : null}
+                  </div>
                 </Form>
               )}
             </Formik>

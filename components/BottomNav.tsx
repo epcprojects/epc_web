@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -19,7 +20,7 @@ export default function BottomNav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const triggerPoint = window.innerHeight * 0.5;
+      const triggerPoint = window.innerHeight * 0.2;
       setShowBottomNav(window.scrollY >= triggerPoint);
     };
 
@@ -62,11 +63,13 @@ export default function BottomNav() {
 
     router.push(href, { scroll: false });
   };
+  const isMobile = useIsMobile();
+  
   return (
     // <div className="fixed md:py-8! bottom-0  left-1/2 w-full flex items-center justify-center   -translate-x-1/2 z-[1000]">
     <div
       className={`fixed bottom-0 left-1/2 z-[1000] flex w-full -translate-x-1/2 items-center justify-center transition-all duration-500 md:py-8! ${
-        showBottomNav
+        showBottomNav || isMobile
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-full opacity-0"
       }`}
@@ -74,7 +77,7 @@ export default function BottomNav() {
       {" "}
       <div className="md:hidden grid grid-cols-5  bg-black gap-0 rounded-t-2xl w-full">
         <button
-          onClick={() => handleClick("/landing-page")}
+          onClick={() => handleClick("/")}
           className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2"
         >
           <svg

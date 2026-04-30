@@ -6,6 +6,7 @@ import InitScroll from "@/components/scroll/InitScroll";
 import LenisSmoothScroll from "@/components/scroll/LenisSmoothScroll";
 import ScrollTop from "@/components/scroll/ScrollTop";
 import AnchorScrollController from "@/components/AnchorScrollController";
+import BottomNav from "../BottomNav";
 
 interface ClientLayoutProps {
   children: React.ReactNode;
@@ -21,6 +22,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
       <InitScroll />
       <ScrollTop />
       <LenisSmoothScroll />
+       <BottomNav />
     </>
   );
 }

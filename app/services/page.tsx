@@ -95,7 +95,7 @@ const Page = () => {
         </div>
       </div>
 
-      <BottomNav />
+      {/* <BottomNav /> */}
       <Footer2 />
     </div>
   );

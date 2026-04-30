@@ -98,7 +98,7 @@ export default function RootLayout({
       </head>
       <body className={`${manrope_init.variable} ${playfair_init.variable}`}>
         <ClientLayout>{children}</ClientLayout>
-        {/* <BottomNav /> */}
+       
       </body>
     </html>
   );

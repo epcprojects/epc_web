@@ -1,8 +1,10 @@
+"use client"
 import { ArrowIcon, ArrowUpIcon, StarIcon } from "@/public/icons";
 import Image from "next/image";
 import React, { ReactNode } from "react";
 import AnimatedButton from "../animation/AnimatedButton";
 import VelocityMarquee from "../animation/VelocityMarquee";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 export type HeroButton = {
   text: string;
@@ -119,10 +121,11 @@ export default function HeroSection({
   socialLinks = defaultSocialLinks,
   innerPagesText,
 }: HeroSectionProps) {
+  const isMobile = useIsMobile();
   return (
     <div className="mxd-hero-01 min-h-[dvh] z-[100]">
-      <div className="mxd-hero-01__wrap loading-wrap">
-        <div className="mxd-hero-01__top flex flex-col container max-w-7xl mx-auto gap-[64px]">
+      <div className="mxd-hero-01__wrap px-[16px]! loading-wrap">
+        <div className="md:mxd-hero-01__top  items-center! flex flex-col container max-w-7xl mx-auto gap-[28px] md:gap-[64px]">
           <div className="items-center flex flex-col gap-[16px]">
             <Image
               src="/img/hero/logo.svg"
@@ -138,14 +141,14 @@ export default function HeroSection({
 
           <div
             className={`flex flex-col items-center ${
-              showTestimonial ? "gap-[40px]!" : "gap-[12px]!"
+              showTestimonial ? "gap-[24px]! md:gap-[40px]!" : "gap-[12px]!"
             }`}
           >
             {innerPagesText ? (
               <p className="text-white text-center">{innerPagesText}</p>
             ) : (
-              <div className="mxd-hero-01__title-wrap">
-                <div className="mxd-hero-01__marquee loading__item bg-black/30! border-0!">
+              <div className="mxd-hero-01__title-wrap ">
+                <div className="mxd-hero-01__marquee loading__item bg-black/30! border-0! ">
                   <VelocityMarquee
                     direction="left"
                     className="marquee marquee-right--gsap"
@@ -156,7 +159,7 @@ export default function HeroSection({
                         className="marquee__item item-regular text items-center! flex!"
                       >
                         <div className="flex items-center gap-2 relative">
-                          <p className="md:text-[80px]! pe-22! font-playfair!">
+                          <p className="md:text-[80px]! text-[30px]! pe-22!  font-playfair!">
                             {text}
                           </p>
 
@@ -180,26 +183,26 @@ export default function HeroSection({
                   </VelocityMarquee>
                 </div>
 
-                <h1 className="hero-01-title md:text-[80px]! font-manrope!">
+                <h1 className="hero-01-title md:text-[80px]! text-[40px]!   font-manrope!">
                   <span className="hero-01-title__row loading__item">
                     <em className="hero-01-title__item font-manrope!">
                       {firstLinePrefix}{" "}
-                      <span className="ml-8! font-playfair! inline-block">
+                      <span className="ml-8! font-playfair ! inline-block">
                         {firstLineHighlight}
                       </span>
                     </em>
 
-                    {firstLineSuffix && (
-                      <em className="hero-01-title__item title-item-transparent font-playfair!">
+                    {firstLineSuffix  && (
+                      <em className="hero-01-title__item title-item-transparent   font-playfair!">
                         {firstLineSuffix}
                       </em>
                     )}
                   </span>
 
-                  <span className="hero-01-title__row loading__item">
-                    <em className="hero-01-title__item font-manrope!">
+                  <span className="hero-01-title__row loading__item md:mt-0! mt-5! ">
+                    <em className="md:hero-01-title__item font-manrope!">
                       {secondLinePrefix}{" "}
-                      <span className="ml-8! font-playfair! inline-block">
+                      <span className="ml-8! font-playfair ! inline-block">
                         {secondLineHighlight}
                       </span>
                     </em>
@@ -209,7 +212,7 @@ export default function HeroSection({
             )}
 
             {showTestimonial ? (
-              <div className="py-[8px]! pr-[20px]! pl-[16px]! flex flex-col lg:flex-row gap-[10px]! items-center bg-black/30 rounded-full">
+              <div className="py-[8px]! md:pr-[20px]! md:pl-[16px]! pr-[8px]! pl-[8px]! flex flex-col lg:flex-row gap-[10px]! items-center bg-black/30 rounded-2xl md:rounded-full">
                 <div className="relative !w-[136px] !h-[40px] shrink-0">
                   <Image
                     src="/img/hero/hero-section-testimonials.png"
@@ -228,7 +231,7 @@ export default function HeroSection({
                     <ArrowIcon />
                   </div>
 
-                  <div className="flex flex-col lg:flex-row items-center gap-2">
+                  <div className="flex flex-row items-center gap-2">
                     <div className="flex flex-row gap-0.5">
                       <StarIcon />
                       <StarIcon />

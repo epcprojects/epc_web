@@ -33,11 +33,13 @@ gsap.registerPlugin(ScrollTrigger);
 type ParallaxBannerProps = {
   videoUrl: string;
   className?: string;
+  bottomSpacerValue?: number;
 };
 
 export default function ParallaxBanner({
   videoUrl,
   className = "",
+  bottomSpacerValue = 250,
 }: ParallaxBannerProps) {
   const sectionRef = useRef<HTMLElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -98,7 +100,7 @@ export default function ParallaxBanner({
       tl.to(
         bottomSpacer,
         {
-          height: 250,
+          height: `${bottomSpacerValue}`,
           ease: "none",
         },
         0,

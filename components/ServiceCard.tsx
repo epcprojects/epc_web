@@ -71,7 +71,10 @@ export default function ServiceCard({
           {features.length > 0 && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {features.map((item, index) => (
-                <div key={index} className="flex items-center gap-3.5">
+                <div
+                  key={index}
+                  className="flex items-center gap-3.5 pt-4! pb-8! border-b! border-b-gray-100!"
+                >
                   <StarIcon />
 
                   <h3 className="text-gray-900! text-[18px]! font-normal!">

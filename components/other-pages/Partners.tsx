@@ -13,7 +13,7 @@ export default function Partners() {
   const bottom = partnersData.bottom;
 
   return (
-    <div className=" rounded-t-[50px] -mt-20! pt-[64px]! pb-[96px]! bg-[white]">
+    <div className="  pt-[64px]! pb-[96px]! bg-[white]">
       <div className=" relative ">
         {/* Block - Marquee Partners Two Lines Start */}
         <div className="container max-w-7xl mx-auto">

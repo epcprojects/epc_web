@@ -496,7 +496,7 @@ textarea {
   color: var(--t-opp-bright);
   text-shadow: none;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
   width: 6px;
   background: var(--base-shade);
@@ -512,7 +512,7 @@ textarea {
 ::-webkit-scrollbar-thumb {
   background-color: var(--accent);
   border-radius: var(--_radius-s);
-}
+} */
 html {
   width: 100%;
   height: 100%;

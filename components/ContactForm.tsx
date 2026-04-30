@@ -5,7 +5,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Image from "next/image";
 
-const contactSchema = Yup.object({
+export const contactSchema = Yup.object({
   fullName: Yup.string()
     .trim()
     .min(2, "Full name must be at least 2 characters")
@@ -23,7 +23,7 @@ const contactSchema = Yup.object({
     .required("Project details are required"),
 });
 
-const initialValues = {
+export const initialValues = {
   fullName: "",
   companyName: "",
   email: "",
@@ -75,7 +75,8 @@ export default function ContactForm() {
         <div className="flex flex-col justify-between h-full">
           <div className="flex flex-col gap-4">
             <h2 className=" text-white text-[50px]! font-semibold!">
-              Let’s <span className="font-playfair">Design Products</span> <br /> user remembers.
+              Let’s <span className="font-playfair">Design Products</span>{" "}
+              <br /> user remembers.
             </h2>
             <p className="text-xl! leading-normal text-white md:text-3xl!">
               Tell us about your idea. We’ll start with a call to understand

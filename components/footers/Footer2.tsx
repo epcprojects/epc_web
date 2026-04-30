@@ -456,29 +456,41 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
 
           <div className="flex flex-col gap-6 min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
-              Support
+              SERVICES
             </h4>
 
             <div className="flex flex-col gap-4">
               <Link
-                href="/contact"
+                href="/services"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >
-                Contact Us
+                UI/UX Design
               </Link>
 
               <Link
-                href="/terms-and-condition"
+                href="/services"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >
-                Term and condition
+                Web & Mobile App
               </Link>
 
               <Link
-                href="/privacy-policy"
+                href="/services"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >
-                Privacy Policy
+                Dashboard
+              </Link>
+              <Link
+                href="/services"
+                className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
+              >
+                Ai & ML Development
+              </Link>
+              <Link
+                href="/services"
+                className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
+              >
+               Branding
               </Link>
             </div>
           </div>
@@ -498,7 +510,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               </Link>
 
               <Link
-                href="https://techbehemoths.com/"
+                href="https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency"
                 target="_blank"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >
@@ -506,7 +518,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               </Link>
 
               <Link
-                href="https://www.techreviewer.co/"
+                href="https://techreviewer.co/companies/endpoint-clients-ltd"
                 target="_blank"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >
@@ -514,21 +526,21 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               </Link>
 
               <Link
-                href="https://www.designrush.com/"
+                href="https://www.trustpilot.com/review/endpointclients.com"
                 target="_blank"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >
                 Designrush
               </Link>
               <Link
-                href="https://www.goodfirms.co/"
+                href="https://www.goodfirms.co/company/endpoint-clients-ltd"
                 target="_blank"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >
                 Goodfirms
               </Link>
               <Link
-                href="https://www.trustpilot.com/"
+                href="https://www.trustpilot.com/review/endpointclients.com"
                 target="_blank"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >

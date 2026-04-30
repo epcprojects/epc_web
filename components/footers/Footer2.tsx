@@ -300,8 +300,8 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
         fill
         className="object-cover object-center -z-10 "
       />
-      <div className="container max-w-7xl mx-auto px-[16px]! md:px-[32px]! flex flex-col gap-[24px] md:gap-[64px]">
-        <div className="flex flex-col items-center md:items-start gap-[24px] md:gap-[40px]">
+      <div className="container max-w-7xl mx-auto px-[16px]! lg:px-[32px]! flex flex-col gap-[24px] lg:gap-[64px]">
+        <div className="flex flex-col items-center md:items-start gap-[24px] lg:gap-[40px]">
           <Link href={`/`} className="">
             <Image
               alt="logo epc"
@@ -311,7 +311,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               className="md:h-180! h-30! "
             />
           </Link>
-          <div className="flex flex-col md:flex-row items-center w-full justify-between md:gap-0 gap-[12px]!">
+          <div className="flex flex-col md:flex-row items-center w-full justify-between lg:gap-0 gap-[12px]!">
             <div className="flex flex-col items-center! md:items-start! gap-3 max-w-[693px]!">
               <span className="text-[16px] md:text-[20px]! text-center md:text-start! font-normal! text-gray-50!">
                 Are you ready to elevate your brand’s digital presence? I lead
@@ -409,7 +409,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 </div>
               </div>
             </div>
-            <div className="w-full! md:w-auto! ">
+            <div className="w-full! lg:w-auto! ">
               <PrimaryButton
               label="Contact Us"
               className="w-full"
@@ -421,7 +421,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
           </div>
         </div>
         <div className="flex flex-wrap gap-[30px] justify-between">
-          <div className="flex flex-col gap-6 md:min-w-[385px]!">
+          <div className="flex flex-col gap-6 2xl:min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               Quick Link
             </h4>
@@ -450,7 +450,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 md:min-w-[385px]!">
+          <div className="flex flex-col gap-6 2xl:min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               SERVICES
             </h4>
@@ -491,7 +491,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 md:min-w-[385px]!">
+          <div className="flex flex-col gap-6 2xl:min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               Review
             </h4>
@@ -631,7 +631,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse md:flex-row justify-between md:gap-0 gap-[16px]! px-[32px]!">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between md:gap-0 gap-[16px]! px-[32px]!">
           <p className="text-[16px]! text-center md:text-start font-normal! text-white!">
             © {new Date().getFullYear()} Endpoint Clients | All Rights Reserved.
           </p>

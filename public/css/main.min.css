@@ -2541,7 +2541,7 @@ p.t-semibold {
 .btn-to-top {
   position: fixed;
   right: 3rem;
-  bottom: 7rem;
+  bottom: 12rem;
   width: 4.6rem;
   height: 4.6rem;
   -moz-border-radius: 50%;
@@ -2585,7 +2585,7 @@ p.t-semibold {
   -ms-transform: scale(1.04);
   transform: scale(1.04);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .btn-to-top {
     right: 6rem;
     bottom: 4rem;

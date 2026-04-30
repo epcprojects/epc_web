@@ -28,8 +28,8 @@ const Page = () => {
       </div>
       <div className="bg-[#FAF7F6]!">
         <ParallaxBanner
-          bottomSpacerValue={64}
-          topSpacerValue={0}
+          // bottomSpacerValue={64}
+          // topSpacerValue={0}
           videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
         />
       </div>

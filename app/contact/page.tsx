@@ -32,7 +32,10 @@ const Page = () => {
       }
 
       resetForm();
-      setStatus({ type: "success", message: "Your inquiry has been sent successfully." });
+      setStatus({
+        type: "success",
+        message: "Your inquiry has been sent successfully.",
+      });
     } catch (error) {
       console.error(error);
       setStatus({
@@ -307,12 +310,12 @@ const Page = () => {
         </div>
       </div>
       <div className="bg-[#FAF7F6]">
-<About />
+        <About />
       </div>
-      
+
       <ParallaxBanner
         bottomSpacerValue={0}
-        topSpacerValue={0}
+        // topSpacerValue={0}
         videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4"
       />
       <div className="bg-[#FAF7F6] relative flex items-start justify-center flex-col py-[64px]! md:py-[96px]!">
@@ -327,7 +330,7 @@ const Page = () => {
             <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!">
               <PolygonIcon />
               <p className="text-[#4939D2]! text-[18px]! font-medium!">
-               Location
+                Location
               </p>
             </div>
             <p className="  text-[48px]! leading-[120%]! font-normal! text-gray-950">
@@ -366,9 +369,9 @@ const Page = () => {
         </div>
       </div>
       <div className="pt-[32px]!">
-  <Facts />
+        <Facts />
       </div>
-    
+
       {/* <ParallaxBanner /> */}
       {/* <>
         <div className="mxd-section loading-wrap relative flex flex-col justify-center items-center h-fit! mxd-hero-section min-h-dvh mxd-hero-fullheight">

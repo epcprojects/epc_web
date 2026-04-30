@@ -56,9 +56,9 @@ const Page = () => {
       </div>
 
       <ParallaxBanner
-        className="bg-[#FAF7F6]"
-        bottomSpacerValue={0}
-        topSpacerValue={0}
+        className="bg-gradient-to-t from-white to-[#faf7f6]"
+        // bottomSpacerValue={0}
+        // topSpacerValue={0}
         videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
       />
       <Facts />

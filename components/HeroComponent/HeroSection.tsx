@@ -90,7 +90,7 @@ const defaultSocialLinks: SocialLink[] = [
     className: "w-24! h-24! rounded-full",
   },
   {
-    href: "https://techbehemoths.com/company/endpoint-clients",
+    href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",
     src: "/img/icons/techbehemothsSvg.svg",
     alt: "Tech Behemoths",
     tooltip: "Leading Design Agency",

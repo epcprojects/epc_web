@@ -78,7 +78,7 @@ const Page = () => {
                     <PrimaryButton
                       label="Book a Call"
                       onClick={() => {
-                        console.log("start project clicked");
+                       window.open("https://calendly.com/endpointclients/30min", "_blank");
                       }}
                     />
                   </div>
@@ -157,7 +157,7 @@ const Page = () => {
             <PrimaryButton
               label="Book a Call"
               onClick={() => {
-                console.log("start project clicked");
+                 window.open("https://calendly.com/endpointclients/30min", "_blank");
               }}
             />
           </div>
@@ -225,7 +225,7 @@ const Page = () => {
               <PrimaryButton
                 label="Book a Call"
                 onClick={() => {
-                  console.log("start project clicked");
+                  window.open("https://calendly.com/endpointclients/30min", "_blank");
                 }}
                 className="bg-white! text-black!"
                 fill="black"

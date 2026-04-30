@@ -387,7 +387,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 </div>
                 <div className="relative group">
                   <a
-                    href="https://clutch.co/profile/endpoint-clients"
+                    href="https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -425,7 +425,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
 
             <div className="flex flex-col gap-4">
               <Link
-                href="/"
+                href="#"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >
                 Home
@@ -445,12 +445,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 About Us
               </Link>
 
-              <Link
-                href="/testimonials"
-                className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
-              >
-                Testimonials
-              </Link>
+             
             </div>
           </div>
 
@@ -641,31 +636,31 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
           </p>
           <div className="flex flex-row gap-[17px]!">
             <Link
-              href={"https://www.facebook.com/endpointclients"}
+              href={"https://www.facebook.com/endpointclients"} target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <FacebookFooterIcon />
             </Link>
             <Link
-              href={"https://www.instagram.com/endpointclients/"}
+              href={"https://www.instagram.com/endpointclients/"} target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <InstagramFooterIcon />
             </Link>
             <Link
-              href={"https://www.youtube.com/@EndPointClients."}
+              href={"https://www.youtube.com/@EndPointClients."} target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <YoutubeFooterIcon />
             </Link>
             <Link
-              href={"https://x.com/Endpointclients"}
+              href={"https://x.com/Endpointclients"} target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <XFooterIcon />
             </Link>
             <Link
-              href={"https://www.linkedin.com/company/endpoint-clients/"}
+              href={"https://www.linkedin.com/company/endpoint-clients/"} target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <LinkedinFooterIcon />

@@ -37,7 +37,7 @@ export default function ScrollTop() {
     <a
       href="#"
       id="to-top"
-      className={`btn btn-to-top slide-up`}
+      className={`btn btn-to-top slide-up !z-[1100]`}
       onClick={handleScrollToTop}
       style={{
         opacity: visible ? 1 : 0,

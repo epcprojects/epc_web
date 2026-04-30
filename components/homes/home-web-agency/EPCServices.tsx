@@ -11,10 +11,12 @@ import AnimatedButton from "@/components/animation/AnimatedButton";
 import RevealText from "@/components/animation/RevealText";
 import { PolygonIcon } from "@/public/icons";
 import PrimaryButton from "@/components/Buttons/PrimaryButton";
+import { useRouter } from "next/navigation";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function EPCServices() {
+  const router = useRouter();
   const pinnedRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -155,7 +157,7 @@ export default function EPCServices() {
                         <PrimaryButton
                           label="Start a Project"
                           onClick={() => {
-                            console.log("start project clicked");
+                            router.push("/contact");
                           }}
                         />
                       </div>

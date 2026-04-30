@@ -4,8 +4,10 @@ import RevealText from "@/components/animation/RevealText";
 import PrimaryButton from "@/components/Buttons/PrimaryButton";
 import { PolygonIcon } from "@/public/icons";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function About() {
+  const router = useRouter();
   return (
     // mxd-section padding-default
     // mxd-container grid-container
@@ -162,7 +164,7 @@ export default function About() {
                       <PrimaryButton
                         label="Start a Project"
                         onClick={() => {
-                          console.log("Project Start clicked");
+                          router.push("/contact");
                         }}
                       />
                     </div>

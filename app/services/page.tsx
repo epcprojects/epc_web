@@ -51,49 +51,50 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#FAF7F6]">
+      <div className="bg-[#FAF7F6] pt-[64px]! md:pt-[96px]!">
         <About />
       </div>
 
       <ParallaxBanner
+        className="bg-[#FAF7F6]"
         bottomSpacerValue={0}
         topSpacerValue={0}
         videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
       />
       <Facts />
       <div className="bg-[#FAF7F6] pt-[96px]!">
- <Testimonials />
+        <Testimonials />
       </div>
-     <div className="bg-[#FAF7F6]">
-<div className="container mx-auto max-w-7xl py-[64px]! md:py-[96px]!">
-        <div className="w-full! relative  flex items-center justify-between bg-linear-to-b from-[#0568BF] to-[#070928]   rounded-[50px]! py-[72px]! px-[60px]!">
-          <div className="space-y-[28px]!">
-            <p className="  text-[48px]! leading-[120%]! font-semibold! text-white">
-              Got a product idea? <br />
-              <span className=" font-playfair ! text-white">
-                {" "}
-                Let&apos;s design it..
-              </span>
-            </p>
+      <div className="bg-[#FAF7F6]">
+        <div className="container mx-auto max-w-7xl py-[64px]! md:py-[96px]!">
+          <div className="w-full! relative  flex items-center justify-between bg-linear-to-b from-[#0568BF] to-[#070928]   rounded-[50px]! py-[72px]! px-[60px]!">
+            <div className="space-y-[28px]!">
+              <p className="  text-[48px]! leading-[120%]! font-semibold! text-white">
+                Got a product idea? <br />
+                <span className=" font-playfair ! text-white">
+                  {" "}
+                  Let&apos;s design it..
+                </span>
+              </p>
 
-            <PrimaryButton
-              label="Book a Call"
-              onClick={() => {
-                console.log("start project clicked");
-              }}
-              className="bg-white! text-black!"
-              fill="black"
+              <PrimaryButton
+                label="Book a Call"
+                onClick={() => {
+                  console.log("start project clicked");
+                }}
+                className="bg-white! text-black!"
+                fill="black"
+              />
+            </div>
+
+            <img
+              src={"/img/backgrounds/ceo-mohsin.png"}
+              className="absolute w-auto! end-32 bottom-0"
             />
           </div>
-
-          <img
-            src={"/img/backgrounds/ceo-mohsin.png"}
-            className="absolute w-auto! end-32 bottom-0"
-          />
         </div>
       </div>
-     </div>
-      
+
       <BottomNav />
       <Footer2 />
     </div>

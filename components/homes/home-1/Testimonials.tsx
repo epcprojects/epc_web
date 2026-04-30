@@ -11,7 +11,7 @@ import { ArrowLeftIcon } from "@/public/icons";
 
 export default function Testimonials() {
   return (
-    <div className="mxd-section padding-grid-pre-mtext pl-[230px]!">
+    <div className="mxd-section padding-grid-pre-mtext">
       <div className="mxd-container no-padding-container">
         {/* Block - Testimonials Slider #01 with Section Title Start */}
         <div className="mxd-block">
@@ -148,16 +148,16 @@ export default function Testimonials() {
                     {/* navigation buttons */}
                     <div className="swiper-button-prev mxd-slider-btn mxd-slider-btn-round-prev animate-card-2">
                       <button className=" w-[48px]! cursor-pointer h-[48px]! flex! items-center! justify-center! border!  border-gray-950! rounded-full">
-                       <span>
-                         <ArrowLeftIcon/>
-                       </span>
+                        <span>
+                          <ArrowLeftIcon />
+                        </span>
                       </button>
                     </div>
                     <div className="swiper-button-next mxd-slider-btn mxd-slider-btn-round-next animate-card-2">
                       <button className=" w-[48px]! cursor-pointer h-[48px]! flex! items-center! justify-center! border!  border-gray-950! rounded-full">
-                       <span className="rotate-180">
-                         <ArrowLeftIcon/>
-                       </span>
+                        <span className="rotate-180">
+                          <ArrowLeftIcon />
+                        </span>
                       </button>
                     </div>
                   </Swiper>

@@ -131,20 +131,14 @@ export default function ParallaxBanner({
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className={`padding-pre-manifest overflow-visible ${className}`}
-    >
+    <section ref={sectionRef} className={` overflow-visible ${className}`}>
       <div ref={topSpacerRef} />
 
       <div
         ref={containerRef}
         className="container max-w-7xl mx-auto transform-gpu px-0!"
       >
-        <div
-          ref={dividerRef}
-          className="mxd-divider overflow-hidden rounded-[32px]"
-        >
+        <div ref={dividerRef} className=" overflow-hidden rounded-[32px]">
           <video
             src="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
             autoPlay
@@ -152,7 +146,7 @@ export default function ParallaxBanner({
             loop
             playsInline
             preload="auto"
-            className="block w-full h-full object-contain"
+            className="block w-full h-full max-h-dvh object-contain"
           />
         </div>
       </div>

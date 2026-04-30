@@ -27,7 +27,11 @@ const Page = () => {
         <About />
       </div>
       <div className="bg-[#FAF7F6]!">
-        <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4" />
+        <ParallaxBanner
+          bottomSpacerValue={64}
+          topSpacerValue={0}
+          videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
+        />
       </div>
       <div className="bg-[#FAF7F6]!">
         <Services />
@@ -46,7 +50,7 @@ const Page = () => {
         className="mxd-section overflow-hidden! scroll-mt-32 bg-[#FAF7F6]!"
         id="contactus"
       >
-        <div className="mxd-container max-w-8xl! mx-auto pb-[96px]!">
+        <div className="container max-w-7xl mx-auto pb-[96px]!">
           <ContactForm />
         </div>
       </div>

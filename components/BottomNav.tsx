@@ -108,7 +108,7 @@ export default function BottomNav() {
           About Us
         </button>
 
-        <div className="relative ">
+        <div className="relative">
           <button
             onClick={() => handleClick("/contact")}
             className="absolute overflow-hidden  p-2 -top-10 w-full rounded-2xl flex text-2xl! text-white items-center flex-col gap-2"

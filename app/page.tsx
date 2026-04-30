@@ -1,3 +1,4 @@
+
 import Footer2 from "@/components/footers/Footer2";
 import About from "@/components/homes/home-software-development-company/About";
 import Hero from "@/components/homes/home-1/Hero";
@@ -14,47 +15,47 @@ const Page = () => {
   return (
     <div>
       <Hero />
-      {/* <div className="bg-black!">
+      <div className="bg-black!">
         <div className="rounded-t-[50px]! overflow-hidden   bg-[#FAF7F6]!">
           <Partners />
         </div>
-      </div> */}
-      {/* <div className="bg-[#FAF7F6]!">
+      </div>
+      <div className="bg-[#FAF7F6]!">
         <ServicesDesignAgency />
-      </div> */}
+      </div>
 
-      {/* <div className="bg-[#FAF7F6] pt-[96px]!">
+      <div className="bg-[#FAF7F6] pt-[96px]!">
         <About />
-      </div> */}
-      {/* <div className="bg-[#FAF7F6]!">
+      </div>
+      <div className="bg-[#FAF7F6]!">
         <ParallaxBanner
           // bottomSpacerValue={64}
           // topSpacerValue={0}
           videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
         />
-      </div> */}
-      {/* <div className="bg-[#FAF7F6]!">
+      </div>
+      <div className="bg-[#FAF7F6]!">
         <Services />
-      </div> */}
+      </div>
 
-      {/* <div className="bg-[#FAF7F6]!">
+      <div className="bg-[#FAF7F6]!">
         <Facts />
-      </div> */}
-      {/* <div className="bg-[#FAF7F6]!">
+      </div>
+      <div className="bg-[#FAF7F6]!">
         <Testimonials />
-      </div> */}
+      </div>
 
       {/* <BottomNav /> */}
 
-      {/* <div
+      <div
         className="mxd-section overflow-hidden! scroll-mt-32 bg-[#FAF7F6]!"
         id="contactus"
       >
         <div className="container max-w-7xl mx-auto pb-[96px]!">
           <ContactForm />
         </div>
-      </div> */}
-      {/* <Footer2 /> */}
+      </div>
+      <Footer2 />
     </div>
   );
 };

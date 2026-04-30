@@ -14,19 +14,39 @@ const Page = () => {
   return (
     <div>
       <Hero />
-      <Partners />
-      <ServicesDesignAgency />
-      <About />
-      <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4" />
-      <Services />
+      <div className="bg-black!">
+        <div className="rounded-t-[50px]! overflow-hidden   bg-[#FAF7F6]!">
+          <Partners />
+        </div>
+      </div>
+      <div className="bg-[#FAF7F6]!">
+        <ServicesDesignAgency />
+      </div>
 
-      <Facts />
-      <Testimonials />
+      <div className="bg-[#FAF7F6] pt-[96px]!">
+        <About />
+      </div>
+      <div className="bg-[#FAF7F6]!">
+        <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4" />
+      </div>
+      <div className="bg-[#FAF7F6]!">
+        <Services />
+      </div>
+
+      <div className="bg-[#FAF7F6]!">
+        <Facts />
+      </div>
+      <div className="bg-[#FAF7F6]!">
+        <Testimonials />
+      </div>
 
       <BottomNav />
 
-      <div className="mxd-section overflow-hidden! scroll-mt-32" id="contactus">
-        <div className="mxd-container max-w-8xl! mx-auto ">
+      <div
+        className="mxd-section overflow-hidden! scroll-mt-32 bg-[#FAF7F6]!"
+        id="contactus"
+      >
+        <div className="mxd-container max-w-8xl! mx-auto pb-[96px]!">
           <ContactForm />
         </div>
       </div>

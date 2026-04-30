@@ -9,7 +9,7 @@ export default function About() {
   return (
     // mxd-section padding-default
     // mxd-container grid-container
-    <div className="container max-w-7xl mx-auto pt-[48px]! px-[32px]! pb-[96px]!">
+    <div className="container max-w-7xl mx-auto  px-[32px]! pb-[96px]!">
       <div className=" space-y-[20px]!">
         {/* Block - About Description with H2 Title and Paragraph Start */}
         <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">

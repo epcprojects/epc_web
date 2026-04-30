@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useLenis } from "lenis/react";
+import { ArrowIcon } from "@/public/icons";
 
 export default function ScrollTop() {
   const [visible, setVisible] = useState(false);
@@ -44,7 +45,9 @@ export default function ScrollTop() {
         pointerEvents: visible ? "auto" : "none",
       }}
     >
-      <i className="ph ph-arrow-up" />
+      <span className="-rotate-90">
+        <ArrowIcon/>
+      </span>
     </a>
   );
 }

@@ -9,7 +9,7 @@ export default function Facts() {
 
   return (
     <div
-      className={`mxd-section  ${pathname === "/services" ? "pb-24! xl:pb-52!" : " padding-default"}  container max-w-7xl mx-auto px-0!`}
+      className={`mxd-section  ${pathname === "/services" ? " pb-[96px]!" : " padding-default pb-[96px]!"}  container max-w-7xl mx-auto px-0! pt-[64px]!`}
     >
       <div className="mxd-container grid-container px-0! ">
         {/* Block - Statistics Cards Start */}

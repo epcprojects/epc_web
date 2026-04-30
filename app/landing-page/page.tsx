@@ -14,10 +14,23 @@ const Page = () => {
   return (
     <div>
       <Hero />
-      <Partners />
+      <div className="bg-black!">
+        <div className="rounded-t-[50px]! overflow-hidden   bg-[white]!">
+          <Partners />
+        </div>
+      </div>
+
       <ServicesDesignAgency />
-      <About />
-      <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4" />
+      <div className="bg-[#FAF7F6] pt-[96px]!">
+        <About />
+      </div>
+
+      <ParallaxBanner
+        topSpacerValue={0}
+        bottomSpacerValue={0}
+        videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
+      />
+
       <Services />
 
       <Facts />
@@ -25,8 +38,11 @@ const Page = () => {
 
       <BottomNav />
 
-      <div className="mxd-section overflow-hidden! scroll-mt-32" id="contactus">
-        <div className="mxd-container max-w-8xl! mx-auto ">
+      <div
+        className="mxd-section overflow-hidden! scroll-mt-32 "
+        id="contactus"
+      >
+        <div className="mxd-container max-w-8xl! mx-auto pb-[96px]!">
           <ContactForm />
         </div>
       </div>

@@ -286,9 +286,13 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <About />
+      <div className="bg-[#FAF7F6]">
+<About />
+      </div>
+      
       <ParallaxBanner
         bottomSpacerValue={0}
+        topSpacerValue={0}
         videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4"
       />
       <div className="bg-[#FAF7F6] relative flex items-start justify-center flex-col py-[64px]! md:py-[96px]!">
@@ -303,7 +307,7 @@ const Page = () => {
             <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!">
               <PolygonIcon />
               <p className="text-[#4939D2]! text-[18px]! font-medium!">
-                Industry Expertise
+               Location
               </p>
             </div>
             <p className="  text-[48px]! leading-[120%]! font-normal! text-gray-950">
@@ -315,25 +319,25 @@ const Page = () => {
 
           <div className="col-span-2 flex flex-col gap-4! md:gap-8!">
             <OfficeContactCard
-              flagSrc="/img/icons/ukFlag.svg"
-              flagAlt="United Kingdom flag"
-              title="London Office"
-              address="71-75 Shelton Street, Covent Garden London WC2H 9JQ United Kingdom"
+              flagSrc="/img/icons/pakistanFlag.svg"
+              flagAlt="Pakistan Flag"
+              title="Pakistan"
+              address="H8, S6, Block F, New City Phase 2 Islamabad 47040 Pakistan"
               email="info@endpointclients.com"
               phone="+44 7598 981921"
             />
             <OfficeContactCard
-              flagSrc="/img/icons/ukFlag.svg"
-              flagAlt="United Kingdom flag"
-              title="London Office"
-              address="71-75 Shelton Street, Covent Garden London WC2H 9JQ United Kingdom"
+              flagSrc="/img/icons/bahrainFlag.svg"
+              flagAlt="Bahrain Flag"
+              title="Bahrain"
+              address="Flat No. 11, Building 1694, Road 968, Block 909, East Riffa, Southern Governorate, Bahrain"
               email="info@endpointclients.com"
-              phone="+44 7598 981921"
+              phone="+97335579427"
             />
             <OfficeContactCard
               flagSrc="/img/icons/ukFlag.svg"
               flagAlt="United Kingdom flag"
-              title="London Office"
+              title="United Kingdom"
               address="71-75 Shelton Street, Covent Garden London WC2H 9JQ United Kingdom"
               email="info@endpointclients.com"
               phone="+44 7598 981921"
@@ -341,7 +345,10 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Facts />
+      <div className="pt-[32px]!">
+  <Facts />
+      </div>
+    
       {/* <ParallaxBanner /> */}
       {/* <>
         <div className="mxd-section loading-wrap relative flex flex-col justify-center items-center h-fit! mxd-hero-section min-h-dvh mxd-hero-fullheight">

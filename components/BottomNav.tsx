@@ -171,9 +171,10 @@ export default function BottomNav() {
         {/* Center CTA */}
         <button
           onClick={() => handleClick("/landing-page")}
-          className="h-[60px] flex items-center gap-3 relative rounded-2xl cursor-pointer text-center py-4 text-3xl! px-[32px]! overflow-hidden bg-[#4539D2] hover:bg-[#2c1dd1] text-white text-lg"
+          className="h-[60px] group  relative rounded-2xl cursor-pointer text-center py-4 text-3xl! px-[32px]! overflow-hidden bg-[#4539D2]  text-white text-lg"
         >
-          <svg
+         <span className="flex items-center gap-3 ">
+           <svg
             width="19"
             height="28"
             viewBox="0 0 19 28"
@@ -186,13 +187,16 @@ export default function BottomNav() {
             />
           </svg>
           Start A Project
-          <Image
+         </span>
+          
+          {/* <Image
             alt=""
             className="absolute -end-2 -top-2"
             src="/img/illustrations/byte-loop-background.svg"
             width={146}
             height={146}
-          />
+          /> */}
+<div className="absolute -left-80 -top-30 w-[65px] h-[200px] rounded-full bg-white  blur-[70px] rotate-30 group-hover:animate-[buttonShine_1.2s_linear_infinite]" />
         </button>
 
         {/* Right Items */}

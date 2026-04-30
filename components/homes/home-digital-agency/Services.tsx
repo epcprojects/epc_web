@@ -26,11 +26,11 @@ export default function ServicesDesignAgency() {
           </div>
 
           <div className="content__block">
-            <div className="stack-wrapper mxd-hero-02-stack h-[100%]! mt-[48px]!">
+            <div className="stack-wrapper mxd-hero-02-stack h-[100%]! mt-[48px]! space-y-[48px]!">
               {projects9.map((stack) => (
                 <div
                   key={stack.id}
-                  className={`${stack.wrapperClass} px-[48px]! pt-[48px]! pb-[32px]!  mb-[48px]!`}
+                  className={`${stack.wrapperClass} px-[48px]! pt-[48px]! pb-[32px]!  `}
                 >
                   <div className="mxd-services-stack__container">
                     <div className="mxd-services-stack__title showcase-title mb-[8px]!">

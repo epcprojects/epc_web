@@ -96,7 +96,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#FAF7F6]! pt-12!">
+      <div className="bg-[#FAF7F6]! pt-[32px]!">
         <Facts />
       </div>
       <div className="bg-black py-[96px]! bg-[url(/img/illustrations/industry.png)] h-full bg-no-repeat bg-top w-full">
@@ -203,9 +203,12 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4" />
-      <Testimonials />
-      <div className="container mx-auto max-w-7xl py-[64px]! md:py-[96px]!">
+      <ParallaxBanner  videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4" />
+      <div className="bg-[#FAF7F6] pt-[96px]!">
+<Testimonials />
+      </div>
+      <div className="bg-[#FAF7F6]">
+ <div className="container mx-auto max-w-7xl py-[64px]! md:py-[96px]! ">
         <div className="w-full! relative  flex items-center justify-between bg-linear-to-b from-[#0568BF] to-[#070928]   rounded-[50px]! py-[72px]! px-[60px]!">
           <div className="space-y-[28px]!">
             <p className="  text-[48px]! leading-[120%]! font-semibold! text-white">
@@ -232,6 +235,8 @@ const Page = () => {
           />
         </div>
       </div>
+      </div>
+     
       <BottomNav />
       <Footer2 />
     </div>

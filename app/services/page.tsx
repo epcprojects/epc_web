@@ -9,13 +9,14 @@ import BottomNav from "@/components/BottomNav";
 import PrimaryButton from "@/components/Buttons/PrimaryButton";
 import ServiceCard from "@/components/ServiceCard";
 import { PolygonIcon } from "@/public/icons";
+import { servicescards } from "@/data/services/servicescards";
 const Page = () => {
   return (
     <div>
       <Hero />
       <div className="bg-black">
         <div className="rounded-t-[50px]   bg-[white]">
-          <div className="py-[64px]! md:py-[96px]! container mx-auto max-w-7xl space-y-[40px]!">
+          <div className="pt-[64px]! pb-[64px]! md:pb-[96px]! md:pt-[64px]! container mx-auto max-w-7xl space-y-[40px]!">
             <div className="flex flex-col items-start gap-[20px]! px-4">
               <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!">
                 <PolygonIcon />
@@ -33,50 +34,38 @@ const Page = () => {
             </div>
 
             <div className="space-y-[96px]!">
-              <ServiceCard
-                title="UI/UX & Product Design."
-                description="We design intuitive, user-centered digital experiences that keep people engaged. From research and wireframes to high-fidelity prototypes, every interaction is crafted with purpose to solve real user problems and drive business results."
-                image="/img/illustrations/uiux_bg.jpg"
-                imageAlt="UI UX product design"
-                features={[
-                  { label: "Research-Driven Decisions" },
-                  { label: "Scalable Systems" },
-                  { label: "Strategic UX Thinking" },
-                  { label: "Data-Informed Design" },
-                  { label: "UI/UX Design" },
-                  { label: "Usability Design" },
-                ]}
-                avatars={[
-                  {
-                    src: "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-                    alt: "Client 1",
-                  },
-                  {
-                    src: "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-                    alt: "Client 2",
-                  },
-                  {
-                    src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80",
-                    alt: "Client 3",
-                  },
-                  {
-                    src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-                    alt: "Client 4",
-                  },
-                ]}
-                buttonIcon="/img/illustrations/actBtn.png"
-                onClick={() => console.log("Clicked")}
-              />
+              {servicescards.map((service) => (
+                <ServiceCard
+                  key={service.title}
+                  title={service.title}
+                  description={service.description}
+                  image={service.image}
+                  imageAlt={service.imageAlt}
+                  features={service.features}
+                  avatars={service.avatars}
+                  buttonIcon={service.buttonIcon}
+                  onClick={service.onClick}
+                />
+              ))}
             </div>
           </div>
-          <About />
         </div>
       </div>
+      <div className="bg-[#FAF7F6]">
+        <About />
+      </div>
 
-      <ParallaxBanner videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4" />
+      <ParallaxBanner
+        bottomSpacerValue={0}
+        topSpacerValue={0}
+        videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
+      />
       <Facts />
-      <Testimonials />
-      <div className="container mx-auto max-w-7xl py-[64px]! md:py-[96px]!">
+      <div className="bg-[#FAF7F6] pt-[96px]!">
+ <Testimonials />
+      </div>
+     <div className="bg-[#FAF7F6]">
+<div className="container mx-auto max-w-7xl py-[64px]! md:py-[96px]!">
         <div className="w-full! relative  flex items-center justify-between bg-linear-to-b from-[#0568BF] to-[#070928]   rounded-[50px]! py-[72px]! px-[60px]!">
           <div className="space-y-[28px]!">
             <p className="  text-[48px]! leading-[120%]! font-semibold! text-white">
@@ -103,6 +92,8 @@ const Page = () => {
           />
         </div>
       </div>
+     </div>
+      
       <BottomNav />
       <Footer2 />
     </div>

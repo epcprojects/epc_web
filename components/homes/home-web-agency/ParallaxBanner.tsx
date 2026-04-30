@@ -34,12 +34,14 @@ type ParallaxBannerProps = {
   videoUrl: string;
   className?: string;
   bottomSpacerValue?: number;
+  topSpacerValue?: number;
 };
 
 export default function ParallaxBanner({
   videoUrl,
   className = "",
   bottomSpacerValue = 250,
+  topSpacerValue = 120,
 }: ParallaxBannerProps) {
   const sectionRef = useRef<HTMLElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -91,7 +93,7 @@ export default function ParallaxBanner({
       tl.to(
         topSpacer,
         {
-          height: 120,
+          height: `${topSpacerValue}`,
           ease: "none",
         },
         0,

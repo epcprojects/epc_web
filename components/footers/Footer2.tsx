@@ -293,7 +293,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
     //   </div>
     //   {/* Footer Block - Info Columns End */}
     // </footer>
-    <footer className="relative pt-[64px]! pb-[120px]! mt-24!">
+    <footer className="relative pt-[64px]! pb-[120px]! ">
       <Image
         alt="logo epc"
         src={"/img/footer/footer-gradient.png"}
@@ -526,7 +526,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               </Link>
 
               <Link
-                href="https://www.trustpilot.com/review/endpointclients.com"
+                href="https://www.designrush.com/"
                 target="_blank"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >

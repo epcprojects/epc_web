@@ -7,6 +7,7 @@ import testimonialsData from "@/data/testimonials.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Parallax } from "swiper/modules";
 import AnimatedButton from "@/components/animation/AnimatedButton";
+import { ArrowLeftIcon } from "@/public/icons";
 
 export default function Testimonials() {
   return (
@@ -146,13 +147,17 @@ export default function Testimonials() {
 
                     {/* navigation buttons */}
                     <div className="swiper-button-prev mxd-slider-btn mxd-slider-btn-round-prev animate-card-2">
-                      <button className="btn btn-round btn-round-small btn-outline slide-left anim-no-delay">
-                        <i className="ph ph-arrow-left" />
+                      <button className=" w-[48px]! cursor-pointer h-[48px]! flex! items-center! justify-center! border!  border-gray-950! rounded-full">
+                       <span>
+                         <ArrowLeftIcon/>
+                       </span>
                       </button>
                     </div>
                     <div className="swiper-button-next mxd-slider-btn mxd-slider-btn-round-next animate-card-2">
-                      <button className="btn btn-round btn-round-small btn-outline slide-right anim-no-delay">
-                        <i className="ph ph-arrow-right" />
+                      <button className=" w-[48px]! cursor-pointer h-[48px]! flex! items-center! justify-center! border!  border-gray-950! rounded-full">
+                       <span className="rotate-180">
+                         <ArrowLeftIcon/>
+                       </span>
                       </button>
                     </div>
                   </Swiper>

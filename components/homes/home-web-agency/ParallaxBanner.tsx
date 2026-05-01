@@ -128,7 +128,7 @@ export default function ParallaxBanner({
     }, section);
 
     return () => ctx.revert();
-  },[topSpacerValue, bottomSpacerValue]);
+  }, [topSpacerValue, bottomSpacerValue]);
 
   return (
     <section ref={sectionRef} className={` overflow-visible ${className}`}>
@@ -140,7 +140,7 @@ export default function ParallaxBanner({
       >
         <div ref={dividerRef} className=" overflow-hidden rounded-[32px]">
           <video
-            src="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
+            src={videoUrl}
             autoPlay
             muted
             loop

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Footer2 from "@/components/footers/Footer2";
 import About from "@/components/homes/home-software-development-company/About";
 import Hero from "@/components/homes/home-1/Hero";
@@ -31,8 +31,8 @@ const HomePageClient = () => {
       </div>
       <div className="bg-[#FAF7F6]! ">
         <ParallaxBanner
-          bottomSpacerValue={isMobile?30:250}
-          topSpacerValue={isMobile?0:150}
+          bottomSpacerValue={isMobile ? 30 : 250}
+          topSpacerValue={isMobile ? 0 : 150}
           videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
         />
       </div>
@@ -53,7 +53,7 @@ const HomePageClient = () => {
         className="mxd-section overflow-hidden!  scroll-mt-32 bg-[#FAF7F6]!"
         id="contactus"
       >
-        <div className="container max-w-7xl mx-auto pl-0! pb-[24px]! lg:pb-[96px]!  ">
+        <div className="container max-w-7xl mx-auto pb-[24px]! lg:pb-[96px]!  ">
           <ContactForm />
         </div>
       </div>

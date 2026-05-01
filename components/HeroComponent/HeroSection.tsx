@@ -165,14 +165,14 @@ export default function HeroSection({
                             {text}
                           </p>
 
-                          <div className="absolute top-6 -right-6 md:top-10 md:-right-20!">
+                          <div className="absolute top-6 -right-6 md:top-10 md:-right-18!">
                             <svg
                               width="32"
                               height="32"
                               viewBox="0 0 128 128"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="scale-150"
+                              className="scale-150 md:scale-100"
                             >
                               <path
                                 d="M64 32.0007C38.0951 35.3677 35.3662 38.0966 31.9993 64.0015C28.6338 38.0951 25.9049 35.3662 0 32.0007C25.9049 28.6338 28.6338 25.9049 32.0007 0C35.3677 25.9049 38.0966 28.6338 64.0015 32.0007H64Z"
@@ -195,11 +195,11 @@ export default function HeroSection({
                       </span>
                     </em>
 
-                    {/* {firstLineSuffix && (
+                    {firstLineSuffix && !isMobile && (
                       <em className="hero-01-title__item title-item-transparent   font-playfair!">
                         {firstLineSuffix}
                       </em>
-                    )} */}
+                    )}
                   </span>
 
                   <span className="hero-01-title__row loading__item md:mt-0! mt-3! ">

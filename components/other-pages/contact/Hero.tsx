@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 import HeroSection from "@/components/HeroComponent/HeroSection";
@@ -13,22 +12,20 @@ export default function Hero() {
           className="object-cover object-center min-h-[dvh] -z-10"
           priority
         />
-        
 
         <HeroSection
-        subtitle=""
-          innerPagesText = {
-            <span className="text-[72px]! text-white text-center! leading-[86px]! font-semibold">
-            Got an  <span className="font-playfair text-white">Idea?</span><br/> Let&apos;s Make It Real.
+          subtitle=""
+          innerPagesText={
+            <span className="text-[42px]! md:text-[72px]! text-white text-center! leading-[44px]!  md:leading-[86px]! font-semibold">
+              Got an <span className="font-playfair text-white">Idea?</span>
+              <br /> Let&apos;s Make It Real.
             </span>
           }
-          showSocialLinks={false}  
+          showSocialLinks={false}
           showTestimonial={false}
           showButtons={false}
           simpleDescription="Tell us what you're building. Our team will get back within 24 hours to schedule a call, understand your goals, and shape the right approach."
         />
-
-       
       </div>
     </>
   );

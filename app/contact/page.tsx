@@ -13,7 +13,10 @@ import About from "@/components/homes/home-software-development-company/About";
 import { PolygonIcon } from "@/public/icons";
 import OfficeContactCard from "@/components/OfficeContactCard.tsx";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { useIsMobile } from "@/hooks/useIsMobile";
 const Page = () => {
+  const isMobile = useIsMobile();
+
   const handleSubmit = async (
     values: typeof initialValues,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -52,12 +55,12 @@ const Page = () => {
       {/* <MobileMenu /> */}
       <Hero />
 
-      <div className="bg-[#160A2B]">
-        <div className="rounded-t-[50px] overflow-hidden  bg-[white]">
-          <div className="bg-[#FAF7F6]">
-            <div className="container mx-auto max-w-7xl py-[64px]! md:py-[96px]!">
-              <div className="grid grid-cols-2 gap-[24px]!">
-                <div className="w-full relative h-full min-h-120 p-[40px]! rounded-4xl overflow-hidden">
+      <div className="lg:bg-[#160A2B] ">
+        <div className="lg:rounded-t-[50px]! rounded-t-[32px]!  lg:mt-0! -mt-10! overflow-hidden  bg-[white]">
+          <div className="bg-[#FAF7F6] ">
+            <div className="container mx-auto max-w-7xl py-4! md:py-[64px]! md:py-[96px]!">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-[24px]!">
+                <div className="w-full relative h-full min-h-120 p-[40px]! rounded-[32px]! md:rounded-4xl overflow-hidden">
                   <video
                     autoPlay
                     loop
@@ -72,12 +75,12 @@ const Page = () => {
                     Your browser does not support the video tag.
                   </video>
 
-                  <div className="relative flex flex-col justify-between h-full">
-                    <div className="space-y-[24px]!">
-                      <h2 className="text-white font-semibold! text-[60px]!">
+                  <div className="relative flex flex-col min-h-140! justify-between h-full">
+                    <div className="space-y-[14px]! md:space-y-[24px]!">
+                      <h2 className="text-white font-semibold! text-[36px]! md:text-[60px]!">
                         Share Your Vision With US
                       </h2>
-                      <p className="text-white! text-[20px]!">
+                      <p className="text-white! text-[16px] md:text-[20px]!">
                         Tell us about your idea. We’ll start with a call to
                         understand your goals and define the right approach,
                         then turn it into a clear, well-designed product.
@@ -104,7 +107,7 @@ const Page = () => {
                 </div>
 
                 <div>
-                  <div className=" bg-white shadow-2xl w-full rounded-4xl px-6! py-10! md:px-16! md:py-14!">
+                  <div className=" bg-white shadow-2xl w-full lg:rounded-[50px]! rounded-[32px]! px-6! py-10! md:px-16! md:py-14!">
                     <Formik
                       initialValues={initialValues}
                       validationSchema={contactSchema}
@@ -309,31 +312,31 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#FAF7F6]">
+      <div className="bg-[#FAF7F6] md:pt-0! pt-16!">
         <About />
       </div>
 
       <ParallaxBanner
-        bottomSpacerValue={0}
-        // topSpacerValue={0}
+        bottomSpacerValue={isMobile ? 0 : 250}
+        topSpacerValue={isMobile ? 0 : 250}
         videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1775646599/d_dcnt5q.mp4"
       />
-      <div className="bg-[#FAF7F6] relative flex items-start justify-center flex-col py-[64px]! md:py-[96px]!">
+      <div className="bg-[#FAF7F6] relative flex items-start justify-center flex-col py-[32px]! md:py-[96px]!">
         <img
           src="/img/services/services-cube.png"
-          className="w-auto! -left-1/12 absolute"
+          className="w-auto! md:inline-block! hidden!  -left-1/12 absolute"
           alt=""
         />
 
-        <div className="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-10!">
-          <div className="flex flex-col items-start gap-[20px]! pb-[48px]!">
+        <div className="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-2! md:gap-10!">
+          <div className="flex flex-col items-start gap-[20px]! pb-8! md:pb-[48px]!">
             <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!">
               <PolygonIcon />
               <p className="text-[#4939D2]! text-[18px]! font-medium!">
                 Location
               </p>
             </div>
-            <p className="  text-[48px]! leading-[120%]! font-normal! text-gray-950">
+            <p className=" text-[32px]! md:text-[48px]! leading-[120%]! font-normal! text-gray-950">
               One Office
               <br />
               <span className=" font-playfair ! ">Global Reach</span>

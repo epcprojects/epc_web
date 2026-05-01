@@ -124,7 +124,7 @@ export default function HeroSection({
   const isMobile = useIsMobile();
   return (
     <div className="mxd-hero-01  z-[100]">
-      <div className="mxd-hero-01__wrap px-[16px]! loading-wrap">
+      <div className="mxd-hero-01__wrap px-[16px]! pb-[100px]! lg:pb-0! loading-wrap">
         <div className="md:mxd-hero-01__top  items-center! flex flex-col container max-w-7xl mx-auto gap-[28px] md:gap-[64px]">
           <div className="items-center flex flex-col gap-3 md:gap-[16px]">
             <Image

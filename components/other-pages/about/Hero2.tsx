@@ -23,7 +23,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="mxd-section pb-31!  relative! flex flex-col justify-center items-center  mxd-hero-section min-h-dvh">
+      <div className="mxd-section pb-31!  relative! flex flex-col justify-center items-center  mxd-hero-section lg:min-h-dvh">
         <Image
           src="/img/about-hero.svg"
           alt="hero bg"

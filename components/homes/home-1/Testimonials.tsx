@@ -116,7 +116,7 @@ export default function Testimonials() {
                   >
                     {testimonialsData.map((item, idx) => (
                       <SwiperSlide className="swiper-slide " key={idx}>
-                        <div className="mxd-testimonials-card bg-base-tint lg:gap-[74px]! gap-[16px]! radius-m lg:px-[30px]! px-[16px]! ">
+                        <div className="mxd-testimonials-card bg-base-tint lg:gap-[74px]! gap-[16px]!   radius-m lg:px-[30px]! px-[16px]! ">
                           <div className="mxd-testimonials-card__content lg:gap-[78px]! gap-[16px]!">
                             <div className="mxd-testimonials-card__media anim-uni-in-up">
                               <div className="mxd-testimonials-card__photo">
@@ -146,14 +146,14 @@ export default function Testimonials() {
                     ))}
 
                     {/* navigation buttons */}
-                    <div className="swiper-button-prev mxd-slider-btn mxd-slider-btn-round-prev animate-card-2 ">
+                    <div className="swiper-button-prev mxd-slider-btn mxd-slider-btn-round-prev animate-card-2 lg:block! hidden!">
                       <button className=" w-[48px]! cursor-pointer h-[48px]! flex! items-center! justify-center! border!  border-gray-950! rounded-full">
                         <span>
                           <ArrowLeftIcon />
                         </span>
                       </button>
                     </div>
-                    <div className="swiper-button-next mxd-slider-btn mxd-slider-btn-round-next animate-card-2">
+                    <div className="swiper-button-next mxd-slider-btn mxd-slider-btn-round-next animate-card-2 lg:block! hidden!">
                       <button className=" w-[48px]! cursor-pointer h-[48px]! flex! items-center! justify-center! border!  border-gray-950! rounded-full">
                         <span className="rotate-180">
                           <ArrowLeftIcon />

@@ -17,8 +17,8 @@ const HomePageClient = () => {
   return (
     <div>
       <Hero />
-      <div className="bg-black! h-full! border-0! ">
-        <div className="lg:rounded-t-[50px]! rounded-t-[32px]! overflow-hidden !   bg-[#FAF7F6]!">
+      <div className="lg:bg-black! h-full! ">
+        <div className="lg:rounded-t-[50px]! rounded-t-[32px]! lg:mt-0! -mt-10! overflow-hidden!     bg-[#FAF7F6]!">
           <Partners />
         </div>
       </div>
@@ -32,7 +32,7 @@ const HomePageClient = () => {
       <div className="bg-[#FAF7F6]! ">
         <ParallaxBanner
           bottomSpacerValue={isMobile?30:250}
-          topSpacerValue={isMobile?0:120}
+          topSpacerValue={isMobile?0:150}
           videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
         />
       </div>
@@ -53,7 +53,7 @@ const HomePageClient = () => {
         className="mxd-section overflow-hidden!  scroll-mt-32 bg-[#FAF7F6]!"
         id="contactus"
       >
-        <div className="container max-w-7xl mx-auto pb-[24px]! lg:pb-[96px]!  ">
+        <div className="container max-w-7xl mx-auto pl-0! pb-[24px]! lg:pb-[96px]!  ">
           <ContactForm />
         </div>
       </div>

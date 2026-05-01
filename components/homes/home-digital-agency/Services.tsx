@@ -30,7 +30,7 @@ export default function ServicesDesignAgency() {
               {projects9.map((stack) => (
                 <div
                   key={stack.id}
-                  className={`${stack.wrapperClass} lg:px-[48px]! px-[16px]! lg:pt-[48px]! pt-[16px]! lg:pb-[32px]!  pb-[16px]! `}
+                  className={`${stack.wrapperClass} lg:px-[48px]! rounded-[20px]! lg:rounded-[38px]! px-[16px]! lg:pt-[48px]! pt-[16px]! lg:pb-[32px]!  pb-[16px]! `}
                 >
                   <div className="mxd-services-stack__container">
                     <div className="mxd-services-stack__title showcase-title  mb-[8px]!">

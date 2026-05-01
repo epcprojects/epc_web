@@ -133,7 +133,7 @@ export default function EPCServices() {
                           src={item.img}
                           width={800}
                           height={800}
-                          className=" h-full! lg:h-auto! w-full! lg:w-auto!"
+                          className=" h-full! lg:h-auto! w-full! lg:w-auto! lg:rounded-[38px]! rounded-[20px]!"
                         />
                       </div>
 

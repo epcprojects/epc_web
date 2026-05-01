@@ -447,6 +447,12 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               >
                 About Us
               </Link>
+               <Link
+                href="/contact"
+                className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
 

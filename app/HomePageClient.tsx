@@ -17,7 +17,7 @@ const HomePageClient = () => {
   return (
     <div>
       <Hero />
-      <div className="lg:bg-black! h-full! ">
+      <div className="lg:bg-[#160A2B]! h-full! ">
         <div className="lg:rounded-t-[50px]! rounded-t-[32px]! lg:mt-0! -mt-10! overflow-hidden!     bg-[#FAF7F6]!">
           <Partners />
         </div>
@@ -53,7 +53,7 @@ const HomePageClient = () => {
         className="mxd-section overflow-hidden!  scroll-mt-32 bg-[#FAF7F6]!"
         id="contactus"
       >
-        <div className="container max-w-7xl mx-auto pb-[24px]! lg:pb-[96px]!  ">
+        <div className="container max-w-7xl mx-auto pb-[24px]! lg:pb-[96px]! px-0!  ">
           <ContactForm />
         </div>
       </div>

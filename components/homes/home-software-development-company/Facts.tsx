@@ -23,7 +23,7 @@ export default function Facts() {
                     className="col-span-5 md:col-span-1  mxd-grid-item pl-0! md:pl-[15px]! pr-0! md:pr-[15px]! pb-0! md:pb-[15px]! mt-0! md:mt-[30px]!"
                   >
                     <div
-                      className={`mxd-stats-simple__inner animate-card-4 flex! md::pb-0! pb-[8px]! border-gray-200! md:border-b-0! border-b!  flex-col! gap-[24px]! md:gap-[32px]! md:p-[24px]! items-center! justify-start! ${
+                      className={`mxd-stats-simple__inner animate-card-4 flex! py-[20px]!  border-gray-200! md:border-b-0! border-b!  flex-col! gap-[24px]! md:gap-[32px]! md:py-[24px]! md:px-[24px]! items-center! justify-start! ${
                         index === 0 ? "before:hidden! border-l-0! " : ""
                       }`}
                     >

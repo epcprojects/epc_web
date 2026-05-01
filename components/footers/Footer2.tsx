@@ -568,9 +568,9 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 <div className="shrink-0">
                   <CallIcon />
                 </div>
-                <p className="text-[16px]! font-normal! text-gray-200!">
+                <Link href={"tel:+923335586757"} className="text-[16px]! font-normal! text-gray-200!">
                   +92 333 5586757
-                </p>
+                </Link>
               </div>
             </div>
           </div>
@@ -595,9 +595,9 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 <div className="shrink-0">
                   <CallIcon />
                 </div>
-                <p className="text-[16px]! font-normal! text-gray-200!">
+                <Link href={"tel:+97335579427"} className="text-[16px]! font-normal! text-gray-200!">
                   +973 3557 9427
-                </p>
+                </Link>
               </div>
             </div>
           </div>
@@ -624,9 +624,9 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 <div className="shrink-0">
                   <CallIcon />
                 </div>
-                <p className="text-[16px]! font-normal! text-gray-200!">
+                <Link href={"tel:+447598981921"} className="text-[16px]! font-normal! text-gray-200!">
                   +44 7598 981921
-                </p>
+                </Link>
               </div>
             </div>
           </div>

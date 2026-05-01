@@ -8,9 +8,9 @@ import { useIsTablet } from "@/hooks/useIsTablet";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about-us" },
+  { label: "About", href: "/about-us" },
   { label: "Services", href: "/services" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function BottomNav() {

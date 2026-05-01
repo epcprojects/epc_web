@@ -19,7 +19,7 @@ export default function ProcessStepCard({
 }: ProcessStepCardProps) {
   return (
     <div
-      className={`flex w-full flex-col items-center justify-center gap-6 rounded-4xl! bg-white px-[24px]! py-[32px]! md:flex-row md:gap-8 md:px-[40px] md:py-[36px] ${className}`}
+      className={`flex w-full flex-col items-center justify-center gap-6 rounded-4xl! bg-white px-[16px]! lg:px-[24px]! py-[16px]! lg:py-[32px]! md:flex-row md:gap-8 md:px-[40px] md:py-[36px] ${className}`}
     >
       <div className="space-y-[16px]!">
         <span className="inline-block text-[18px]! font-medium text-gray-950!">
@@ -27,7 +27,7 @@ export default function ProcessStepCard({
         </span>
 
         <div className="flex flex-col gap-3">
-          <h2 className="text-[32px]! font-semibold leading-tight text-gray-950! md:text-[40px]!">
+          <h2 className="text-[24px]! lg:text-[32px]! font-semibold leading-tight text-gray-950! md:text-[40px]!">
             {title}
           </h2>
 
@@ -41,7 +41,7 @@ export default function ProcessStepCard({
         <img
           src={image}
           alt={imageAlt}
-          className="h-40 w-40 shrink-0 object-contain md:h-52 md:w-52"
+          className="h-[160px]! w-[160px]! shrink-0 object-contain md:h-52 md:w-52"
         />
       </div>
     </div>

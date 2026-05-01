@@ -144,7 +144,7 @@ export default function ContactForm() {
                     />
                   </div>
 
-                  <div className="grid grid-cols-1 gap-x-10 gap-y-8 md:grid-cols-2">
+                  <div className="grid grid-cols-1 gap-x-10 gap-y-8 lg:grid-cols-2">
                     <div>
                       <label
                         htmlFor="companyName"

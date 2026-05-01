@@ -13,11 +13,11 @@ export default function Partners() {
   const bottom = partnersData.bottom;
 
   return (
-    <div className="  pt-[64px]! pb-[96px]! ">
+    <div className="  lg:pt-[64px]! pt-[40px]! pb-[40px]!  lg:pb-[96px]!  ">
       <div className=" relative ">
         {/* Block - Marquee Partners Two Lines Start */}
         <div className="container max-w-7xl mx-auto">
-          <h2 className="!text-[24px]  !font-bold text-gray-950 text-center !mb-6">
+          <h2 className="lg:text-[24px]! text-[20px]!   !font-bold text-gray-950 text-center !mb-6 ">
             Chosen by 350+ Premium Brands Worldwide
           </h2>
           {/* <div className="bg-linear-to-r from-[#FCF7F650] to-[#FCF7F6] absolute end-0 z-50 h-full -bottom-9 w-1/3"></div>
@@ -25,12 +25,12 @@ export default function Partners() {
           {/* top line */}
           <VelocityMarquee
             direction="left"
-            className="marquee marquee--gsap h-[91px]!"
+            className="marquee marquee--gsaph h-[91px]! "
           >
             {top.map((p, idx) => (
               <a
                 key={idx}
-                className="marquee__item mr-0! h-[68px]! opacity-60 item-partners"
+                className="marquee__item mr-0! h-[68px]! opacity-60 item-partners "
                 href={p.href || "#0"}
               >
                 <Image

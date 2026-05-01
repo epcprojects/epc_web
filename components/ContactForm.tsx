@@ -67,7 +67,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className=" h-full py-8 md:px-18! md:py-36! relative flex! items-center w-full rounded-[56px]! overflow-hidden bg-neutral-900">
+    <section className=" h-full py-8 px-[16px]! md:px-18! md:py-36! relative flex! items-center w-full rounded-[56px]! overflow-hidden bg-neutral-900">
       <video
         autoPlay
         loop
@@ -81,14 +81,14 @@ export default function ContactForm() {
         />
         Your browser does not support the video tag.
       </video>
-      <div className="container mx-auto max-w-8xl px-4 md:px-8 gap-10! grid grid-cols-1 md:grid-cols-2 relative">
+      <div className="container mx-auto lg:max-w-8xl py-[16px]! lg:py-0!   md:px-8 gap-10! grid grid-cols-1 md:grid-cols-2 relative">
         <div className="flex flex-col justify-between h-full">
           <div className="flex flex-col gap-4">
-            <h2 className=" text-white text-[50px]! font-semibold!">
+            <h2 className=" text-white text-[36px]! lg:text-[50px]! font-semibold!">
               Let’s <span className="font-playfair">Design Products</span>{" "}
               <br /> user remembers.
             </h2>
-            <p className="text-xl! leading-normal text-white md:text-3xl!">
+            <p className="text-[20px]! leading-normal text-white md:text-[30px]!">
               Tell us about your idea. We’ll start with a call to understand
               your goals and define the right approach, then turn it into a
               clear, well-designed product.
@@ -306,7 +306,7 @@ export default function ContactForm() {
               )}
             </Formik>
           </div>
-          <div className="w-full text-white mt-3 max-w-[580px] min-w-[580px]">
+          <div className="w-full text-white mt-3 max-w-[580px] lg:min-w-[580px]">
             Not Interested to submit the form?{" "}
             <a
               target="_blank"

@@ -76,7 +76,7 @@ export default function AnimatedButton<As extends ElementType = "div">(
     setIsMounted(true);
   }, []);
 
-  const baseClassName = `btn-anim group ${variantClass} ${className}`;
+  const baseClassName = `btn-anim min-w-0! group ${variantClass} ${className}`;
 
   const tagProps = {
     className: baseClassName,
@@ -106,7 +106,7 @@ export default function AnimatedButton<As extends ElementType = "div">(
           </div>
         </span>
 
-        {position === "next" ? children : null}
+        {/* {position === "next" ? children : null} */}
       </Tag>
     );
   }
@@ -122,7 +122,7 @@ export default function AnimatedButton<As extends ElementType = "div">(
         </div>
       </span>
 
-      {position === "next" ? children : null}
+      {/* {position === "next" ? children : null} */}
     </Tag>
   );
 }

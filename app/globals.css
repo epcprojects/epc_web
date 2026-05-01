@@ -41,18 +41,32 @@ body {
   font-family: var(--playfair) !important;
 }
 
-/* 
-html,
+
+/* html,
 body {
   overflow-x: visible;
   overflow-y: visible;
   -ms-overflow-style: auto;
-} */
-
-/* Chrome, Safari, Edge: sirf horizontal scrollbar hide */
-/* html::-webkit-scrollbar:horizontal,
+}
+html::-webkit-scrollbar:horizontal,
 body::-webkit-scrollbar:horizontal {
   height: 0;
+}
+html::-webkit-scrollbar:vertical,
+body::-webkit-scrollbar:vertical {
+  width: 10px;
+} */
+
+
+
+
+
+/* html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: auto;
 } */
 
 /* Vertical scrollbar visible */
@@ -60,26 +74,13 @@ body::-webkit-scrollbar:horizontal {
 body::-webkit-scrollbar:vertical {
   width: 10px;
 } */
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -ms-overflow-style: auto;
-}
-
-/* Vertical scrollbar visible */
-html::-webkit-scrollbar:vertical,
-body::-webkit-scrollbar:vertical {
-  width: 10px;
-}
 
 /* Horizontal scrollbar hide */
-html::-webkit-scrollbar:horizontal,
+/* html::-webkit-scrollbar:horizontal,
 body::-webkit-scrollbar:horizontal {
   height: 0;
   display: none;
-}
+} */
 
 html,
 body,

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { useIsTablet } from "@/hooks/useIsTablet";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -64,18 +65,19 @@ export default function BottomNav() {
     router.push(href, { scroll: false });
   };
   const isMobile = useIsMobile();
+  const isTablet = useIsTablet();
   
   return (
     // <div className="fixed md:py-8! bottom-0  left-1/2 w-full flex items-center justify-center   -translate-x-1/2 z-[1000]">
     <div
-      className={`fixed bottom-0 left-1/2 z-[1000] flex w-full -translate-x-1/2 items-center justify-center transition-all duration-500 md:py-8! ${
-        showBottomNav || isMobile
+      className={`fixed bottom-0 left-1/2 z-[1000] flex w-full -translate-x-1/2 items-center justify-center transition-all duration-500 xl:py-8! ${
+        showBottomNav || isMobile || isTablet
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-full opacity-0"
       }`}
     >
       {" "}
-      <div className="md:hidden grid grid-cols-5  bg-black gap-0 rounded-t-2xl w-full">
+      <div className="lg:hidden grid grid-cols-5  bg-black gap-0 rounded-t-2xl w-full">
         <button
           onClick={() => handleClick("/")}
           className=" w-full flex text-xl! py-3 text-white p-2 items-center flex-col gap-2"
@@ -118,7 +120,8 @@ export default function BottomNav() {
           >
             <img
               src={"/img/illustrations/projectIcon.svg"}
-              className="w-full h-full rounded-2xl"
+              className="w-full h-[73px]! rounded-2xl"
+
             />
           </button>
         </div>
@@ -157,7 +160,7 @@ export default function BottomNav() {
           Contact
         </button>
       </div>
-      <div className="bg-white md:flex hidden border w-fit border-[#E5E7EB] drop-shadow-2xl p-3 items-center gap-2.5 rounded-3xl">
+      <div className="bg-white lg:flex hidden border w-fit border-[#E5E7EB] drop-shadow-2xl p-3 items-center gap-2.5 rounded-3xl">
         {/* Left Items */}
         {navItems.slice(0, 2).map((item, index) => (
           <button

@@ -11,7 +11,7 @@ import { ArrowLeftIcon } from "@/public/icons";
 
 export default function Testimonials() {
   return (
-    <div className="mxd-section padding-grid-pre-mtext">
+    <div className="mxd-section padding-grid-pre-mtext lg:pb-[113px]! pb-[24px]!">
       <div className="mxd-container no-padding-container">
         {/* Block - Testimonials Slider #01 with Section Title Start */}
         <div className="mxd-block">
@@ -19,15 +19,15 @@ export default function Testimonials() {
             <div className="row gx-0">
               <div className="col-12 col-xl-5">
                 {/* Additional Container Start */}
-                <div className="mxd-container grid-container">
+                <div className="mxd-container grid-container px-[16px]! lg:px-[45px]!">
                   <div className="mxd-block">
                     {/* Section Title Start */}
-                    <div className="mxd-section-title no-margin-desktop">
+                    <div className="mxd-section-title no-margin-desktop mb-[36px]! lg:mb-[112px]!">
                       <div className="container-fluid p-0">
                         <div className="row g-0">
-                          <div className="col-12 mxd-grid-item no-margin">
+                          <div className="col-12 mxd-grid-item no-margin px-0! lg:px-[15px]!">
                             <div className="mxd-section-title__title anim-uni-in-up">
-                              <RevealText as="h2" className="reveal-type">
+                              <RevealText as="h2" className="reveal-type lg:text-[44px]! text-[36px]!">
                                 Stories that showcase our{" "}
                                 <span className="font-playfair !">
                                   {" "}
@@ -36,8 +36,8 @@ export default function Testimonials() {
                               </RevealText>
                             </div>
                           </div>
-                          <div className="col-12 mxd-grid-item no-margin">
-                            <div className="mxd-section-title__descr">
+                          <div className="col-12 mxd-grid-item no-margin px-0! lg:px-[15px]!">
+                            <div className="mxd-section-title__descr mt-[16px]! lg:mt-[22px]! lg:pr-[60px]! pr-0!">
                               <p className="anim-uni-in-up">
                                 Great work speaks for itself, but our clients
                                 speak even louder. Discover why teams keep
@@ -45,8 +45,8 @@ export default function Testimonials() {
                               </p>
                             </div>
                           </div>
-                          <div className="col-12 mxd-grid-item no-margin">
-                            <div className="mxd-section-title__controls anim-uni-in-up">
+                          <div className="col-12 mxd-grid-item no-margin px-0! lg:px-[15px]!">
+                            <div className="mxd-section-title__controls anim-uni-in-up lg:mt-[32px]! mt-[16px]!">
                               <a
                                 className="mxd-section-title__image-link"
                                 href="https://clutch.co/"
@@ -89,10 +89,10 @@ export default function Testimonials() {
               </div>
               <div className="col-12 col-xl-7">
                 {/* Testimonials Slider Start */}
-                <div className="testimonials-slider overflow-hidden anim-uni-in-up">
+                <div className="testimonials-slider overflow-hidden anim-uni-in-up lg:px-[30px]! px-[16px]!">
                   {/* slider main container */}
                   <Swiper
-                    className="swiper-testimonials"
+                    className="swiper-testimonials lg:pb-[70px]! pb-0!"
                     {...{
                       slidesPerView: "auto",
                       grabCursor: true,
@@ -115,9 +115,9 @@ export default function Testimonials() {
                     modules={[Navigation, Pagination, Parallax]}
                   >
                     {testimonialsData.map((item, idx) => (
-                      <SwiperSlide className="swiper-slide" key={idx}>
-                        <div className="mxd-testimonials-card bg-base-tint radius-m">
-                          <div className="mxd-testimonials-card__content">
+                      <SwiperSlide className="swiper-slide " key={idx}>
+                        <div className="mxd-testimonials-card bg-base-tint lg:gap-[74px]! gap-[16px]! radius-m lg:px-[30px]! px-[16px]! ">
+                          <div className="mxd-testimonials-card__content lg:gap-[78px]! gap-[16px]!">
                             <div className="mxd-testimonials-card__media anim-uni-in-up">
                               <div className="mxd-testimonials-card__photo">
                                 <Image
@@ -130,7 +130,7 @@ export default function Testimonials() {
                               <div className="mxd-testimonials-card__company"></div>
                             </div>
                             <div className="mxd-testimonials-card__text">
-                              <p className="anim-uni-in-up">{item.text}</p>
+                              <p className="anim-uni-in-up lg:mb-[33px]! mb-0!">{item.text}</p>
                             </div>
                           </div>
                           <div className="mxd-testimonials-card__author">
@@ -146,7 +146,7 @@ export default function Testimonials() {
                     ))}
 
                     {/* navigation buttons */}
-                    <div className="swiper-button-prev mxd-slider-btn mxd-slider-btn-round-prev animate-card-2">
+                    <div className="swiper-button-prev mxd-slider-btn mxd-slider-btn-round-prev animate-card-2 ">
                       <button className=" w-[48px]! cursor-pointer h-[48px]! flex! items-center! justify-center! border!  border-gray-950! rounded-full">
                         <span>
                           <ArrowLeftIcon />

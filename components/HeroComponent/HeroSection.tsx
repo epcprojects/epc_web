@@ -212,7 +212,7 @@ export default function HeroSection({
             )}
 
             {showTestimonial ? (
-              <div className="py-[8px]! md:pr-[20px]! md:pl-[16px]! pr-[8px]! pl-[8px]! flex flex-col lg:flex-row gap-[10px]! items-center bg-black/30 rounded-2xl md:rounded-full">
+              <div className="py-[8px]! md:pr-[20px]! md:pl-[16px]! pr-[8px]! pl-[8px]! hidden  lg:flex flex-col lg:flex-row gap-[10px]! items-center bg-black/30 rounded-2xl md:rounded-full">
                 <div className="relative !w-[136px] !h-[40px] shrink-0">
                   <Image
                     src="/img/hero/hero-section-testimonials.png"
@@ -254,7 +254,7 @@ export default function HeroSection({
           </div>
 
           {(showButtons || showSocialLinks) && (
-            <div className="space-y-12! md:min-w-[1200px]! max-w-[1200px]!">
+            <div className="space-y-12! xl:min-w-[1200px]! max-w-[1200px]!">
               {showButtons && buttons.length > 0 && (
                 <div className="flex lg:flex-row flex-col items-center gap-6 justify-center">
                   {buttons.map((button, index) => (

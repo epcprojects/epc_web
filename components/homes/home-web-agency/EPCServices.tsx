@@ -68,8 +68,8 @@ export default function EPCServices() {
   }, []);
 
   return (
-    <div className="container  padding-pinned-img-pre-mtext">
-      <div className=" ">
+    <div className="container  padding-pinned-img-pre-mtext px-[16px]! lg:px-0!">
+      <div className=" space-y-[10px]! lg:space-y-0!">
         {/* <div className="-mb-8 md:-mb-16 space-y-4! md:space-y-4!">
           <div className="px-4 py-3 font-semibold text-3xl! text-[#4338CA] border-2! border-[#4338CA] w-fit rounded-full">
             Our Services
@@ -78,16 +78,16 @@ export default function EPCServices() {
             We Design Digital Solutions <br /> that Performs
           </h2>
         </div> */}
-        <div className="mxd-block__name flex flex-col gap-[20px]!">
-          <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">
+        <div className="mxd-block__name flex flex-col gap-[20px]! ">
+          <div className="py-[8px]! px-[16px]! lg:px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">
             <PolygonIcon />
-            <p className="text-[#4939D2]! text-[18px]! font-medium!">
+            <p className="text-[#4939D2]! text-[16px]! lg:text-[18px]! font-medium!">
               Our Services
             </p>
           </div>
           <RevealText
             as="h2"
-            className="reveal-type anim-uni-in-up text-[48px]!"
+            className="reveal-type anim-uni-in-up text-[36px]! lg:text-[48px]!"
           >
             We Design Digital <br /> Solutions{" "}
             <span className="font-playfair !">That Performs</span>
@@ -120,27 +120,28 @@ export default function EPCServices() {
 
             <div className="mxd-pinned__content page-padding">
               <div className="mxd-pinned__text-wrap">
-                <div className="mxd-pinned__text-list" role="list">
+                <div className="mxd-pinned__text-list lg:gap-[70px]! gap-[24px]!" role="list">
                   {services.map((item: Service, idx: number) => (
                     <div
-                      className="mxd-pinned__text-item"
+                      className="mxd-pinned__text-item "
                       role="listitem"
                       key={idx}
                     >
-                      <div className="mxd-pinned__img-mobile anim-uni-in-up">
+                      <div className="mxd-pinned__img-mobile anim-uni-in-up h-full! lg:h-auto!  ">
                         <Image
                           alt="Image"
                           src={item.img}
                           width={800}
                           height={800}
+                          className=" h-full! lg:h-auto! w-full! lg:w-auto!"
                         />
                       </div>
 
-                      <h2 className="mxd-pinned__title h2-small anim-uni-in-up text-[48px]!">
+                      <h2 className="mxd-pinned__title h2-small anim-uni-in-up lg:mb-[34px]! mb-[16px]! text-[24px]! lg:text-[48px]!">
                         {item.title}
                       </h2>
 
-                      <div className="mxd-pinned__tags">
+                      <div className="mxd-pinned__tags lg:mb-[32px]! mb-[16px]!">
                         {item.tags.map((tag, tagIdx) => (
                           <span
                             className="tag tag-default tag-outline anim-uni-in-up text-[14px]! text-gray-900!"
@@ -151,9 +152,9 @@ export default function EPCServices() {
                         ))}
                       </div>
 
-                      <p className="anim-uni-in-up text-[20px]!">{item.desc}</p>
+                      <p className="anim-uni-in-up text-[16px]! lg:text-[20px]!">{item.desc}</p>
 
-                      <div className="mt-12!">
+                      <div className="mt-[16px]! lg:mt-12!">
                         <PrimaryButton
                           label="Start a Project"
                           onClick={() => {

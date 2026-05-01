@@ -7375,6 +7375,13 @@ form textarea:required:valid {
   border-radius: 3.3rem;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .mxd-hero-01__marquee {
+    top: 7.3rem;
+   }
+}
+
 .mxd-hero-01__marquee .marquee-flex {
   display: -webkit-box;
   display: -moz-box;

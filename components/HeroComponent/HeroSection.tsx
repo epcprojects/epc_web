@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { ArrowIcon, ArrowUpIcon, StarIcon } from "@/public/icons";
 import Image from "next/image";
 import React, { ReactNode } from "react";
@@ -75,28 +75,28 @@ const defaultSocialLinks: SocialLink[] = [
     src: "/img/icons/upwork.svg",
     alt: "Upwork",
     tooltip: "Top Rated Plus",
-    className: "w-24! h-24!",
+    className: "w-18! h-18! md:w-24! md:h-24!",
   },
   {
     href: "https://pro.fiverr.com/freelancers/templateplanet",
     src: "/img/icons/fiverr.svg",
     alt: "Fiverr",
     tooltip: "Pro Seller Agency",
-    className: "w-24! h-24!",
+    className: "w-18! h-18! md:w-24! md:h-24! rounded-full",
   },
   {
     href: "https://clutch.co/profile/endpoint-clients",
     src: "/img/icons/clutch.svg",
     alt: "Clutch",
     tooltip: "Leading Design Agency",
-    className: "w-24! h-24! rounded-full",
+    className: "w-18! h-18! md:w-24! md:h-24! rounded-full",
   },
   {
     href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",
     src: "/img/icons/techbehemothsSvg.svg",
     alt: "Tech Behemoths",
     tooltip: "Leading Design Agency",
-    className: "h-24! rounded-full",
+    className: "w-18! h-18! md:w-24! md:h-24! rounded-full",
   },
 ];
 
@@ -123,10 +123,10 @@ export default function HeroSection({
 }: HeroSectionProps) {
   const isMobile = useIsMobile();
   return (
-    <div className="mxd-hero-01 min-h-[dvh] z-[100]">
+    <div className="mxd-hero-01  z-[100]">
       <div className="mxd-hero-01__wrap px-[16px]! loading-wrap">
         <div className="md:mxd-hero-01__top  items-center! flex flex-col container max-w-7xl mx-auto gap-[28px] md:gap-[64px]">
-          <div className="items-center flex flex-col gap-[16px]">
+          <div className="items-center flex flex-col gap-3 md:gap-[16px]">
             <Image
               src="/img/hero/logo.svg"
               alt="ring"
@@ -136,7 +136,9 @@ export default function HeroSection({
               priority
             />
 
-            <p className="text-2xl text-white font-normal">{subtitle}</p>
+            <p className=" text-xl! md:text-2xl text-white font-normal">
+              {subtitle}
+            </p>
           </div>
 
           <div
@@ -148,7 +150,7 @@ export default function HeroSection({
               <p className="text-white text-center">{innerPagesText}</p>
             ) : (
               <div className="mxd-hero-01__title-wrap ">
-                <div className="mxd-hero-01__marquee loading__item bg-black/30! border-0! ">
+                <div className="mxd-hero-01__marquee  loading__item bg-black/30! border-0! ">
                   <VelocityMarquee
                     direction="left"
                     className="marquee marquee-right--gsap"
@@ -159,17 +161,18 @@ export default function HeroSection({
                         className="marquee__item item-regular text items-center! flex!"
                       >
                         <div className="flex items-center gap-2 relative">
-                          <p className="md:text-[80px]! text-[30px]! pe-22!  font-playfair!">
+                          <p className="md:text-[80px]! text-[30px]! pe-8! md:pe-22!  font-playfair!">
                             {text}
                           </p>
 
-                          <div className="absolute top-10 -right-20!">
+                          <div className="absolute top-6 -right-6 md:top-10 md:-right-20!">
                             <svg
                               width="32"
                               height="32"
                               viewBox="0 0 128 128"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
+                              className="scale-150"
                             >
                               <path
                                 d="M64 32.0007C38.0951 35.3677 35.3662 38.0966 31.9993 64.0015C28.6338 38.0951 25.9049 35.3662 0 32.0007C25.9049 28.6338 28.6338 25.9049 32.0007 0C35.3677 25.9049 38.0966 28.6338 64.0015 32.0007H64Z"
@@ -185,21 +188,21 @@ export default function HeroSection({
 
                 <h1 className="hero-01-title md:text-[80px]! text-[40px]!   font-manrope!">
                   <span className="hero-01-title__row loading__item">
-                    <em className="hero-01-title__item font-manrope!">
+                    <em className="hero-01-title__item md:mt-auto! mb-12! mt-8! font-manrope!">
                       {firstLinePrefix}{" "}
                       <span className="ml-8! font-playfair ! inline-block">
                         {firstLineHighlight}
                       </span>
                     </em>
 
-                    {firstLineSuffix  && (
+                    {/* {firstLineSuffix && (
                       <em className="hero-01-title__item title-item-transparent   font-playfair!">
                         {firstLineSuffix}
                       </em>
-                    )}
+                    )} */}
                   </span>
 
-                  <span className="hero-01-title__row loading__item md:mt-0! mt-5! ">
+                  <span className="hero-01-title__row loading__item md:mt-0! mt-3! ">
                     <em className="md:hero-01-title__item font-manrope!">
                       {secondLinePrefix}{" "}
                       <span className="ml-8! font-playfair ! inline-block">
@@ -319,8 +322,8 @@ export default function HeroSection({
 
 function getDefaultButtonClassName(variant: HeroButton["variant"]) {
   if (variant === "secondary") {
-    return "min-w-[264px] rounded-[12px] px-8! py-4! text-xl text-gray-950 font-medium flex items-center justify-center gap-3 slide-right";
+    return "min-w-[264px] rounded-[12px] px-8! py-2! md:py-4! text-[16px]! md:text-xl text-gray-950 font-medium flex items-center justify-center gap-3 slide-right";
   }
 
-  return "min-w-[272px] rounded-[12px] px-8! py-4! text-lg font-medium flex items-center justify-center gap-4 slide-right";
+  return "min-w-[272px] rounded-[12px] px-8! py-2! md:py-4! text-[16px]! md:text-xl font-medium flex items-center justify-center gap-4 slide-right";
 }

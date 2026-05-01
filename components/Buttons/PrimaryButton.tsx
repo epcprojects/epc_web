@@ -4,19 +4,22 @@ type PrimaryButtonProps = {
   onClick?: () => void;
   className?: string;
   fill?: string;
+  paddingClass?: string;
 };
+
 
 export default function PrimaryButton({
   label,
   onClick,
   className = "",
   fill = "white",
+  paddingClass
 }: PrimaryButtonProps) {
   return (
     <button
       type="button"
       onClick={onClick}
-      className={`py-[16px]! px-[24px]! relative cursor-pointer group  overflow-hidden flex flex-row items-center justify-center! gap-2 bg-[#4939D2] rounded-[12px]! ${className}`}
+      className={`${paddingClass ? paddingClass : "py-[12px]! md:py-[16px]! px-[16px]! md:px-[24px]!"} relative cursor-pointer group  overflow-hidden flex flex-row items-center! justify-center! gap-2 bg-[#4939D2] rounded-[12px]! ${className}`}
     >
       {/* <div className=" absolute inset-0 w-full h-full overflow-hidden">
         <div className="w-full h-full [&>svg]:w-full [&>svg]:h-full">
@@ -24,7 +27,7 @@ export default function PrimaryButton({
         </div>
       </div> */}
 
-      <span className={` ${className} relative z-10 text-[20px]! text-white`}>
+      <span className={`  relative z-10 text-[20px]! text-white`}>
         {label}
       </span>
 

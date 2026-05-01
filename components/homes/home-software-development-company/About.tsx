@@ -11,12 +11,12 @@ export default function About() {
   return (
     // mxd-section padding-default
     // mxd-container grid-container
-    <div className="container max-w-7xl mx-auto  px-[32px]! pb-[96px]!">
+    <div className="container max-w-7xl mx-auto px-[16px]! lg:px-[32px]! pb-[30px]! lg:pb-[96px]!">
       <div className=" space-y-[20px]!">
         {/* Block - About Description with H2 Title and Paragraph Start */}
-        <div className="py-[8px]! px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">
+        <div className="py-[8px]! px-[16px]! lg:px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">
           <PolygonIcon />
-          <p className="text-[#4939D2]! text-[18px]! font-medium!">
+          <p className="text-[#4939D2]! text-[16px]! lg:text-[18px]! font-medium!">
             What Makes Us Different
           </p>
         </div>
@@ -27,7 +27,7 @@ export default function About() {
                 <div className="mxd-block__name">
                   <RevealText
                     as="h2"
-                    className="reveal-type anim-uni-in-up text-[48px]! font-semibold!"
+                    className="reveal-type anim-uni-in-up text-[36px]! lg:text-[48px]! font-semibold!"
                   >
                     Design That
                     <br />
@@ -39,14 +39,14 @@ export default function About() {
               <div className="col-12 col-xl-6 mxd-grid-item no-margin px-[0px]!">
                 <div className="mxd-block__content">
                   <div className="mxd-block__paragraph">
-                    <p className="t-large t-bright anim-uni-in-up text-[24px]!">
+                    <p className="t-large t-bright anim-uni-in-up text-[18px]! lg:text-[24px]!">
                       Great products don’t need explanation. We design
                       experiences that feel natural, reduce friction, and guide
                       users effortlessly from first interaction to conversion.
                     </p>
                     <div className="mxd-paragraph__lists">
                       <div className="container-fluid p-0 ">
-                        <div className="grid grid-cols-2 gap-y-[12px]!">
+                        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-y-[12px]!">
                           <div className=" ">
                             <ul>
                               <li>

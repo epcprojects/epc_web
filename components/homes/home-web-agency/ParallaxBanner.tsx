@@ -128,7 +128,7 @@ export default function ParallaxBanner({
     }, section);
 
     return () => ctx.revert();
-  }, []);
+  },[topSpacerValue, bottomSpacerValue]);
 
   return (
     <section ref={sectionRef} className={` overflow-visible ${className}`}>
@@ -146,7 +146,7 @@ export default function ParallaxBanner({
             loop
             playsInline
             preload="auto"
-            className="block w-full h-full max-h-dvh object-contain"
+            className="block w-full h-full max-h-dvh object-contain "
           />
         </div>
       </div>

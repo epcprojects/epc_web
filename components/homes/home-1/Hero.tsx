@@ -7,9 +7,9 @@ import HeroSection from "@/components/HeroComponent/HeroSection";
 export default function Hero() {
   return (
     <>
-      <div className="md:mxd-section md:pb-31!    relative! flex flex-col justify-center items-center h-fit! md:mxd-hero-section min-h-dvh md:mxd-hero-fullheight">
+      <div className="md:mxd-section lg:pb-31!   relative! flex flex-col justify-center items-center h-fit! md:mxd-hero-section min-h-dvh md:mxd-hero-fullheight">
         <Image
-          src="/img/hero/hero-bg.svg"
+          src="/img/contactus-hero.svg"
           alt="hero bg"
           fill
           className="object-cover object-center -z-10"

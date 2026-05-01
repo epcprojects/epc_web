@@ -1,3 +1,4 @@
+"use client"
 import Footer2 from "@/components/footers/Footer2";
 import About from "@/components/homes/home-software-development-company/About";
 import Hero from "@/components/homes/home-1/Hero";
@@ -9,6 +10,7 @@ import Facts from "@/components/homes/home-software-development-company/Facts";
 import BottomNav from "@/components/BottomNav";
 import ContactForm from "@/components/ContactForm";
 import Testimonials from "@/components/homes/home-1/Testimonials";
+import { useIsMobile } from "@/hooks/useIsMobile";
 import type { Metadata } from "next";
 
 const siteUrl =
@@ -67,25 +69,26 @@ export const metadata: Metadata = {
 };
 
 const Page = () => {
+  const isMobile = useIsMobile();
   return (
     <div>
       <Hero />
-      <div className="bg-black!">
-        <div className="rounded-t-[50px]! overflow-hidden   bg-[#FAF7F6]!">
+      <div className="bg-black! h-full! border-0! ">
+        <div className="lg:rounded-t-[50px]! rounded-t-[32px]! overflow-hidden !   bg-[#FAF7F6]!">
           <Partners />
         </div>
       </div>
-      <div className="bg-[#FAF7F6]!">
+      <div className="bg-[#FAF7F6]! ">
         <ServicesDesignAgency />
       </div>
 
-      <div className="bg-[#FAF7F6] pt-[96px]!">
+      <div className="bg-[#FAF7F6] pt-[16px]! lg:pt-[96px]!">
         <About />
       </div>
-      <div className="bg-[#FAF7F6]!">
+      <div className="bg-[#FAF7F6]! ">
         <ParallaxBanner
-          // bottomSpacerValue={64}
-          // topSpacerValue={0}
+          bottomSpacerValue={isMobile?30:250}
+          topSpacerValue={isMobile?0:120}
           videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
         />
       </div>
@@ -103,10 +106,10 @@ const Page = () => {
       {/* <BottomNav /> */}
 
       <div
-        className="mxd-section overflow-hidden! scroll-mt-32 bg-[#FAF7F6]!"
+        className="mxd-section overflow-hidden!  scroll-mt-32 bg-[#FAF7F6]!"
         id="contactus"
       >
-        <div className="container max-w-7xl mx-auto pb-[96px]!">
+        <div className="container max-w-7xl mx-auto pb-[24px]! lg:pb-[96px]!  ">
           <ContactForm />
         </div>
       </div>

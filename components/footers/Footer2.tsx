@@ -298,22 +298,22 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
         alt="logo epc"
         src={"/img/footer/footer-gradient.png"}
         fill
-        className="object-cover object-center -z-10"
+        className="object-cover object-center -z-10 "
       />
-      <div className="container max-w-7xl mx-auto px-[32px]! flex flex-col gap-[64px]">
-        <div className="flex flex-col gap-[40px]">
+      <div className="container max-w-7xl mx-auto px-[16px]! lg:px-[32px]! flex flex-col gap-[24px] lg:gap-[64px]">
+        <div className="flex flex-col items-center md:items-start gap-[24px] lg:gap-[40px]">
           <Link href={`/`} className="">
             <Image
               alt="logo epc"
               src={"img/footer/footer-logo.svg"}
               width={40}
               height={40}
-              className="lg:h-180! "
+              className="md:h-180! h-30! "
             />
           </Link>
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-[12px] lg:gap-0">
-            <div className="flex flex-col gap-3 max-w-[693px]!">
-              <span className="text-[20px]! font-normal! text-gray-50!">
+          <div className="flex flex-col md:flex-row items-center w-full justify-between lg:gap-0 gap-[12px]!">
+            <div className="flex flex-col items-center! md:items-start! gap-3 max-w-[693px]!">
+              <span className="text-[16px] md:text-[20px]! text-center md:text-start! font-normal! text-gray-50!">
                 Are you ready to elevate your brand’s digital presence? I lead
                 an exceptional team of UX/UI designers, researchers, 3D artists,
                 and webmasters.
@@ -409,16 +409,19 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 </div>
               </div>
             </div>
-            <PrimaryButton
+            <div className="w-full! lg:w-auto! ">
+              <PrimaryButton
               label="Contact Us"
+              className="w-full"
               onClick={() => {
                 router.push("/contact");
               }}
             />
+            </div>
           </div>
         </div>
         <div className="flex flex-wrap gap-[30px] justify-between">
-          <div className="flex flex-col gap-6 min-w-[385px]!">
+          <div className="flex flex-col gap-6 2xl:min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               Quick Link
             </h4>
@@ -444,12 +447,10 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               >
                 About Us
               </Link>
-
-             
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 min-w-[385px]!">
+          <div className="flex flex-col gap-6 2xl:min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               SERVICES
             </h4>
@@ -485,12 +486,12 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
                 href="/services"
                 className="text-[16px]! font-normal! text-gray-300! hover:text-white transition-colors"
               >
-               Branding
+                Branding
               </Link>
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 min-w-[385px]!">
+          <div className="flex flex-col gap-6 2xl:min-w-[385px]!">
             <h4 className="text-[17px]! font-semibold! uppercase text-white">
               Review
             </h4>
@@ -544,7 +545,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             </div>
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[24px]">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[16px] md:gap-[24px]">
           <div className="bg-black/50 rounded-[32px]! p-[28px]! flex flex-col gap-[20px]">
             <div className="flex flex-row gap-6 items-center">
               <div className="shrink-0">
@@ -630,37 +631,42 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between px-[32px]!">
-          <p className="text-[16px]! font-normal! text-white!">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between md:gap-0 gap-[16px]! px-[32px]!">
+          <p className="text-[16px]! text-center md:text-start font-normal! text-white!">
             © {new Date().getFullYear()} Endpoint Clients | All Rights Reserved.
           </p>
-          <div className="flex flex-row gap-[17px]!">
+          <div className="flex flex-row md:justify-start justify-center gap-[17px]!">
             <Link
-              href={"https://www.facebook.com/endpointclients"} target="_blank"
+              href={"https://www.facebook.com/endpointclients"}
+              target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <FacebookFooterIcon />
             </Link>
             <Link
-              href={"https://www.instagram.com/endpointclients/"} target="_blank"
+              href={"https://www.instagram.com/endpointclients/"}
+              target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <InstagramFooterIcon />
             </Link>
             <Link
-              href={"https://www.youtube.com/@EndPointClients."} target="_blank"
+              href={"https://www.youtube.com/@EndPointClients."}
+              target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <YoutubeFooterIcon />
             </Link>
             <Link
-              href={"https://x.com/Endpointclients"} target="_blank"
+              href={"https://x.com/Endpointclients"}
+              target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <XFooterIcon />
             </Link>
             <Link
-              href={"https://www.linkedin.com/company/endpoint-clients/"} target="_blank"
+              href={"https://www.linkedin.com/company/endpoint-clients/"}
+              target="_blank"
               className="w-[32px]! h-[32px]! flex items-center justify-center "
             >
               <LinkedinFooterIcon />

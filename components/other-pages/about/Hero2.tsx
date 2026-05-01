@@ -47,7 +47,7 @@ export default function Hero() {
             simpleDescription="We started with a simple belief that great design has the power to change how people experience the world. Today, we're a global team helping brands across 15+ industries design products that truly matter."
           />
         </div>
-        <div className="w-full overflow-hidden mt-[20px]! lg:mt-0!">
+        <div className="w-full overflow-hidden -mt-[60px]! lg:mt-0!">
           <VelocityMarquee
             direction="left"
             duration={20}
@@ -60,7 +60,7 @@ export default function Hero() {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
-                className="mr-[30px]! lg:w-120! w-90! h-90! lg:h-120! z-10 "
+                className="mr-[30px]! lg:w-120! w-50! h-50! lg:h-120! z-10 "
                 priority
               />
             ))}

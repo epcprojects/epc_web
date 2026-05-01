@@ -37,7 +37,7 @@ export default function Hero() {
         <HeroSection
           subtitle=""
           innerPagesText={
-            <span className="text-[72px]! text-white leading-[86px]! font-semibold">
+            <span className="text-[42px]! md:text-[72px]! text-white text-center! leading-[44px]!  md:leading-[86px]! font-semibold">
               Design <span className="font-playfair text-white">Services</span>
               <br /> Built for Impact
             </span>

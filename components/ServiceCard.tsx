@@ -55,15 +55,21 @@ export default function ServiceCard({
   return (
     <div className={`container mx-auto w-full max-w-[1320px] ${className}`}>
       <div className="rounded-4xl w-full! h-full! bg-white overflow-hidden border border-gray-100 drop-shadow-2xl">
-        <div className="overflow-hidden w-full!  bg-linear-to-l from-[#DDB1FF] via-20% to-[#BBE6FA]">
-          <img src={image} alt={imageAlt} className="h-fit w-full" />
+        <div className="overflow-hidden w-full!   bg-linear-to-l from-[#DDB1FF] via-20% to-[#BBE6FA]">
+          <img
+            src={image}
+            alt={imageAlt}
+            className="h-fit w-full min-h-[180px]!"
+          />
         </div>
 
-        <div className="py-[40px]! px-[48px]! space-y-[24px]! bg-white!">
-          <div className="space-y-[12px]!">
-            <h2 className="text-[48px]! font-semibold!">{title}</h2>
+        <div className=" p-8! md:py-[40px]! md:px-[48px]! space-y-[24px]! bg-white!">
+          <div className="space-y-[8px]! md:space-y-[12px]!">
+            <h2 className="text-[32px]! md:text-[48px]! font-semibold!">
+              {title}
+            </h2>
 
-            <p className="text-gray-700! text-[20px] font-normal">
+            <p className="text-gray-700! text-[16px] md:text-[20px] font-normal">
               {description}
             </p>
           </div>
@@ -73,7 +79,7 @@ export default function ServiceCard({
               {features.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3.5 pt-4! pb-8! border-b! border-b-gray-100!"
+                  className="flex items-center gap-3.5 pt-0! md:pt-4! pb-6! md:pb-8! border-b! border-b-gray-100!"
                 >
                   <StarIcon />
 
@@ -87,7 +93,7 @@ export default function ServiceCard({
 
           <div className="flex items-center justify-between gap-4">
             {avatars.length > 0 && (
-              <div className="flex -space-x-1 overflow-hidden">
+              <div className="flex flex-wrap -space-x-1 overflow-hidden">
                 {avatars.map((avatar, index) => (
                   <img
                     key={index}

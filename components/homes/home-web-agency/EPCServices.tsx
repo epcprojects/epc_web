@@ -70,14 +70,6 @@ export default function EPCServices() {
   return (
     <div className="container  padding-pinned-img-pre-mtext px-[16px]! lg:px-0!">
       <div className=" space-y-[10px]! lg:space-y-0!">
-        {/* <div className="-mb-8 md:-mb-16 space-y-4! md:space-y-4!">
-          <div className="px-4 py-3 font-semibold text-3xl! text-[#4338CA] border-2! border-[#4338CA] w-fit rounded-full">
-            Our Services
-          </div>
-          <h2 className="text-5xl! leading-normal!">
-            We Design Digital Solutions <br /> that Performs
-          </h2>
-        </div> */}
         <div className="mxd-block__name flex flex-col gap-[20px]! ">
           <div className="py-[8px]! px-[16px]! lg:px-[20px]! border! border-[#4939D2]! rounded-full flex flex-row items-center gap-[8px]!  w-fit ">
             <PolygonIcon />
@@ -90,7 +82,7 @@ export default function EPCServices() {
             className="reveal-type anim-uni-in-up text-[36px]! lg:text-[48px]!"
           >
             We Design Digital <br /> Solutions{" "}
-            <span className="font-playfair !">That Performs</span>
+            <span className="font-playfair !">That Perform</span>
           </RevealText>
         </div>
         {/* Block - Services Pinned Image Start */}
@@ -120,7 +112,10 @@ export default function EPCServices() {
 
             <div className="mxd-pinned__content page-padding">
               <div className="mxd-pinned__text-wrap">
-                <div className="mxd-pinned__text-list lg:gap-[70px]! gap-[24px]!" role="list">
+                <div
+                  className="mxd-pinned__text-list lg:gap-[70px]! gap-[24px]!"
+                  role="list"
+                >
                   {services.map((item: Service, idx: number) => (
                     <div
                       className="mxd-pinned__text-item "
@@ -152,7 +147,9 @@ export default function EPCServices() {
                         ))}
                       </div>
 
-                      <p className="anim-uni-in-up text-[16px]! lg:text-[20px]!">{item.desc}</p>
+                      <p className="anim-uni-in-up text-[16px]! lg:text-[20px]!">
+                        {item.desc}
+                      </p>
 
                       <div className="mt-[16px]! lg:mt-12!">
                         <PrimaryButton

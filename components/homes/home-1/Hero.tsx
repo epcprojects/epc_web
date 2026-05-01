@@ -64,7 +64,7 @@ export default function Hero() {
           firstLineHighlight="Design"
           firstLineSuffix="tech"
           secondLinePrefix="Solutions That"
-          secondLineHighlight="Performs"
+          secondLineHighlight="Perform"
         />
 
         {/* <div className="absolute!  inset-0  -z-10 pointer-events-none overflow-hidden">

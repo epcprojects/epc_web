@@ -60,8 +60,8 @@ const ServicesPageClient = () => {
       </div>
 
       <ParallaxBanner
-        bottomSpacerValue={isMobile ? 0 : 30}
-        topSpacerValue={isMobile ? 0 : 30}
+        bottomSpacerValue={isMobile ? 0 : 250}
+        topSpacerValue={isMobile ? 0 : 150}
         className="bg-gradient-to-t from-white to-[#faf7f6]"
         videoUrl="https://res.cloudinary.com/dgbdcdqd1/video/upload/Endpoint_Video_Compressed_jfvvui.mp4"
       />
